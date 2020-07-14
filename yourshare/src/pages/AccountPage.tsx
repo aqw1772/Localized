@@ -25,7 +25,6 @@ export class AccountPage extends React.Component<AccountScreenProps> {
             <input type="text" placeholder="Phone number:"/>
             <input type="text" placeholder="Zip code:"/>
 
-            {/* <input type="submit" /> */}
             <button onClick={(e) => this.props.changePage(pages.BrowsePage)}>
               Join
             </button>
