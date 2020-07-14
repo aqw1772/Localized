@@ -10,13 +10,6 @@ export class BrowsePage extends React.Component<BrowseScreenProps> {
     return (
     <div>
         <h1>Welcome, [username]!</h1>
-        <p onClick={(e) => this.props.changePage(pages.AddItemPage)}>
-          Add item
-        </p>
-        <p onClick={(e) => this.props.changePage(pages.CommunityPage)}>
-          Manage Community
-        </p>
-        <div>
         {/* first table */}
         <table>
           <tr>
@@ -69,6 +62,13 @@ export class BrowsePage extends React.Component<BrowseScreenProps> {
               <td>A friend</td>
             </tr>
         </table>
+        <p onClick={(e) => this.props.changePage(pages.AddItemPage)}>
+          Add item
+        </p>
+        <p onClick={(e) => this.props.changePage(pages.CommunityPage)}>
+          Manage Community
+        </p>
+        <div>
 
 
       </div>
