@@ -9,13 +9,17 @@ export class AccountPage extends React.Component<AccountScreenProps> {
   render() {
     return (
       <div>
+        {/*First div represents left side of page*/}
         <div>
           <h1>YourShare</h1>
         </div>
 
+        {/*Second div represents right side of page*/}
         <div>
           <h1>Join your community</h1>
           <h2>Sign-up</h2>
+
+          {/*User input form*/}
           <form>
             <input type="text" placeholder="Username:"/>
             <input type="text" placeholder="Phone number:"/>
