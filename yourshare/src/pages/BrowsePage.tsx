@@ -17,8 +17,9 @@ export class BrowsePage extends React.Component<BrowseScreenProps> {
             <th>Lender</th>
           </tr>
             <tr>`
-              <td>Blender</td>
-              <td>Stacey</td>
+                <p onClick={(e) => this.props.changePage(pages.BorrowItemPage)}>
+                    <td>Blender          </td> <td>Stacey</td>
+                </p>
             </tr>
             <tr>
               <td>Rake</td>
@@ -65,9 +66,9 @@ export class BrowsePage extends React.Component<BrowseScreenProps> {
         <p onClick={(e) => this.props.changePage(pages.AddItemPage)}>
           Add item
         </p>
-        <p onClick={(e) => this.props.changePage(pages.BorrowItemPage)}>
-          Borrow item
-        </p>
+        {/* <p onClick={(e) => this.props.changePage(pages.BorrowItemPage)}>
+          
+        </p> */}
         <p onClick={(e) => this.props.changePage(pages.CommunityPage)}>
           Manage Community
         </p>
