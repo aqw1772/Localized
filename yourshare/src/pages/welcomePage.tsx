@@ -18,7 +18,7 @@ export class BrowsePage extends React.Component<BrowseScreenProps> {
         </p>
         <div>
         {/* first table */}
-        <table style="width:150%" >
+        <table >
           <tr>
             <th>Items for borrowing</th>
             <th>Lender</th>
