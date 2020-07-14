@@ -11,7 +11,7 @@ export class AccountPage extends React.Component<AccountScreenProps> {
       <div>
         <h1>YourShare Account</h1>
         <button onClick={(e) => this.props.changePage(pages.BrowsePage)}>
-          Join
+          Join Hello
         </button>
         <p className="App-link" onClick={(e) => this.props.changePage(pages.BrowsePage)}>
           Sign-in
