@@ -10,7 +10,7 @@ export class CommunityPage extends React.Component<CommunityScreenProps> {
     return (
       <div>
         <p className="App-link" onClick={(e) => this.props.changePage(pages.BrowsePage)}>
-          Back to browse
+        <i class='far fa-arrow-alt-circle-left' style='font-size:36px'></i> Back to browse
         </p>
         <h1>YourShare Manage Community</h1>
         
