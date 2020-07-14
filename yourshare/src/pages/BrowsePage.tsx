@@ -13,6 +13,9 @@ export class BrowsePage extends React.Component<BrowseScreenProps> {
         <p onClick={(e) => this.props.changePage(pages.AddItemPage)}>
           Add item
         </p>
+        <p onClick={(e) => this.props.changePage(pages.BorrowItemPage)}>
+          Borrow item
+        </p>
         <p onClick={(e) => this.props.changePage(pages.CommunityPage)}>
           Community
         </p>
