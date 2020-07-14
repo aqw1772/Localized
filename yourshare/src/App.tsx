@@ -4,11 +4,13 @@ import { AccountPage } from "./pages/AccountPage";
 import { BrowsePage } from "./pages/BrowsePage";
 import { AddItemPage } from "./pages/AddItemPage";
 import { CommunityPage } from "./pages/CommunityPage";
+import { BorrowItemPage } from "./pages/BorrowItemPage";
 
 export enum pages {
   AccountPage,
   BrowsePage,
   CommunityPage,
+  BorrowItemPage,
   AddItemPage
 }
 
@@ -35,6 +37,8 @@ export class App extends React.Component<{}, AppState> {
         return <CommunityPage changePage={this.changeScreen} />;
       case pages.AddItemPage:
         return <AddItemPage changePage={this.changeScreen} />;
+      case pages.BorrowItemPage:
+          return <BorrowItemPage changePage={this.changeScreen} />;
       default:
         return <AccountPage changePage={this.changeScreen} />;
     }
