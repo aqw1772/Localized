@@ -39,6 +39,8 @@
 
 ### When going to coding
 
+You got the signoff of your coach or/and your instructor?
+
 Each component is a file. Here see brand.tsx, signup.tsx and signin.tsx.
 
 ![code1](https://github.com/tnt-summer-academy/Team00-AppPrototype/blob/main/yourshare/screenshots/brand.png)
