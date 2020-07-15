@@ -4,9 +4,9 @@
 
 ## SignUp page - Christelle
 
-Why?
+![account](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/YourShare-screens/YS_account.png)
 
-3 components:
+3 components for the signup page:
 
 ### Brand component
 
@@ -28,4 +28,21 @@ Why?
   * Button for signing in
   * Not reused
   
- ![account](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/YourShare-screens/YS_account.png)
+### Why this choice?
+
+* Thinking about reusability
+* Thinking about things that go together
+
+### Decomposition presentation
+
+![decomposition](https://github.com/tnt-summer-academy/Team00-AppPrototype/blob/main/yourshare/screenshots/3components.png)
+
+### When going to coding
+
+Each component is a file. Here see brand.tsx, signup.tsx and signin.tsx.
+
+!(code1)[https://github.com/tnt-summer-academy/Team00-AppPrototype/blob/main/yourshare/screenshots/brand.png]
+
+!(code2)[https://github.com/tnt-summer-academy/Team00-AppPrototype/blob/main/yourshare/screenshots/signin.png]
+
+!(code3)[https://github.com/tnt-summer-academy/Team00-AppPrototype/blob/main/yourshare/screenshots/signup.png]
