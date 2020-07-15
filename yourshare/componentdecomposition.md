@@ -39,6 +39,8 @@
 
 ### When going to coding
 
+This is not for the breakdown work but we wanted to show you how the breakdown then will be used during coding.
+
 You got the signoff of your coach or/and your instructor?
 
 Each component is a file. Here see brand.tsx, signup.tsx and signin.tsx.
