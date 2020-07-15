@@ -41,8 +41,8 @@
 
 Each component is a file. Here see brand.tsx, signup.tsx and signin.tsx.
 
-!(code1)[https://github.com/tnt-summer-academy/Team00-AppPrototype/blob/main/yourshare/screenshots/brand.png]
+![code1](https://github.com/tnt-summer-academy/Team00-AppPrototype/blob/main/yourshare/screenshots/brand.png)
 
-!(code2)[https://github.com/tnt-summer-academy/Team00-AppPrototype/blob/main/yourshare/screenshots/signin.png]
+![code2](https://github.com/tnt-summer-academy/Team00-AppPrototype/blob/main/yourshare/screenshots/signin.png)
 
-!(code3)[https://github.com/tnt-summer-academy/Team00-AppPrototype/blob/main/yourshare/screenshots/signup.png]
+![code3](https://github.com/tnt-summer-academy/Team00-AppPrototype/blob/main/yourshare/screenshots/signup.png)
