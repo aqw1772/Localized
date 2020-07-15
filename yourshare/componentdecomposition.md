@@ -8,13 +8,13 @@ Why?
 
 3 components:
 
-1. Brand component
+### Brand component
 
   * Name of the app
   * Logo of the app
   * Not reused
   
-2. SignUp component
+### SignUp component
 
   * Text: Join your community
   * Text: Signup 
@@ -23,7 +23,7 @@ Why?
   * Not reused 
   * This could be reused anywhere in the app where I want to have sign up
   
-3. SignIn component
+### SignIn component
 
   * Button for signing in
   * Not reused
