@@ -20,7 +20,7 @@ interface AppState {
 export class App extends React.Component<{}, AppState> {
   constructor(props: any) {
     super(props);
-    this.state = { currentPage: pages.SignupPage };
+    this.state = { currentPage: pages.AddItemPage }; // start out on the page I'm testing.  I'm 100% sure I'll forget to put this back :/
   }
   render() {
     return <div className="App">{this.getCurrentScreen()}</div>;
