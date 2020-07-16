@@ -1,4 +1,4 @@
-// import { actionIdentifier, TodoActions, AddAction, ToggleAction } from './actions'
+import { actionIdentifier, YourShareActions, AddAction } from './actions'
 import { IYourShareState, Person } from './types';
 
 // Reducer
@@ -29,38 +29,41 @@ const intialState: IYourShareState = {
     ]
 }
 
-function yourShareReducer(state: IYourShareState | undefined, action: any): IYourShareState {
-    //if (state === undefined) {
-    return intialState;
-    //}
+function yourShareReducer(state: IYourShareState | undefined, action: YourShareActions): IYourShareState {
+    if (state === undefined) {
+        return intialState;
+    }
 
     // let nextId = state.idCounter;
     // let listOfItems = state.items;
-    // switch (action.type) {
-    //     case actionIdentifier.Add: {
-    //         let addAction = action as AddAction;
-    //         return {
-    //             items: listOfItems.concat(new ToDoItem(nextId, addAction.description)),
-    //             idCounter: nextId + 1
-    //         };
-    //     }
-    //     case actionIdentifier.Toggle:
-    //         let toggleAction = action as ToggleAction;
-    //         let id = toggleAction.id;
-    //         listOfItems = listOfItems.slice(0);
-    //         let itemIdx = listOfItems.findIndex(item => item.id === id);
-    //         if (itemIdx !== -1) {
-    //             listOfItems[itemIdx].completed = !listOfItems[itemIdx].completed;
-    //         }
-    //         let newState = {
-    //             items: listOfItems,
-    //             idCounter: state.idCounter
-    //         };
-    //         return newState;
+    switch (action.type) {
+        case actionIdentifier.Add: {
+            let addAction = action as AddAction;
+            alert('A name was submitted: ' + addAction.name + ' type: ' + addAction.typeOfItem + ' Desc: ' + addAction.description);
+            let newState: IYourShareState = { ...state };
+            newState.currentUser.items.push()
+            // return {
+            //     items: listOfItems.concat(new ToDoItem(nextId, addAction.description)),
+            //     idCounter: nextId + 1
+            // };
+        }
+        //     case actionIdentifier.Toggle:
+        //         let toggleAction = action as ToggleAction;
+        //         let id = toggleAction.id;
+        //         listOfItems = listOfItems.slice(0);
+        //         let itemIdx = listOfItems.findIndex(item => item.id === id);
+        //         if (itemIdx !== -1) {
+        //             listOfItems[itemIdx].completed = !listOfItems[itemIdx].completed;
+        //         }
+        //         let newState = {
+        //             items: listOfItems,
+        //             idCounter: state.idCounter
+        //         };
+        //         return newState;
 
-    //     default:
-    //         return state;
-    // }
+        default:
+            return state;
+    }
 }
 
 export default yourShareReducer;

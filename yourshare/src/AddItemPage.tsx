@@ -1,11 +1,15 @@
 import React from "react";
 import { pages } from "./App";
+import { addItem } from "./redux/actions"
+import { IYourShareState } from './redux/types';
+import { connect } from 'react-redux';
 
 interface AddItemScreenProps {
   changePage: (page: pages) => void;
+  addItem: (n: string, t: string, d: string) => void;
 }
 
-export class AddItemPage extends React.Component<AddItemScreenProps> {
+class AddItemPage extends React.Component<AddItemScreenProps> {
 
   nameRef: React.RefObject<HTMLInputElement>;
   typeRef: React.RefObject<HTMLInputElement>;
@@ -47,10 +51,40 @@ export class AddItemPage extends React.Component<AddItemScreenProps> {
 
   private handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (this.nameRef.current == null || this.typeRef.current == null || this.descriptionRef.current == null)
+    if (this.nameRef.current == null || this.typeRef.current == null || this.descriptionRef.current == null) {
       alert('INTERNAL ERROR: missing reference!');
-    else
-      alert('A name was submitted: ' + this.nameRef.current.value + ' type: ' + this.typeRef.current.value + ' Desc: ' + this.descriptionRef.current.value);
-
+      return;
+    }
+    this.props.addItem(this.nameRef.current.value, this.typeRef.current.value, this.descriptionRef.current.value);
   }
 }
+
+// Map redux state to component state
+// This function subscribes to all store updates and gets called when
+// anything in the store changes. It return an object containing the store data you
+// want to transmit as props to a component
+// Here an object containing countValue is transmitted
+function mapStateToProps(state: IYourShareState) {
+  return {
+    // no data props
+  }
+}
+
+// Map redux actions to component props
+// This function returns an object with 2 functions that the component can call
+// increase... fires a dispatch with increase... as a type
+function mapDispatchToProps(dispatch: any) {
+  return {
+    addItem: (n: string, t: string, d: string) => dispatch(addItem(n, t, d))
+  }
+}
+
+// The Hight Order Component (HOC)
+// props need to be recived by the component
+let connectedComponent = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(AddItemPage);
+
+
+export default connectedComponent;

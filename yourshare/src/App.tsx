@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { SignupPage } from "./SignupPage";
 import { WelcomePage } from "./WelcomePage";
-import { AddItemPage } from "./AddItemPage";
+import AddItemPage from "./AddItemPage";
 import { CommunityPage } from "./CommunityPage";
 
 export enum pages {

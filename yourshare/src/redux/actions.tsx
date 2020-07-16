@@ -1,8 +1,7 @@
 // Actions and their types
 
 export enum actionIdentifier {
-    Add,
-    Toggle
+    Add
 }
 
 interface Action {
@@ -10,26 +9,19 @@ interface Action {
 }
 
 export interface AddAction extends Action {
+    name: string;
+    typeOfItem: string;
     description: string;
 }
 
-export function addItem(desc: string): AddAction {
+export function addItem(nam: string, toi: string, desc: string): AddAction {
     return {
         type: actionIdentifier.Add,
+        name: nam,
+        typeOfItem: toi,
         description: desc
     };
 };
 
 
-export interface ToggleAction extends Action {
-    id: number;
-}
-
-export function toggleItem(idToComplete: number): ToggleAction {
-    return {
-        type: actionIdentifier.Toggle,
-        id: idToComplete
-    }
-};
-
-export type TodoActions = AddAction | ToggleAction
+export type YourShareActions = AddAction
