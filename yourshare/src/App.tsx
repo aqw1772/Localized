@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { AccountPage } from "./pages/AccountPage";
+import  AccountPage  from "./pages/AccountPage";
 import { BrowsePage } from "./pages/BrowsePage";
 import { AddItemPage } from "./pages/AddItemPage";
 import { CommunityPage } from "./pages/CommunityPage";
