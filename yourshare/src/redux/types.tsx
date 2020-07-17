@@ -1,4 +1,3 @@
-// State of the app
 
 export interface IPreferences {
   text_me_when_someone_wants_to_borrow_an_item: boolean,
@@ -28,13 +27,17 @@ export interface IPerson {
 export class Person implements IPerson {
   id: number;
   name: string;
+  phone: string;
+  zipCode: string;
   preferences: IPreferences;
   bestFriends: Array<IPerson>;
   items: Array<IItem>;
 
-  constructor(theId: number, theName: string) {
-    this.id = theId;
+  constructor(personId: number, theName: string, ph: string, zip: string) {
+    this.id = personId;
     this.name = theName;
+    this.phone = ph;
+    this.zipCode = zip;
     this.preferences = new Prefs(false, false, false);
     this.bestFriends = new Array<IPerson>();
     this.items = new Array<IItem>();
@@ -62,8 +65,8 @@ export class Item implements IItem {
   ownedBy: IPerson;
   lentTo = undefined;
 
-  constructor(the_id: number, the_name: string, the_itemType: string, desc: string, owner: IPerson) {
-    this.id = the_id;
+  constructor(itemId: number, the_name: string, the_itemType: string, desc: string, owner: IPerson) {
+    this.id = itemId;
     this.name = the_name;
     this.itemType = the_itemType;
     this.description = desc;
@@ -72,6 +75,9 @@ export class Item implements IItem {
 }
 
 export interface IYourShareState {
+  // Declaring a global variable here so that we can issue sequential, increasing ID numbers to
+  // Person and Item objects
+  // May we need this, maybe we don't, but it's often useful for looking things up / saving to a file, etc
   idCounter: number,
   people: Array<IPerson>,
   currentUser: IPerson

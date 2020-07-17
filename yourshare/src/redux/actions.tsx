@@ -10,16 +10,16 @@ interface Action {
 
 export interface AddAction extends Action {
     name: string;
-    typeOfItem: string;
-    description: string;
+    phone: string;
+    zip: string;
 }
 
-export function addItem(nam: string, toi: string, desc: string): AddAction {
+export function joinInfo(nam: string, ph: string, z: string): AddAction {
     return {
         type: actionIdentifier.Add,
         name: nam,
-        typeOfItem: toi,
-        description: desc
+        phone: ph,
+        zip: z
     };
 };
 

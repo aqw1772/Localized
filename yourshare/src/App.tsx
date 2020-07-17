@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { SignupPage } from "./SignupPage";
 import { WelcomePage } from "./WelcomePage";
-import AddItemPage from "./AddItemPage";
+import { AddItemPage } from "./AddItemPage";
 import { CommunityPage } from "./CommunityPage";
 
 export enum pages {
@@ -20,7 +20,7 @@ interface AppState {
 export class App extends React.Component<{}, AppState> {
   constructor(props: any) {
     super(props);
-    this.state = { currentPage: pages.AddItemPage }; // start out on the page I'm testing.  I'm 100% sure I'll forget to put this back :/
+    this.state = { currentPage: pages.SignupPage }; // start out on the page I'm testing.  I'm 100% sure I'll forget to put this back :/
   }
   render() {
     return <div className="App">{this.getCurrentScreen()}</div>;

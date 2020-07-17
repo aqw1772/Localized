@@ -1,4 +1,4 @@
-import { actionIdentifier, YourShareActions, AddAction } from './actions'
+import { YourShareActions, actionIdentifier, AddAction } from './actions'
 import { IYourShareState, Person } from './types';
 
 // Reducer
@@ -10,12 +10,12 @@ import { IYourShareState, Person } from './types';
 
 // State of the app
 // It is defined by count
-const you = new Person(0, "This is you",)
+const you = new Person(0, "This is you", "508-867-5309", "98052")
 
-const person1 = new Person(1, "Stacey")
+const person1 = new Person(1, "Stacey", "425-123-4567", "98011")
 person1.addItem(2, "Blender", "Kitchen", "A pretty great blender.  The lid...");
 
-const person2 = new Person(3, "Marcos")
+const person2 = new Person(3, "Marcos", "206-7654-321", "98115")
 person2.addItem(4, "Rake", "Garden", "A pretty great rake.  The handle...");
 person2.addItem(5, "Car", "Garden", "A pretty great car.  The steering wheel...");
 
@@ -34,32 +34,20 @@ function yourShareReducer(state: IYourShareState | undefined, action: YourShareA
         return intialState;
     }
 
-    // let nextId = state.idCounter;
-    // let listOfItems = state.items;
+    const nextId = state.idCounter + 1;
+
     switch (action.type) {
         case actionIdentifier.Add: {
             let addAction = action as AddAction;
-            alert('A name was submitted: ' + addAction.name + ' type: ' + addAction.typeOfItem + ' Desc: ' + addAction.description);
-            let newState: IYourShareState = { ...state };
-            newState.currentUser.items.push()
-            // return {
-            //     items: listOfItems.concat(new ToDoItem(nextId, addAction.description)),
-            //     idCounter: nextId + 1
-            // };
+            alert('Added name: ' + addAction.name + ' phone: ' + addAction.phone + ' zip: ' + addAction.zip);
+
+            let newState: IYourShareState = { ...state }; // this will copy the current state
+
+            newState.currentUser = new Person(nextId, addAction.name, addAction.phone, addAction.zip);
+            newState.idCounter = nextId;
+
+            return newState;
         }
-        //     case actionIdentifier.Toggle:
-        //         let toggleAction = action as ToggleAction;
-        //         let id = toggleAction.id;
-        //         listOfItems = listOfItems.slice(0);
-        //         let itemIdx = listOfItems.findIndex(item => item.id === id);
-        //         if (itemIdx !== -1) {
-        //             listOfItems[itemIdx].completed = !listOfItems[itemIdx].completed;
-        //         }
-        //         let newState = {
-        //             items: listOfItems,
-        //             idCounter: state.idCounter
-        //         };
-        //         return newState;
 
         default:
             return state;
