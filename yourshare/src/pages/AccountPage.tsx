@@ -15,8 +15,8 @@ export class AccountPage extends React.Component<AccountScreenProps> {
         <div>
           <h1>YourShare</h1>
         </div>
-        <div>
-           <img src={YS_icon} alt=""/>
+        <div className="animate__rotateIn">
+           <img src={YS_icon} alt=""></img>
         </div>
 
         {/*Second div represents right side of page*/}
