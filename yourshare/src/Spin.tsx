@@ -1,6 +1,6 @@
 import React from 'react';
 import {useSpring,animated} from 'react-spring';
-import logo from '/images/YS_icon.png';
+import logo from './images/YS_icon.png';
 import './App.css';
 
 let ReactImage = () => {
