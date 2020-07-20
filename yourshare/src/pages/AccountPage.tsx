@@ -1,7 +1,9 @@
-import React from "react";
+import React from "react"
 import { pages } from "../App";
 import ReactImage from "../Spin";
 import {useSpring,animated} from 'react-spring';
+import YS_icon from "./YS_icon.png";
+
 
 interface AccountScreenProps {
   changePage: (page: pages) => void;
@@ -11,13 +13,13 @@ const AccountPage = (props:AccountScreenProps) => {
   return (
     <div>
       <div>
-      {/* This div represents the top left corner */}
-        <ReactImage />
-      </div>
-      {/*First div represents left side of page*/}
-      <div>
-        <h1>YourShare</h1>
-      </div>
+        {/*First div represents left side of page*/}
+        <div>
+          <h1>YourShare</h1>
+        </div>
+        <div className="animate__rotateIn">
+           <img src={YS_icon} alt=""></img>
+        </div>
 
       {/*Second div represents right side of page*/}
       <div>
