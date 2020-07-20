@@ -6,18 +6,4 @@
   color: #61dafb;
   text-decoration: underline;
 }
-<<<<<<< HEAD
 
-.column {
-  float: left;
-  width: 50%;
-}
-=======
-/* rotate image */
-.animate__rotateIn {
-  display: block;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-
-}
->>>>>>> 8bf2fcae50d651815da70b0eabc8ce9b216f29ae
