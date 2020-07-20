@@ -42,3 +42,5 @@ export class BorrowItemPage extends React.Component<BorrowItemScreenProps> {
     );
   }
 }
+
+export default BorrowItemPage;
