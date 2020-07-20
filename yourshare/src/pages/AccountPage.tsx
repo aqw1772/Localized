@@ -1,5 +1,7 @@
-import React from "react";
+import React from "react"
 import { pages } from "../App";
+import YS_icon from "./YS_icon.png";
+ 
 
 interface AccountScreenProps {
   changePage: (page: pages) => void;
@@ -12,6 +14,9 @@ export class AccountPage extends React.Component<AccountScreenProps> {
         {/*First div represents left side of page*/}
         <div>
           <h1>YourShare</h1>
+        </div>
+        <div className="animate__rotateIn">
+           <img src={YS_icon} alt=""></img>
         </div>
 
         {/*Second div represents right side of page*/}
