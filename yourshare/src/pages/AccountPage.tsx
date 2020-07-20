@@ -20,7 +20,7 @@ const AccountPage = (props:AccountScreenProps) => {
         <div className="animate__rotateIn">
            <img src={YS_icon} alt=""></img>
         </div>
-
+      </div>
       {/*Second div represents right side of page*/}
       <div>
         <h1>Join your community</h1>
@@ -45,9 +45,3 @@ const AccountPage = (props:AccountScreenProps) => {
 }
 
 export default AccountPage;
-// export class AccountPage extends React.Component<AccountScreenProps> {
-//   render() {
-    
-    
-//   }
-// }
