@@ -41,13 +41,9 @@ const AccountPage = (props:AccountScreenProps) => {
         Sign-in
       </p>
     </div>
+    </div>
   );
 }
 
 export default AccountPage;
-// export class AccountPage extends React.Component<AccountScreenProps> {
-//   render() {
-    
-    
-//   }
-// }
+
