@@ -2,7 +2,7 @@ import React from "react"
 import { pages } from "../App";
 import ReactImage from "../Spin";
 import {useSpring,animated} from 'react-spring';
-import YS_icon from "./YS_icon.png";
+const YS_icon = require("./YS_icon.png");
 
 
 interface AccountScreenProps {
@@ -40,6 +40,7 @@ const AccountPage = (props:AccountScreenProps) => {
       <p className="App-link" onClick={(e) => props.changePage(pages.BrowsePage)}>
         Sign-in
       </p>
+    </div>
     </div>
   );
 }
