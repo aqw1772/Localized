@@ -1,5 +1,6 @@
 import React from "react";
 import { pages } from "../App";
+import YS_upload from "./YS_upload.png";
 
 interface AddItemScreenProps {
   changePage: (page: pages) => void;
@@ -24,11 +25,17 @@ export class AddItemPage extends React.Component<AddItemScreenProps> {
       
         
         <div>
-          <input type="image" src="/images/YS_Upload.png" alt="file" width="80" height="80"></input>
+          
           <br></br>
-          <label>Upload Picture</label>
+          <div className="container">
+            <input type="image" src={YS_upload} alt="file" width="80" height="400"></input>
+            <label className="btn">Upload Picture</label>
+          </div>
+          <br></br>
           <button>Cancel</button>
-          <button className="rectButton">Add item</button>
+          <br></br>
+          <br></br>
+          <button>Add item</button>
         </div>
 
       </div>

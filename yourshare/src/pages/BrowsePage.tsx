@@ -14,9 +14,10 @@ class BrowsePage extends React.Component<BrowseScreenProps> {
     return (
     <div className="wrapper">
       <div>
-          <h1>Welcome, [username]!</h1>
+          <h1>Welcome, {this.props.you.name}!</h1>
           {/* first table */}
-          <table>
+          <ItemList changePage={this.props.changePage}/>
+          {/* <table>
             <tr>
               <th>Items for borrowing</th>
               <th>Lender</th>
@@ -58,7 +59,7 @@ class BrowsePage extends React.Component<BrowseScreenProps> {
                 <td>Jim</td>
               </tr>
             
-          </table>
+          </table> */}
         </div>
         <div className="borrowRight"> {/* second table on right */}
           <table>
@@ -71,15 +72,13 @@ class BrowsePage extends React.Component<BrowseScreenProps> {
                 <td><em>A friend</em></td>
             </tr>
           </table>
-          <p className="rectButton" onClick={(e) => this.props.changePage(pages.AddItemPage)}>
+          <button onClick={(e) => this.props.changePage(pages.AddItemPage)}>
             Add item
-          </p>
-          {/* <p onClick={(e) => this.props.changePage(pages.BorrowItemPage)}>
-            
-          </p> */}
-          <p onClick={(e) => this.props.changePage(pages.CommunityPage)}>
+          </button>
+          <br/>
+          <button onClick={(e) => this.props.changePage(pages.CommunityPage)}>
             Manage Community
-          </p>
+          </button>
         </div>
         <div>
 

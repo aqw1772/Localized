@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -14,28 +15,32 @@ code {
 
 .App {
   /* background-color: #282c34; */
-  background-color: lightgrey;
+  background-color: #F2F2F2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   /* align-items: center;
   justify-content: center; */
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
+  font-size: 20px;
   color: white;
 }
-<<<<<<< HEAD
 
 .wrapper{
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.borrow{
-  border: 1px solid grey;
-  width: 200px;
+button{
+  width: 150px;
   height:40px;
-  background-color: #282c34;
+  background-color: #62666E;
   color: white;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: none;
+  
 }
 
 input{ 
@@ -43,18 +48,14 @@ input{
  border-top: none;
  border-left: none;
  border-right: none;
- background-color: lightgrey;
+ background-color: #F2F2F2;
  width: 400px;
  margin-bottom: 40px;
  font-size: large;
-
- 
 }
 
-.rectButton {
-  background-color: darkgray;
-  color: white;
-  
+h3 {
+  color: black;
 }
 
 h2 {
@@ -81,5 +82,40 @@ td {
 .borrowRight table{
   margin-top: 147px;
 }
-=======
->>>>>>> 38651b7bb1f508308a23786f2d8293a782882268
+
+.wrapper {
+  color: black;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #62666E;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+/* .rectangleButton {
+  background-color: #282c34;
+  color: white;
+  width: 100px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+

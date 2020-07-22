@@ -1,55 +1,18 @@
-import React from "react"
+import React from "react";
 import { pages } from "../App";
 import ReactImage from "../Spin";
 import { useSpring, animated } from 'react-spring';
 import YS_icon from "./YS_icon.png";
 
-import { joinInfo } from "../redux/actions"
+import { joinInfo } from "../redux/actions";
 import { IYourShareState } from '../redux/types';
 import { connect } from 'react-redux';
-
 
 interface AccountScreenProps {
   changePage: (page: pages) => void;
   saveJoinInfo: (n: string, t: string, d: string) => void;
 }
 
-<<<<<<< HEAD
-const AccountPage = (props:AccountScreenProps) => {
-  return (
-    <div className="wrapper">
-        <div className="animate__rotateIn">
-          <h1>YourShare</h1>
-          <img src={YS_icon} alt=""></img>
-        </div>
-
-        {/*Second div represents right side of page*/}
-        <div className="account">
-          <h1>Join your community</h1>
-          <h2>Sign-up</h2>
-          {/*User input form*/}
-          <form>
-            <input type="text" placeholder="Username:"/>
-            <br/>
-            <input type="text" placeholder="Phone number:"/>
-            <br/>
-            <input type="text" placeholder="Zip code:"/>
-            <br/>
-            <button onClick={(e) => props.changePage(pages.BrowsePage)}>
-              Join
-            </button>
-          </form>
-        </div>
-      <div className="App-link" onClick={(e) => props.changePage(pages.BrowsePage)}>
-        Sign-in
-      </div>
-    </div>
-  );
- 
-}
-
-export default AccountPage;
-=======
 class AccountPage extends React.Component<AccountScreenProps> {
 
   nameRef: React.RefObject<HTMLInputElement>;
@@ -65,14 +28,10 @@ class AccountPage extends React.Component<AccountScreenProps> {
 
   render() {
     return (
-      <div>
+      <div className="wrapper">
         <div>
-          {/*First div represents left side of page*/}
-          <div>
             <h1>YourShare</h1>
-          </div>
-          <div className="animate__rotateIn">
-            <img src={YS_icon} alt=""></img>
+            <img src={YS_icon} alt="" className="animate__rotateIn"></img>
           </div>
 
           {/*Second div represents right side of page*/}
@@ -85,29 +44,28 @@ class AccountPage extends React.Component<AccountScreenProps> {
               <p>
                 <label>
                   Name:
-          <input type="text" ref={this.nameRef} />
+                <input type="text" ref={this.nameRef} />
                 </label>
               </p>
               <p>
                 <label>
                   Phone number:
-          <input type="text" ref={this.phoneNumRef} />
+                <input type="text" ref={this.phoneNumRef} />
                 </label>
               </p>
               <p>
                 <label>
                   Zip code:
-          <input type="text" ref={this.zipCodeRef} />
+                  <input type="text" ref={this.zipCodeRef} />
                 </label>
               </p>
               <p>
-                <input type="submit" value="Join" />
+                <button> Join </button>
               </p>
             </form>
-          </div>
           <p className="App-link" onClick={(e) => this.props.changePage(pages.BrowsePage)}>
             Sign-in
-      </p>
+          </p>
         </div>
       </div>
     );
@@ -153,4 +111,3 @@ const connectedComponent = connect(
 
 export { connectedComponent as AccountPage }
 
->>>>>>> 38651b7bb1f508308a23786f2d8293a782882268
