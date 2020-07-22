@@ -56,18 +56,18 @@ export class BrowsePage extends React.Component<BrowseScreenProps> {
             
           </table>
         </div>
-        <div> {/* second table on right */}
+        <div className="borrowRight"> {/* second table on right */}
           <table>
           <tr>
               <th>Your items</th>
               <th>Lent to</th>
             </tr>
             <tr>
-                <td>Add your first item</td>
-                <td>A friend</td>
+                <td><em>Add your first item</em></td>
+                <td><em>A friend</em></td>
             </tr>
           </table>
-          <p onClick={(e) => this.props.changePage(pages.AddItemPage)}>
+          <p className="rectButton" onClick={(e) => this.props.changePage(pages.AddItemPage)}>
             Add item
           </p>
           {/* <p onClick={(e) => this.props.changePage(pages.BorrowItemPage)}>

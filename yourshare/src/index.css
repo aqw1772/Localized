@@ -38,7 +38,7 @@ code {
 }
 
 input{ 
- border-bottom: 1px solid grey;
+ border-bottom: 2px solid grey;
  border-top: none;
  border-left: none;
  border-right: none;
@@ -46,6 +46,14 @@ input{
  width: 400px;
  margin-bottom: 40px;
  font-size: large;
+
+ 
+}
+
+.rectButton {
+  background-color: darkgray;
+  color: white;
+  
 }
 
 h2 {
@@ -53,16 +61,22 @@ h2 {
   margin-right: 400px;
 }
 
-.account h1 {
+h1 {
   color: black;
 }
 
 table {
-  position: relative;
+  position: center;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
   color: black;
 }
 
 td {
   border: 1px solid grey;
+}
+
+.borrowRight table{
+  margin-top: 147px;
 }

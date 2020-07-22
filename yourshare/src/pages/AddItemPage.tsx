@@ -28,7 +28,7 @@ export class AddItemPage extends React.Component<AddItemScreenProps> {
           <br></br>
           <label>Upload Picture</label>
           <button>Cancel</button>
-          <button>Add item</button>
+          <button className="rectButton">Add item</button>
         </div>
 
       </div>
