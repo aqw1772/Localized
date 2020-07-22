@@ -46,8 +46,3 @@ const AccountPage = (props:AccountScreenProps) => {
 
 export default AccountPage;
 // export class AccountPage extends React.Component<AccountScreenProps> {
-//   render() {
-    
-    
-//   }
-// }
