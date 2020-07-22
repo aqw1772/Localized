@@ -3,7 +3,22 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: black;
   text-decoration: underline;
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  text-align: center;
+}
+
+/* rotate image */
+.animate__rotateIn {
+  display: block;
+  animation-duration: 3;
+  animation-iteration-count: infinite;
+}
+
+.animate__rotateIn h1 {
+  color: black;
 }
 

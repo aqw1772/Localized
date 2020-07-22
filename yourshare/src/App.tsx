@@ -21,7 +21,7 @@ interface AppState {
 export class App extends React.Component<{}, AppState> {
   constructor(props: any) {
     super(props);
-    this.state = { currentPage: pages.BorrowItemPage };
+    this.state = { currentPage: pages.AccountPage };
   }
   render() {
     return <div className="App">{this.getCurrentScreen()}</div>;

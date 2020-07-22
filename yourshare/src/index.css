@@ -24,10 +24,9 @@ code {
   color: white;
 }
 
-.column {
-  float: left;
-  width: 50%;
-  margin: 0;
+.wrapper{
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .borrow{
@@ -38,17 +37,32 @@ code {
   color: white;
 }
 
-.borrow:hover{
-  background-color: darkgray;
-  transition: ease-in 0.5s;
-}
-
-input{
- /* border-top: 0;
- border-left: 0;
- border-right: 0; */
- border: 0px 2px 0px 0px;
+input{ 
+ border-bottom: 1px solid grey;
+ border-top: none;
+ border-left: none;
+ border-right: none;
  background-color: lightgrey;
  width: 400px;
+ margin-bottom: 40px;
+ font-size: large;
+}
 
+h2 {
+  color: black;
+  margin-right: 400px;
+}
+
+.account h1 {
+  color: black;
+}
+
+table {
+  position: relative;
+  align-items: center;
+  color: black;
+}
+
+td {
+  border: 1px solid grey;
 }

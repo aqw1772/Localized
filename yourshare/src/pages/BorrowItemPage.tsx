@@ -1,5 +1,7 @@
 import React from "react";
 import { pages } from "../App";
+import YS_blender from "./YS_blender.png";
+
 
 
 interface BorrowItemScreenProps {
@@ -9,11 +11,9 @@ interface BorrowItemScreenProps {
 export class BorrowItemPage extends React.Component<BorrowItemScreenProps> {
   render() {
     return (
-      <div>
-         <h3>Borrow item</h3>
-
-        <div className="row">
-          <div className="column">
+      <div className="wrapper"> 
+          <div>
+          <h3>Borrow item</h3>
             <form action="">
               <input type = "text" name ="name" placeholder="Item name: Blender" className="name" readOnly/>
               <br/>
@@ -28,21 +28,12 @@ export class BorrowItemPage extends React.Component<BorrowItemScreenProps> {
             </form>
           </div>
           
-          <div className="column">
+       
             <div>
-                <img src="./images/YS_blender.png" alt="" className="blender"/>
+            <img src={YS_blender} alt=""></img>
                 <h4>Cancel</h4>
                 <button className="borrow">Request to borrow</button>
             </div>
-
-              
-            
-        
-           
-  
-          </div>
-        </div>
-     
       </div>
 
     //form 
