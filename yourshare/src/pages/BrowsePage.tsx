@@ -1,68 +1,21 @@
 import React from "react";
 import { pages } from "../App";
+import ItemList from "../components/ItemList/ItemList"
+import {IYourShareState, IPerson } from "../redux/types";
+import { connect } from 'react-redux';
 
 interface BrowseScreenProps {
   changePage: (page: pages) => void;
+  you: IPerson;
 }
 
-export class BrowsePage extends React.Component<BrowseScreenProps> {
+class BrowsePage extends React.Component<BrowseScreenProps> {
   render() {
     return (
     <div>
-        <h1>Welcome, [username]!</h1>
+        <h1>Welcome, {this.props.you.name}</h1>
         {/* first table */}
-        <table>
-          <tr>
-            <th>Items for borrowing</th>
-            <th>Lender</th>
-          </tr>
-            <tr>`
-                <p onClick={(e) => this.props.changePage(pages.BorrowItemPage)}>
-                    <td>Blender          </td> <td>Stacey</td>
-                </p>
-            </tr>
-            <tr>
-              <td>Rake</td>
-              <td>Marcos</td>
-            </tr>
-            <tr>
-              <td>Car</td>
-              <td>Marcos</td>
-            </tr>
-            <tr>
-              <td>Bike</td>
-              <td>Cam</td>
-            </tr>
-            <tr>
-              <td>Drill</td>
-              <td>Stacey</td>
-            </tr>
-            <tr>
-              <td>Ladder</td>
-              <td>Marcos</td>
-            </tr>
-            <tr>
-              <td>Kayak</td>
-              <td>Cam</td>
-            </tr>
-            <tr>
-              <td>The Office DVD Box set</td>
-              <td>Stacey</td>
-            </tr>
-            <tr>
-              <td>Cart</td>
-              <td>Jim</td>
-            </tr>
-          {/* second table on right */}
-          <tr>
-            <th>Your items</th>
-            <th>Lent to</th>
-          </tr>
-          <tr>
-              <td>Add your first item</td>
-              <td>A friend</td>
-            </tr>
-        </table>
+        <ItemList changePage={this.props.changePage}/>
         <p onClick={(e) => this.props.changePage(pages.AddItemPage)}>
           Add item
         </p>
@@ -72,12 +25,37 @@ export class BrowsePage extends React.Component<BrowseScreenProps> {
         <p onClick={(e) => this.props.changePage(pages.CommunityPage)}>
           Manage Community
         </p>
-        <div>
-
-
-      </div>
       </div>
      
-    )
+    );
   }
 }
+
+//Map redux state to component state
+// This function subscribes to all store updates and gets called when
+// anything in the store changes. It return an object containing the store data you
+// want to transmit as props to a component
+// Here an object containing countValue is transmitted
+function mapStateToProps(state: IYourShareState) {
+  return {
+    you: state.currentUser // "currentUser" in Redux state is 'you' on this page
+  }
+}
+
+// Map redux actions to component props
+// This function returns an object with 2 functions that the component can call
+// increase... fires a dispatch with increase... as a type
+function mapDispatchToProps(dispatch: any) {
+  return {
+    // no actions on this page / screen
+  }
+}
+
+// The Hight Order Component (HOC)
+// props need to be recived by the component
+const connectedComponent = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(BrowsePage);
+
+export { connectedComponent as BrowsePage }

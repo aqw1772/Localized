@@ -3,3 +3,4 @@
 - basic navigation framework
 - sample page components
 - some image assets
+- yourshare skeleton for ENG2.6
