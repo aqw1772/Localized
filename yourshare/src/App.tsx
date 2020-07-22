@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import  AccountPage  from "./pages/AccountPage";
+import { AccountPage } from "./pages/AccountPage";
 import { BrowsePage } from "./pages/BrowsePage";
 import { AddItemPage } from "./pages/AddItemPage";
 import { CommunityPage } from "./pages/CommunityPage";
@@ -25,7 +25,7 @@ interface AppState {
 export class App extends React.Component<{}, AppState> {
   constructor(props: any) {
     super(props);
-    this.state = { currentPage: pages.SignupPage };
+    this.state = { currentPage: pages.AccountPage };
   }
   render() {
     return <div className="App">{this.getCurrentScreen()}</div>;

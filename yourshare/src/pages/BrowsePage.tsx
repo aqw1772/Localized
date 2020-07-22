@@ -15,7 +15,7 @@ class BrowsePage extends React.Component<BrowseScreenProps> {
     <div>
         <h1>Welcome, {this.props.you.name}</h1>
         {/* first table */}
-        <ItemList />
+        <ItemList changePage={this.props.changePage}/>
         <p onClick={(e) => this.props.changePage(pages.AddItemPage)}>
           Add item
         </p>
