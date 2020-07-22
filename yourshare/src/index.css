@@ -23,6 +23,7 @@ code {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+<<<<<<< HEAD
 
 .wrapper{
   display: grid;
@@ -80,3 +81,5 @@ td {
 .borrowRight table{
   margin-top: 147px;
 }
+=======
+>>>>>>> 38651b7bb1f508308a23786f2d8293a782882268
