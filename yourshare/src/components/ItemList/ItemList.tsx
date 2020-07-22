@@ -3,7 +3,7 @@ import "./ItemList.css";
 // import { toggleItem } from '../../redux/actions';
 import { IYourShareState, IPerson, IItem } from '../../redux/types';
 import { connect } from 'react-redux';
-import { pages } from "../App";
+import { pages } from "../../App";
 
 // ToDoList component
 // Render the component on the screen
@@ -25,7 +25,7 @@ class ItemList extends React.Component<IItemListProps> {
                     <tbody>
                         {this.props.listOfPeople.map((person: IPerson) => {
                             return person.items.map((item: IItem) => (
-                                <tr key={person.id} > <td onClick={(e) => this.props.changePage(pages.AddItemPage)}>{item.name}</td><td>{person.name}</td></tr>)
+                                <tr key={person.id} > <td onClick={(e) => this.props.changePage(pages.BorrowItemPage)}>{item.name}</td><td>{person.name}</td></tr>)
                             )
                         }
                         )}

@@ -50,9 +50,9 @@ class SignupPage extends React.Component<SignupScreenProps> {
             <input type="submit" value="Join" />
           </p>
         </form>
-        <p onClick={(e) => this.props.changePage(pages.WelcomePage)}>
+        {/* <p onClick={(e) => this.props.changePage(pages.WelcomePage)}>
           Sign-In
-        </p>
+        </p> */}
       </div>
     );
   }
@@ -64,7 +64,7 @@ class SignupPage extends React.Component<SignupScreenProps> {
       return;
     }
     this.props.saveJoinInfo(this.nameRef.current.value, this.phoneNumRef.current.value, this.zipCodeRef.current.value);
-    this.props.changePage(pages.WelcomePage)
+    // this.props.changePage(pages.WelcomePage)
   }
 }
 

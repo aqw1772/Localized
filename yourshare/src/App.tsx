@@ -5,12 +5,8 @@ import { BrowsePage } from "./pages/BrowsePage";
 import { AddItemPage } from "./pages/AddItemPage";
 import { CommunityPage } from "./pages/CommunityPage";
 import { BorrowItemPage } from "./pages/BorrowItemPage";
-import { SignupPage } from "./SignupPage";
-import { WelcomePage } from "./WelcomePage";
 
 export enum pages {
-  SignupPage,
-  WelcomePage,
   AccountPage,
   BrowsePage,
   CommunityPage,
@@ -37,10 +33,6 @@ export class App extends React.Component<{}, AppState> {
         return <AccountPage changePage={this.changeScreen} />;
       case pages.BrowsePage:
         return <BrowsePage changePage={this.changeScreen} />;
-      case pages.SignupPage:
-        return <SignupPage changePage={this.changeScreen} />;
-      case pages.WelcomePage:
-        return <WelcomePage changePage={this.changeScreen} />;
       case pages.CommunityPage:
         return <CommunityPage changePage={this.changeScreen} />;
       case pages.AddItemPage:

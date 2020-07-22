@@ -15,7 +15,7 @@ class WelcomePage extends React.Component<WelcomeScreenProps> {
     return (
       <div>
         <h1>Welcome, {this.props.you.name}</h1>
-        <ItemList />
+        {/* <ItemList /> */}
         <p onClick={(e) => this.props.changePage(pages.AddItemPage)}>
           Add item
           </p>
