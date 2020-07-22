@@ -17,7 +17,7 @@ export class BrowsePage extends React.Component<BrowseScreenProps> {
             <th>Lender</th>
           </tr>
             <tr>`
-                <p onClick={(e) => this.props.changePage(pages.BorrowItemPage)}>
+                <p className="BorrowItemPage" onClick={(e) => this.props.changePage(pages.BorrowItemPage)}>
                     <td>Blender          </td> <td>Stacey</td>
                 </p>
             </tr>
@@ -63,13 +63,13 @@ export class BrowsePage extends React.Component<BrowseScreenProps> {
               <td>A friend</td>
             </tr>
         </table>
-        <p onClick={(e) => this.props.changePage(pages.AddItemPage)}>
+        <p className="AddItemPage" onClick={(e) => this.props.changePage(pages.AddItemPage)}>
           Add item
         </p>
         {/* <p onClick={(e) => this.props.changePage(pages.BorrowItemPage)}>
           
         </p> */}
-        <p onClick={(e) => this.props.changePage(pages.CommunityPage)}>
+        <p className="CommunityPage" onClick={(e) => this.props.changePage(pages.CommunityPage)}>
           Manage Community
         </p>
         <div>
