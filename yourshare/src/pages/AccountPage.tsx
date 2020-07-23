@@ -47,9 +47,9 @@ class AccountPage extends React.Component<AccountScreenProps> {
                 <br/>
                 <input type="text" ref={this.zipCodeRef} placeholder="Zip code: "/>
                 <br/>
-                <button> Join </button>
-              
+                <button className="join"> Join </button>
             </form>
+            
           <p className="App-link" onClick={(e) => this.props.changePage(pages.BrowsePage)}>
             Sign-in
           </p>
