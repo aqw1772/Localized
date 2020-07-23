@@ -1,4 +1,5 @@
-body {
+@media only screen and (max-width: 600px) {
+  body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -6,6 +7,7 @@ body {
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
   
+}
 }
 
 code {
@@ -50,8 +52,15 @@ button{
   margin-left: 250px;
 }
 
+/* add friend button on the left*/
+.addFriendbtn{
+  margin-right: 730px;
+  margin-top: 20px;
+}
+
+/* input field for all the pages */
 input{ 
- border-bottom: 2px solid grey;
+ border-bottom: 1px solid grey;
  border-top: none;
  border-left: none;
  border-right: none;
@@ -59,7 +68,33 @@ input{
  width: 400px;
  margin-bottom: 40px;
  font-size: large;
+ margin-right: 30%;
 }
+
+.checkboxes {
+  display: block;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.checkboxes input{
+  width: 30px;
+  margin-right: 0px;
+  margin-left: 460px;
+}
+
+.checkboxes label{
+  position: relative;
+  margin-left: none;
+  width: 20px;
+  color: black;
+}
+
+/* input feild focus removed */
+input:focus{
+  outline: none;
+}
+
 
 h3 {
   color: black;
@@ -99,12 +134,13 @@ td {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 100px;
 }
 
 .container .btn {
   position: absolute;
   top: 82%;
-  left: 50%;
+  left: 44%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #62666E;
@@ -116,13 +152,47 @@ td {
   border-radius: 5px;
 }
 
+textarea{
+  outline: none;
+  background-color: #F2F2F2;
+  margin-right: 30%;
+}
 
-/* .rectangleButton {
-  background-color: #282c34;
-  color: white;
-  width: 100px;
-  height: 40px;
-  margin-left: auto;
-  margin-right: auto;
-} */
+.bottom {
+    margin-top: 200px;
+    
+    margin-right: 0px;
+}
+
+.cancel {
+  color: gray;
+  margin-right: 10px;
+}
+
+.back-button_title {
+  display: inline-flex;
+  margin-left: -200px;
+  margin-bottom: 100px;
+}
+
+.back-button_title img{
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: -270px;
+  margin-right: 15px;
+}
+
+.back-button_title h1 {
+  margin-top: 15px;
+}
+
+span{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10%;
+  margin-right: 3%;
+ 
+}
+
 
