@@ -23,6 +23,8 @@ const person3 = new Person(6, "Cam", "304-266-8178", "83045")
 person3.addItem(7, "Bike", "Garage", "A pretty great bike. The handle is...");
 person3.addItem(8, "Kayak", "Garage","A pretty great kayak. The handle is ...");
 
+const person4 =new Person(9, "Stacey", "264-305-7898", "33115")
+person4.addItem(10, "Drill", "Kitchen", "A pretty great drill. The chuck is ...")
 
 const intialState: IYourShareState = {
     idCounter: 6, // this is the id assigned to the next object that we create
