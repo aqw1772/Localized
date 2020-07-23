@@ -3,7 +3,12 @@ import { render, fireEvent } from '@testing-library/react';
 import App from '../App';
 import { act } from 'react-dom/test-utils';
 import ReactDOM from 'react-dom';
+import yourShareReducer from "../redux/reducer"
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { intialState } from '../redux/reducer';
 
+let store = createStore(yourShareReducer);
 
 // test('renders learn react link', () => {
 //   const { getByText } = render(<App />);
@@ -20,7 +25,7 @@ beforeEach(() => {
     container = document.createElement('div');
     console.log(container);
     document.body.appendChild(container);
-    act(() => { ReactDOM.render(<App />, container) });
+    act(() => { ReactDOM.render(<Provider store={store}><App /></Provider>, container) });
 });
 
 // Executed after each test
@@ -42,6 +47,6 @@ test('After clicking on "back to browse" button on Community page it should be b
         // expect(linkElement).toBeInTheDocument();
         // TODO: Replace the text with the correct text
         
-        expect(header?.textContent).toBe("Welcome, [username]!");
+        expect(header?.textContent).toBe("Welcome, " + intialState.currentUser.name+"!");
     }
 });

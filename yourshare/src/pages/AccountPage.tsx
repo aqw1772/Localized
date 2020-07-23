@@ -1,13 +1,12 @@
-import React from "react"
+import React from "react";
 import { pages } from "../App";
 import ReactImage from "../Spin";
 import { useSpring, animated } from 'react-spring';
 import YS_icon from "./YS_icon.png";
 
-import { joinInfo } from "../redux/actions"
+import { joinInfo } from "../redux/actions";
 import { IYourShareState } from '../redux/types';
 import { connect } from 'react-redux';
-
 
 interface AccountScreenProps {
   changePage: (page: pages) => void;
@@ -29,14 +28,10 @@ class AccountPage extends React.Component<AccountScreenProps> {
 
   render() {
     return (
-      <div>
+      <div className="wrapper">
         <div>
-          {/*First div represents left side of page*/}
-          <div>
             <h1>YourShare</h1>
-          </div>
-          <div className="animate__rotateIn">
-            <img src={YS_icon} alt=""></img>
+            <img src={YS_icon} alt="" className="animate__rotateIn"></img>
           </div>
 
           {/*Second div represents right side of page*/}
@@ -49,29 +44,28 @@ class AccountPage extends React.Component<AccountScreenProps> {
               <p>
                 <label>
                   Name:
-          <input type="text" ref={this.nameRef} />
+                <input type="text" ref={this.nameRef} />
                 </label>
               </p>
               <p>
                 <label>
                   Phone number:
-          <input type="text" ref={this.phoneNumRef} />
+                <input type="text" ref={this.phoneNumRef} />
                 </label>
               </p>
               <p>
                 <label>
                   Zip code:
-          <input type="text" ref={this.zipCodeRef} />
+                  <input type="text" ref={this.zipCodeRef} />
                 </label>
               </p>
               <p>
-                <input type="submit" value="Join" />
+                <button> Join </button>
               </p>
             </form>
-          </div>
           <p className="App-link" onClick={(e) => this.props.changePage(pages.BrowsePage)}>
             Sign-in
-      </p>
+          </p>
         </div>
       </div>
     );

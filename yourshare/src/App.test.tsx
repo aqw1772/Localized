@@ -53,6 +53,6 @@ test('After button click on Account page the page should be BrowsePage', () => {
         // TODO: Replace the text with the correct text
         console.log(intialState.currentUser.name);
         console.log(btn?.textContent);
-        expect(header?.textContent).toBe("Welcome, " + intialState.currentUser.name);
+        expect(header?.textContent).toBe("Welcome, " + intialState.currentUser.name+"!");
     }
 });

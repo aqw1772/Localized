@@ -8,7 +8,7 @@
 }
 
 .ItemList td {
-    border: 1px solid yellow;
+    border: 1px solid gray;
     border-collapse: collapse;
     padding: 5px;
 }
