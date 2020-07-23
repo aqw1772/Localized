@@ -27,6 +27,9 @@ const person4 =new Person(9, "Stacey", "264-305-7898", "33115")
 person4.addItem(10, "Drill", "Kitchen", "A pretty great drill. The chuck is ...");
 person4.addItem(11, "The office DVD Box set", "Garage", "A pretty great box set. The set is ...");
 
+const person5 = new Person(13, "Jim", "962-555-3210", "82501")
+person5.addItem(14, "Cart", "Kitchen", "A pretty great cart.  The cart is....");
+
 const intialState: IYourShareState = {
     idCounter: 6, // this is the id assigned to the next object that we create
     currentUser: you,
@@ -35,6 +38,7 @@ const intialState: IYourShareState = {
         person2,
         person3,
         person4,
+        person5
     ]
 }
 
