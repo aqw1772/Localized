@@ -1,5 +1,6 @@
 import React from "react";
 import { pages } from "../App";
+import Icon_ArrowLeftCircle from "./icon_ArrowLeftCircle_.png";
 
 interface CommunityScreenProps {
   changePage: (page: pages) => void;
@@ -9,10 +10,11 @@ export class CommunityPage extends React.Component<CommunityScreenProps> {
   render() {
     return (
       <div>
-        <p className="App-link" onClick={(e) => this.props.changePage(pages.BrowsePage)}>
-         Back to browse
-        </p>
-        <h1>YourShare Manage Community</h1>
+        {/* Add back button (icon) and title at the top of the page */}
+        <div className="back-button_title">
+            <img src={Icon_ArrowLeftCircle} alt="" onClick={(e) => this.props.changePage(pages.BrowsePage)}/>
+            <h1>Manage Community</h1>
+        </div>
         <table>
           <tr>
             <th>Friends</th>
