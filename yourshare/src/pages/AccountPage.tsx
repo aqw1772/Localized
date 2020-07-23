@@ -92,7 +92,7 @@ function mapStateToProps(state: IYourShareState) {
     // no data props
   }
 }
-
+function mapDispatchToProps(dispatch: any){
   return {
     saveJoinInfo: (n: string, p: string, z: string) => dispatch(joinInfo(n, p, z))
   }
