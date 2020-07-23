@@ -14,9 +14,9 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
   render() {
     return (
       <div className="wrapper">
-          <p className="App-link" onClick={(e) => this.props.changePage(pages.EditCivilPage)}>
+          <button className="App-link" onClick={(e) => this.props.changePage(pages.EditCivilPage)}>
             My Content Page
-          </p>
+          </button>
     </div>
     );
   }

@@ -14,9 +14,9 @@ export class EditCivilPage extends React.Component<EditCivilScreenProps> {
   render() {
     return (
       <div className="wrapper">
-          <p className="App-link" onClick={(e) => this.props.changePage(pages.WelcomePage)}>
+          <button className="App-link" onClick={(e) => this.props.changePage(pages.WelcomePage)}>
             Edit Civil Supporter Page
-          </p>
+          </button>
     </div>
     );
   }

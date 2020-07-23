@@ -14,9 +14,9 @@ export class BubblePage extends React.Component<BubbleScreenProps> {
   render() {
     return (
       <div className="wrapper">
-          <p className="App-link" onClick={(e) => this.props.changePage(pages.DesignCivilPage)}>
+          <button className="App-link" onClick={(e) => this.props.changePage(pages.DesignCivilPage)}>
             Bubble UI Page
-          </p>
+          </button>
     </div>
     );
   }
