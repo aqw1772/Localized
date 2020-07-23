@@ -32,10 +32,11 @@ export class AddItemPage extends React.Component<AddItemScreenProps> {
             <label className="btn">Upload Picture</label>
           </div>
           <br></br>
-          <button>Cancel</button>
-          <br></br>
-          <br></br>
-          <button>Add item</button>
+           
+              <button>Cancel</button>
+              <button>Add item</button>
+           
+          
         </div>
 
       </div>
