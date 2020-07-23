@@ -25,6 +25,7 @@ person3.addItem(8, "Kayak", "Garage","A pretty great kayak. The handle is ...");
 
 const person4 =new Person(9, "Stacey", "264-305-7898", "33115")
 person4.addItem(10, "Drill", "Kitchen", "A pretty great drill. The chuck is ...");
+person4.addItem(11, "The office DVD Box set", "Garage", "A pretty great box set. The set is ...");
 
 const intialState: IYourShareState = {
     idCounter: 6, // this is the id assigned to the next object that we create
@@ -33,6 +34,7 @@ const intialState: IYourShareState = {
         person1,
         person2,
         person3,
+        person4,
     ]
 }
 
