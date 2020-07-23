@@ -33,6 +33,15 @@ export class CommunityPage extends React.Component<CommunityScreenProps> {
             <td><input type="checkbox"></input></td>
           </tr>
         </table>
+          <button className="addFriendbtn">Add friend</button>
+          <br></br>
+          <div className="checkboxes">
+              <input type="checkbox"></input><label>Text me when someone wants to borrow an item</label>
+              <br></br>
+              <input type="checkbox"></input><label>Allow best friends to auto borrow without approval</label>
+              <br></br>
+              <input type="checkbox"></input><label>Block friends of friends from seeing my items</label>
+          </div>
       </div>
     );
   }
