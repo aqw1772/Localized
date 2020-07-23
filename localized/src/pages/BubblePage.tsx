@@ -5,7 +5,7 @@ interface BubbleScreenProps {
   changePage: (page: pages) => void;
 }
 
-class BubblePage extends React.Component<BubbleScreenProps> {
+export class BubblePage extends React.Component<BubbleScreenProps> {
 
   constructor(props: any) {
     super(props);
@@ -21,5 +21,3 @@ class BubblePage extends React.Component<BubbleScreenProps> {
     );
   }
 }
-
-export default BubblePage ;

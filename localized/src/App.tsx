@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import  WelcomePage from './pages/WelcomePage';
-import  BubblePage from './pages/WelcomePage';
-import  DesignCivilPage from './pages/WelcomePage';
-import  MyContentPage from './pages/WelcomePage';
-import  EditCivilPage from './pages/WelcomePage';
+import  { WelcomePage } from './pages/WelcomePage';
+import  { BubblePage } from './pages/BubblePage';
+import  { DesignCivilPage } from './pages/DesignCivilPage';
+import  { MyContentPage } from './pages/MyContentPage';
+import  { EditCivilPage } from './pages/EditCivilPage';
 
 export enum pages {
   WelcomePage,

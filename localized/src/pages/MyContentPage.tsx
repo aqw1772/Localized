@@ -5,7 +5,7 @@ interface MyContentScreenProps {
   changePage: (page: pages) => void;
 }
 
-class MyContentPage extends React.Component<MyContentScreenProps> {
+export class MyContentPage extends React.Component<MyContentScreenProps> {
 
   constructor(props: any) {
     super(props);
@@ -21,5 +21,3 @@ class MyContentPage extends React.Component<MyContentScreenProps> {
     );
   }
 }
-
-export default MyContentPage;

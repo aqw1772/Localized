@@ -5,14 +5,14 @@ interface WelcomeScreenProps {
   changePage: (page: pages) => void;
 }
 
-class WelcomePage extends React.Component<WelcomeScreenProps> {
+export class WelcomePage extends React.Component<WelcomeScreenProps> {
   constructor(props: any) {
     super(props);
   }
 
   render() {
     return (
-      <div className="wrapper">
+      <div>
           <button className="App-link" onClick={(e) => this.props.changePage(pages.BubblePage)}>
             Welcome Page
           </button>
@@ -20,5 +20,3 @@ class WelcomePage extends React.Component<WelcomeScreenProps> {
     );
   }
 }
-
-export default WelcomePage;

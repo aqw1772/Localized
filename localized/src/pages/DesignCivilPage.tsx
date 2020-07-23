@@ -5,7 +5,7 @@ interface DesignCivilScreenProps {
   changePage: (page: pages) => void;
 }
 
-class EditCivilPage extends React.Component<DesignCivilScreenProps> {
+export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
 
   constructor(props: any) {
     super(props);
@@ -21,5 +21,3 @@ class EditCivilPage extends React.Component<DesignCivilScreenProps> {
     );
   }
 }
-
-export default EditCivilPage;
