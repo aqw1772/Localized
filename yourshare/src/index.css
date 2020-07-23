@@ -26,21 +26,28 @@ code {
   color: white;
 }
 
+/* two column grid layout for each page */
 .wrapper{
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
+/* button style for buttons on the different pages */
 button{
   background-color: #62666E;
   color: white;
   text-align: center;
   border: none;
   outline: none;
-  padding: 15px 20px;  
+  padding: 10px 32px;  
   text-align: center;
   font-size: 22px;
   cursor: pointer;
+}
+
+/* join button alignment for landing page */
+.join{
+  margin-left: 250px;
 }
 
 input{ 
