@@ -79,11 +79,7 @@ function mapStateToProps(state: IYourShareState) {
     // no data props
   }
 }
-
-// Map redux actions to component props
-// This function returns an object with 2 functions that the component can call
-// increase... fires a dispatch with increase... as a type
-function mapDispatchToProps(dispatch: any) {
+function mapDispatchToProps(dispatch: any){
   return {
     saveJoinInfo: (n: string, p: string, z: string) => dispatch(joinInfo(n, p, z))
   }
