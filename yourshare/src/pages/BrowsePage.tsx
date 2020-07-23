@@ -75,7 +75,7 @@ class BrowsePage extends React.Component<BrowseScreenProps> {
           <button className="AddItem" onClick={(e) => this.props.changePage(pages.AddItemPage)}>
             Add item
           </button>
-          <br/>
+          <p></p>
           <button className="CommunityPage" onClick={(e) => this.props.changePage(pages.CommunityPage)}>
             Manage Community
           </button>

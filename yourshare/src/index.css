@@ -3,8 +3,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
   
 }
 
@@ -26,21 +26,28 @@ code {
   color: white;
 }
 
+/* two column grid layout for each page */
 .wrapper{
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
+/* button style for buttons on the different pages */
 button{
-  width: 150px;
-  height:40px;
   background-color: #62666E;
   color: white;
   text-align: center;
   border: none;
   outline: none;
-  border-radius: none;
-  
+  padding: 10px 32px;  
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* join button alignment for landing page */
+.join{
+  margin-left: 250px;
 }
 
 input{ 
