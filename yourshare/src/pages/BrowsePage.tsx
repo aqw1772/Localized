@@ -72,7 +72,9 @@ class BrowsePage extends React.Component<BrowseScreenProps> {
                 <td><em>A friend</em></td>
             </tr>
           </table>
-            
+            <br></br>
+            <br></br>
+            <br></br>
               <button onClick={(e) => this.props.changePage(pages.AddItemPage)}>
               Add item
              </button>
