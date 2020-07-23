@@ -34,7 +34,7 @@ export class BorrowItemPage extends React.Component<BorrowItemScreenProps> {
           </div>
           
              
-       
+    
             <div>
                 <div className="container">
                    <img src={YS_blender} alt="blender image" />
