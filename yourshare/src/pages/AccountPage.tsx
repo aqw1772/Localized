@@ -41,28 +41,15 @@ class AccountPage extends React.Component<AccountScreenProps> {
 
             {/*User input form*/}
             <form onSubmit={this.handleSubmit}>
-              <p>
-                <label>
-                  Name:
-                <input type="text" ref={this.nameRef} />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Phone number:
-                <input type="text" ref={this.phoneNumRef} />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Zip code:
-                  <input type="text" ref={this.zipCodeRef} />
-                </label>
-              </p>
-              <p>
-                <button> Join </button>
-              </p>
+                <input type="text" ref={this.nameRef} placeholder="Username:" />
+                <br/>
+                <input type="text" ref={this.phoneNumRef} placeholder="Phone number:" />
+                <br/>
+                <input type="text" ref={this.zipCodeRef} placeholder="Zip code: "/>
+                <br/>
+                <button className="join"> Join </button>
             </form>
+            
           <p className="App-link" onClick={(e) => this.props.changePage(pages.BrowsePage)}>
             Sign-in
           </p>
