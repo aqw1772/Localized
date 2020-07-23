@@ -158,11 +158,6 @@ textarea{
   margin-right: 30%;
 }
 
-.bottom {
-    margin-top: 200px;
-    
-    margin-right: 0px;
-}
 
 .cancel {
   color: gray;
@@ -192,7 +187,6 @@ span{
   bottom: 0;
   margin-bottom: 10%;
   margin-right: 3%;
- 
 }
 
 
