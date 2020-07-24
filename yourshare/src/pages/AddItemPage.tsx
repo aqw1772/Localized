@@ -34,8 +34,8 @@ export class AddItemPage extends React.Component<AddItemScreenProps> {
           
           <br></br>
           <div className="container">
-            <input type="image" src={YS_upload} alt="file" width="80" height="400"></input>
-            <label className="btn">Upload Picture</label>
+            <img src={YS_upload} alt="file"/>
+            <button className="btn">Upload Picture</button>
           </div>
           
           <span>

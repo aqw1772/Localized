@@ -12,6 +12,7 @@ interface BorrowItemScreenProps {
 export class BorrowItemPage extends React.Component<BorrowItemScreenProps> {
   render() {
     return (
+
       <div className="wrapper"> 
           <div>
             {/* Add back button (icon) and title at the top of the page */}

@@ -29,18 +29,20 @@ class AccountPage extends React.Component<AccountScreenProps> {
   render() {
     return (
       <div className="wrapper">
-        <div>
+        <div className="yourshare">
             <h1>YourShare</h1>
             <img src={YS_icon} alt="" className="animate__rotateIn"></img>
           </div>
 
           {/*Second div represents right side of page*/}
           <div>
+            <div className="title">
             <h1>Join your community</h1>
             <h2>Sign-up</h2>
+            </div>
 
             {/*User input form*/}
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} className="form">
                 <input type="text" ref={this.nameRef} placeholder="Username:" />
                 <br/>
                 <input type="text" ref={this.phoneNumRef} placeholder="Phone number:" />
