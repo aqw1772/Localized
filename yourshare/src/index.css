@@ -192,16 +192,20 @@ span{
   margin-right: 3%;
 }
 
-.yourshare{
+.yourshare {
   margin-top: 20%;
   margin-bottom: 30%;
 }
 
-/* .title h1 h2{
-  margin-right: 30%;
-} */
+.title {
+  display: grid;
+  text-align: left;
+  margin-left: 60px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
 
 .form{
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
