@@ -4,7 +4,7 @@ import ItemList from "../components/ItemList/ItemList"
 import {IYourShareState, IPerson } from "../redux/types";
 import { connect } from 'react-redux';
 
-interface BrowseScreenProps {
+export interface BrowseScreenProps {
   changePage: (page: pages) => void;
   you: IPerson;
 }
@@ -75,11 +75,11 @@ class BrowsePage extends React.Component<BrowseScreenProps> {
             <br></br>
             <br></br>
             <br></br>
-              <button onClick={(e) => this.props.changePage(pages.AddItemPage)}>
+              <button className="AddItem" onClick={(e) => this.props.changePage(pages.AddItemPage)}>
               Add item
              </button>
               <p></p>
-             <button onClick={(e) => this.props.changePage(pages.CommunityPage)}>
+             <button className="CommunityPage" onClick={(e) => this.props.changePage(pages.CommunityPage)}>
               Manage Community
               </button>
            

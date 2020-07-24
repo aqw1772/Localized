@@ -7,11 +7,12 @@ import { CommunityPage } from "./pages/CommunityPage";
 import { BorrowItemPage } from "./pages/BorrowItemPage";
 
 export enum pages {
-  AccountPage,
-  BrowsePage,
-  CommunityPage,
-  BorrowItemPage,
-  AddItemPage
+    AccountPage,
+    BrowsePage,
+    CommunityPage,
+    BorrowItemPage,
+    AddItemPage,
+    changePage
 }
 
 interface AppState {
@@ -44,11 +45,12 @@ export class App extends React.Component<{}, AppState> {
     }
   };
 
-  private changeScreen = (nextPage: pages) => {
+  public changeScreen = (nextPage: pages) => {
     this.setState((state, props) => ({
       currentPage: nextPage
     }));
   };
+  
 }
 
 export default App;
