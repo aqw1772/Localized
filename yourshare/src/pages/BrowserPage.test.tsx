@@ -56,7 +56,7 @@ test('After clicking on "table row" button BrowsePage the page should be BorrowI
 });
 
 test('After clicking on "Add Item" button BrowsePage the page should be AddItem', () => {
-    const btn = container.querySelector('p.AddItem');
+    const btn = container.querySelector('button.AddItem');
     // ?  because it cannot be null here. Otherwise move it in the if (btn != null)
     console.log("btn " + btn?.textContent);
     if (btn != null) {
@@ -73,7 +73,7 @@ test('After clicking on "Add Item" button BrowsePage the page should be AddItem'
 });
 
 test('After clicking on "Management Community" the new page should be Manage Community', () => {
-    const btn = container.querySelector('p.CommunityPage');
+    const btn = container.querySelector('button.CommunityPage');
     // ?  because it cannot be null here. Otherwise move it in the if (btn != null)
     console.log("btn " + btn?.textContent);
     if (btn != null) {
