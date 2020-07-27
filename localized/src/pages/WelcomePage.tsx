@@ -14,8 +14,8 @@ export class WelcomePage extends React.Component<WelcomeScreenProps> {
 
   render() {
     return (
-      <div>
-        <img src={logo}></img>
+      <div className="welcome">
+        <img className="logo" src={logo}></img>
           <button className="App-link" onClick={(e) => this.props.changePage(pages.BubblePage)}>
             Welcome Page
           </button>
