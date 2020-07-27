@@ -1,19 +1,14 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import App from './App';
+import App from '../App';
 import { act } from 'react-dom/test-utils';
 import ReactDOM from 'react-dom';
-import { pages } from "./App";
-import AppState  from "./App";
-import { intialState } from './redux/reducer';
-
+import yourShareReducer from "../redux/reducer"
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-
-import yourShareReducer from "./redux/reducer"
+import { intialState } from '../redux/reducer';
 
 let store = createStore(yourShareReducer);
-
 
 // test('renders learn react link', () => {
 //   const { getByText } = render(<App />);
@@ -30,7 +25,7 @@ beforeEach(() => {
     container = document.createElement('div');
     console.log(container);
     document.body.appendChild(container);
-    act(() => { ReactDOM.render(<Provider store={store}><App /></Provider>, container);});
+    act(() => { ReactDOM.render(<Provider store={store}><App /></Provider>, container) });
 });
 
 // Executed after each test
@@ -39,7 +34,7 @@ afterEach(() => {
     document.body.removeChild(container);
 });
 
-test('After button click on Account page the page should be BrowsePage', () => {
+test('After clicking on "back to browse" button on Community page it should be back on BrowsePage', () => {
     const btn = container.querySelector('p.App-link');
     // ?  because it cannot be null here. Otherwise move it in the if (btn != null)
     console.log("btn " + btn?.textContent);
@@ -51,8 +46,7 @@ test('After button click on Account page the page should be BrowsePage', () => {
         // const linkElement = getByText(/BrowsePage/);
         // expect(linkElement).toBeInTheDocument();
         // TODO: Replace the text with the correct text
-        console.log(intialState.currentUser.name);
-        console.log(btn?.textContent);
+        
         expect(header?.textContent).toBe("Welcome, " + intialState.currentUser.name+"!");
     }
 });
