@@ -1,13 +1,8 @@
 import React from "react";
 import { pages } from "../App";
 import ReactImage from "../Spin";
-<<<<<<< HEAD
-import {useSpring,animated} from 'react-spring';
-const YS_icon = require("./YS_icon.png");
-=======
 import { useSpring, animated } from 'react-spring';
 import YS_icon from "./YS_icon.png";
->>>>>>> ad3976805f2e1a1332c79d9bff1b8c5ee11b03d0
 
 import { joinInfo } from "../redux/actions";
 import { IYourShareState } from '../redux/types';
@@ -61,14 +56,6 @@ class AccountPage extends React.Component<AccountScreenProps> {
           </p>
         </div>
       </div>
-<<<<<<< HEAD
-      <p className="App-link" onClick={(e) => props.changePage(pages.BrowsePage)}>
-        Sign-in
-      </p>
-    </div>
-    </div>
-  );
-=======
     );
   }
 
@@ -92,7 +79,6 @@ function mapStateToProps(state: IYourShareState) {
   return {
     // no data props
   }
->>>>>>> ad3976805f2e1a1332c79d9bff1b8c5ee11b03d0
 }
 function mapDispatchToProps(dispatch: any){
   return {
@@ -108,4 +94,3 @@ const connectedComponent = connect(
 )(AccountPage);
 
 export { connectedComponent as AccountPage }
-
