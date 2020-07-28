@@ -3,7 +3,7 @@ import { pages } from "../App";
 
 interface DesignCivilScreenProps {
   changePage: (page: pages) => void;
-A  // myurl: URL
+ // myurl: URL
 }
 
 export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
