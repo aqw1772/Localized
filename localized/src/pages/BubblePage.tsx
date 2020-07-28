@@ -6,6 +6,8 @@ interface BubbleScreenProps {
   changePage: (page: pages) => void;
 }
 
+
+
 export class BubblePage extends React.Component<BubbleScreenProps> {
 
   constructor(props: any) {
