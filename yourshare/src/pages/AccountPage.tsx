@@ -94,4 +94,3 @@ const connectedComponent = connect(
 )(AccountPage);
 
 export { connectedComponent as AccountPage }
-
