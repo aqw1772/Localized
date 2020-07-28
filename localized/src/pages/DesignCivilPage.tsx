@@ -17,6 +17,8 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
           <button className="App-link" onClick={(e) => this.props.changePage(pages.MyContentPage)}>
           Design Civil Supporter Page
           </button>
+          <p> Select your method Preferred Method of Contact</p>
+          
     </div>
     );
   }
