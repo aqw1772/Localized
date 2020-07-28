@@ -16,6 +16,10 @@ export class WelcomePage extends React.Component<WelcomeScreenProps> {
           <button className="App-link" onClick={(e) => this.props.changePage(pages.BubblePage)}>
             Welcome Page
           </button>
+
+          <button className="App-link" onClick={(e) => this.props.changePage(pages.SignUpPage)}>
+            Sign Up
+          </button>
     </div>
     );
   }
