@@ -30,7 +30,7 @@ export class SignUpPage extends React.Component<SignUpScreenProps> {
               <br/>
               <input type="password" placeholder="confirm password" required/>
               <br/>
-              <button>Sign Up</button>
+              <button onClick={(e) => this.props.changePage(pages.BubblePage)}>Sign Up</button>
           </form>
 
          
