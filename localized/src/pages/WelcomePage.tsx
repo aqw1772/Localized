@@ -21,6 +21,15 @@ export class WelcomePage extends React.Component<WelcomeScreenProps> {
         </div>
         <div className="rightColumn"> {/* div for the right side of the page*/}
           {/* Navbar component goes here */}
+          <div>
+            <button className="App-link" onClick={(e) => this.props.changePage(pages.BubblePage)}>
+              Welcome Page
+            </button>
+
+            <button className="App-link" onClick={(e) => this.props.changePage(pages.SignUpPage)}>
+              Sign Up
+            </button>
+          </div>
           <img src={iPhone_screenshot} onClick={(e) => this.props.changePage(pages.BubblePage)}></img>
           {/* Click on the iPhone to advance to the next page (haven't made the sign-up button yet) */}
         </div>
