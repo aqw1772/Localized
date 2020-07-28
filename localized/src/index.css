@@ -27,3 +27,11 @@ code {
   margin-right: auto;
   margin-top: 180px;
 }
+
+.Tile {
+  background-color: rgb(250, 225, 178);
+    padding: 0 2em 1em;
+    border:2px darkgoldenrod solid;
+    border-radius: 2em;
+    margin:1em;
+}
