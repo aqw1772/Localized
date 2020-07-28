@@ -1,15 +1,19 @@
 import React from "react";
 
-
 interface BubbleProps{
     name: string
 }
 
 class Bubble extends React.Component<BubbleProps>{
+    
+    constructor(props: any, name: string){
+        super(props);
+    }
+
     render(){
         return(
             <div>
-                <h1>{this.props.name}</h1>
+                <h2>{this.props.name}</h2>
             </div>
         )
     }
