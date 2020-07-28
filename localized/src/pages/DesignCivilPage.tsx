@@ -3,10 +3,11 @@ import { pages } from "../App";
 
 interface DesignCivilScreenProps {
   changePage: (page: pages) => void;
+A  // myurl: URL
 }
 
 export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
-
+  
   constructor(props: any) {
     super(props);
   }
@@ -18,7 +19,9 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
           Design Civil Supporter Page
           </button>
           <p> Select your method Preferred Method of Contact</p>
-          
+          <button className ="contact" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}>Facebook</button>
+          <button className ="contact" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Text Message</button>
+          <button className ="contact" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}>Email</button>
     </div>
     );
   }
