@@ -5,13 +5,15 @@ import  { BubblePage } from './pages/BubblePage';
 import  { DesignCivilPage } from './pages/DesignCivilPage';
 import  { MyContentPage } from './pages/MyContentPage';
 import  { EditCivilPage } from './pages/EditCivilPage';
+import  { SignUpPage }  from './pages/SignUpPage';
 
 export enum pages {
   WelcomePage,
   BubblePage,
   DesignCivilPage,
   MyContentPage,
-  EditCivilPage
+  EditCivilPage,
+  SignUpPage
 }
 
 interface AppState {
@@ -38,7 +40,9 @@ export class App extends React.Component<{}, AppState> {
       case pages.MyContentPage:
         return <MyContentPage changePage={this.changeScreen} />;
       case pages.EditCivilPage:
-          return <EditCivilPage changePage={this.changeScreen} />;
+        return <EditCivilPage changePage={this.changeScreen} />;
+      case pages.SignUpPage:
+        return <SignUpPage changePage={this.changeScreen}/>;
       default:
         return <WelcomePage changePage={this.changeScreen} />;
     }
