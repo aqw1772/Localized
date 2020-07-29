@@ -1,4 +1,5 @@
 import React from "react";
+import './Bubble.css';
 
 interface BubbleProps{
     name: string
@@ -6,14 +7,15 @@ interface BubbleProps{
 
 class Bubble extends React.Component<BubbleProps>{
     
-    constructor(props: any, name: string){
+    constructor(props: any){
         super(props);
     }
 
     render(){
         return(
             <div>
-                <h2>{this.props.name}</h2>
+                <h2 className="animate__bounceOut">{this.props.name}</h2>
+
             </div>
         )
     }
