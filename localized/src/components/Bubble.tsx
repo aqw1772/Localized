@@ -15,7 +15,7 @@ class Bubble extends React.Component<BubbleProps>{
         return(
             <div>
                 <h2 className="animate__bounceOut">{this.props.name}</h2>
-
+                
             </div>
         )
     }
