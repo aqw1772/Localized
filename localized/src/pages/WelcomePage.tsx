@@ -3,6 +3,7 @@ import { pages } from "../App";
 import logo from "../images/logo.png";
 import iPhone_screenshot from "../images/iPhone.png";
 import WelcomeNavBar from "../components/WelcomeNavBar";
+import WelcomeCarousel from "../components/WelcomeCarousel";
 
 interface WelcomeScreenProps {
   changePage: (page: pages) => void;
@@ -19,6 +20,7 @@ export class WelcomePage extends React.Component<WelcomeScreenProps> {
         <div className="leftColumn"> {/* div for the left side of the page*/}
           <img className="logo" src={logo}></img>
           {/* Carousel component goes here */}
+          <WelcomeCarousel/>
         </div>
         <div className="rightColumn"> {/* div for the right side of the page*/}
           {/* Navbar component goes here */}
