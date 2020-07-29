@@ -22,7 +22,7 @@ class WelcomeNavBar extends React.Component<IWelcomeNavBarProps> {
             <div className="welcomeNavBar">
                 <img src={tablet}></img>
                 <img src={phoneLaptop}></img>
-                <img src={largeTablet}></img>
+                <img className="largeTablet" src={largeTablet}></img>
                 <img src={ComputerMacOS}></img>
                 <img src={phone}></img>
                 <img className="navButton" src={SignUp} onClick={(e) => this.props.changePage(pages.SignUpPage)}></img>

@@ -50,6 +50,11 @@ code {
   margin-bottom: auto;
 }
 
+.welcomeNavBar .largeTablet {
+  margin-left: 0px;
+  margin-right: 15px;
+}
+
 .welcomeNavBar .navButton:hover {
   -webkit-filter: brightness(90%) !important;
   filter: brightness(90%);
