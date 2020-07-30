@@ -26,14 +26,14 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
             My Content Page
         </button>
 
-        <p>
+        <p className="p"> 
           Latest articles for you based on your interests
           <hr></hr>
         </p>
     
 
       
-        <CardDeck>
+        <CardDeck className="card-deck">
           <Card>
             <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Election_voting_20180128.jpg/1200px-Election_voting_20180128.jpg"/>
             <Card.Body>
