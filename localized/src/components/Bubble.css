@@ -17,6 +17,13 @@ p{
 
 .App-link{
   float: right;
+  border-color: #2196F3;
+  color: dodgerblue
+}
+
+.App-link:hover {
+  background: #2196F3;
+  color: white;
 }
 
 #menu{
