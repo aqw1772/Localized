@@ -26,6 +26,8 @@ p{
   flex-wrap: wrap;
   height: auto; /* can change this */
   width: 1000px;
+  list-style-type: none;
+  margin: 0 auto;
 }
 
 #menu li {
@@ -34,6 +36,6 @@ p{
 }
 
 .animate__bounceOut{
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 }
