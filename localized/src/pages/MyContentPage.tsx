@@ -4,6 +4,8 @@ import { createDecipher } from "crypto";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
+import CardGroup from 'react-bootstrap/CardGroup';
+import CardColumns from 'react-bootstrap/CardColumns';
 
 
 
@@ -19,53 +21,59 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
 
   render() {
     return (
-      <div className="wrapper">
+      <div>
         <button className="App-link" onClick={(e) => this.props.changePage(pages.EditCivilPage)}>
             My Content Page
         </button>
-<br/>
-      <p>
+
+        <p>
+          Latest articles for you based on your interests
+          <hr></hr>
+        </p>
+    
+
+      
         <CardDeck>
           <Card>
-            <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Election_voting_20180128.jpg/1200px-Election_voting_20180128.jpg" width="100px" height="200px"/>
+            <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Election_voting_20180128.jpg/1200px-Election_voting_20180128.jpg"/>
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
+                voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.
               </Card.Text>
-              <Button variant="primary">Read More</Button>
+              <Button variant="primary" className="mt-5">Read More...</Button>
+            </Card.Body>
+          </Card>
+
+          <Card> 
+          <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/BostonSchoolSt3.JPG/1200px-BostonSchoolSt3.JPG"  height="400"/>
+            <Card.Body>
+              <Card.Title><strong>Card title </strong></Card.Title>
+              <Card.Text>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
+                voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.{' '}
+              </Card.Text>
+              <Button variant="primary">Read More...</Button>
             </Card.Body>
           </Card>
 
           <Card>
-          <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/BostonSchoolSt3.JPG/1200px-BostonSchoolSt3.JPG" width="100" height="200" />
+            <Card.Img variant="top" src="https://media1.s-nbcnews.com/j/newscms/2017_33/2124231/170817-black-lives-matter-protest-ac-926p_024173f5245dacd5c6cccbbed5fef4af.nbcnews-ux-2880-1000.jpg" />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
-                This card has supporting text below as a natural lead-in to additional
-                content.{' '}
-              </Card.Text>
-              <Button variant="primary">Read More</Button>
-            </Card.Body>
-          </Card>
-
-          <Card>
-            <Card.Img variant="top" src="https://media1.s-nbcnews.com/j/newscms/2017_33/2124231/170817-black-lives-matter-protest-ac-926p_024173f5245dacd5c6cccbbed5fef4af.nbcnews-ux-2880-1000.jpg" width="100" height="200" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to
-                additional content. This card has even longer content than the first to
-                show that equal height action.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
+                voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.
             </Card.Text>
-            <Button variant="primary">Read More</Button>
+            <Button variant="primary">Read More...</Button>
             </Card.Body>
           </Card>
-        </CardDeck>
-      </p>
 
-      </div>
+
+        </CardDeck>
+      
+              </div>
     );
   }
 }
