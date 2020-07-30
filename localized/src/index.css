@@ -63,7 +63,29 @@ code {
 }
 
 .card{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 18px;
+  min-width: 20px;
 }
 
+
+
+.card img{
+  border-radius: 18px 18px 0px 0px;
+}
+
+
+.card button:hover{
+  background-color: #0078D4;
+}
+
+.card button{
+  margin-left:75%;
+  background-color: #18A0FB;
+  border: 2px solid #116FB0;
+  border-radius: 6px;
+  text-transform: lowercase;
+  margin-bottom: -20px;
+}
+
+ 
