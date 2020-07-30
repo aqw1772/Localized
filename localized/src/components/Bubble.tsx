@@ -14,7 +14,7 @@ class Bubble extends React.Component<BubbleProps>{
     render(){
         return(
             <div>
-                <h2 className="animate__bounceOut">{this.props.name}</h2>
+                <h2 className="animate__fadeOutUp">{this.props.name}</h2>
                 
             </div>
         )
