@@ -12,6 +12,20 @@ code {
     monospace;
 }
 
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/raleway-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/raleway-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/raleway-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/raleway-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/raleway-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/raleway-v17-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
 .wrapper{
   display: grid;
   grid-template-columns: 50% 50%;
@@ -59,4 +73,42 @@ code {
   -webkit-filter: brightness(90%) !important;
   filter: brightness(90%);
   cursor: pointer;
+}
+
+.welcomeCarousel {
+  margin-top: 400px;
+  height: 600px;
+}
+
+.carousel {
+  background-color: darkgrey;
+  margin-left: 200px;
+  margin-right: 20px;
+  margin-top: 200px;
+  width: 80%;
+  height: 90%;
+
+}
+
+.carousel-indicators {
+  color: blue;
+  color-adjust: blue;
+  border: 1px solid blue;
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.carousel h1,h3 {
+  font-family: 'Raleway';
+  color: #0078D4;
+}
+
+.carousel h1 {
+  font-size: 72px;
+}
+
+.carousel-item {
+  margin-bottom: 10px;
 }
