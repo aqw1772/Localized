@@ -16,7 +16,9 @@ class WelcomeCarousel extends React.Component {
                         <br></br>
                         <h3>Welcome to Localized! A web app that allows anyone with a computer or mobile device to 
                             easily access any information they might need to feel confident enough to participate 
-                            in their local government. We have an integrated <b>Civil Supporter</b> chatbot that is 
+                            in their local government. </h3>
+                        <br></br>
+                        <h3>We have an integrated <b>Civil Supporter</b> chatbot that is 
                             here to help too!</h3>
                         <br></br>
                         <br></br>

@@ -89,6 +89,10 @@ code {
 
 }
 
+.carousel-indicators {
+  top: 400px !important;
+}
+
 .carousel-indicators li {
   border-radius: 50%;
   height: 20px !important;
