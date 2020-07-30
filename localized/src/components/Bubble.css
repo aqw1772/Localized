@@ -18,7 +18,9 @@ p{
 .App-link{
   float: right;
   border-color: #2196F3;
-  color: dodgerblue
+  color: dodgerblue;
+  font-size: 30px;
+  margin-right: 20px;
 }
 
 .App-link:hover {
