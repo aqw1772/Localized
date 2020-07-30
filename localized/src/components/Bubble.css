@@ -1,3 +1,8 @@
+@media sreen and(max-width: 400px){
+.animate__fadeOutUp{
+  width: 100%;
+}
+}
 h2{width: 230px;
   height:200px;
   border-radius: 50%;
@@ -5,7 +10,9 @@ h2{width: 230px;
   font-size: 25px;
   line-height: 250px;
   text-align: center;
-  background: gray;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 p{
@@ -26,12 +33,16 @@ p{
   /* flex-direction: row; */
   flex-flow: row wrap-reverse;
   /* flex-wrap: wrap-reverse; */
-  align-items: center;
+  align-items: flex-end;
+  padding-top: 40%;
+  width: max-content;
 }
 li{
   margin: 0.1em;
   padding: 0.1em;
+ 
 }
+
 /* .BubbleList{
     /* position: absolute; */
     /* top: 0;
@@ -44,11 +55,18 @@ li{
     position: relative;
     flex-wrap: wrap; */
 
-/*  */
-/* #menu ul li{
-  display:inline-block;
-} */ 
-/* .animate__bounceOut{
+ #menu ul li{
+  position: relative;
+  transform: translateX(-240px);
+} 
+.animate__fadeOutUp{
+  /* animation-delay: 3s; */
   animation-duration: 2s;
   animation-iteration-count: infinite;
-} */
+  animation: bounce 0.9s infinite;
+}
+@keyframes bounce{
+  10%{
+    transform: translateY(240px);
+  }
+}
