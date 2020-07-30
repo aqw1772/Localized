@@ -81,7 +81,6 @@ code {
 }
 
 .carousel {
-  background-color: darkgrey;
   margin-left: 200px;
   margin-right: 20px;
   margin-top: 200px;
@@ -90,14 +89,15 @@ code {
 
 }
 
-.carousel-indicators {
-  color: blue;
-  color-adjust: blue;
-  border: 1px solid blue;
-  background-color: red;
+.carousel-indicators li {
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  height: 20px !important;
+  width: 20px !important;
+  background-color: darkgrey !important;
+}
+
+.carousel-indicators .active {
+  background-color: #0078D4 !important;
 }
 
 .carousel h1,h3 {
