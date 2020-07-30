@@ -16,10 +16,11 @@ export class BubblePage extends React.Component<BubbleScreenProps> {
 
   render() {
     return (
-      <div className="wrapper">
+      <div>
           <p>Tell us what you're interested in!</p>
           <br></br>
-          <p>Tap once to add to your personalized library and tap again to remove</p>
+          <p>Tap once to add to your personalized library and tap again to remove</p> 
+          <br></br>
           <button className="App-link" onClick={(e) => this.props.changePage(pages.DesignCivilPage)}>
             Next
           </button>
