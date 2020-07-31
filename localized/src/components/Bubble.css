@@ -1,0 +1,135 @@
+@media screen and(max-width: 400px){
+.animate__fadeOutUp{
+  width: 100%;
+}
+}
+
+/* Placement of the words in the bubble */
+h2{
+  line-height: 6em;
+  margin-bottom: 0;
+}
+
+/*Selected state for the bubbles*/
+.blueButton{
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
+  color: white;
+  font-size: 25px;
+  line-height: 250px;
+  text-align: center;
+  background: -webkit-linear-gradient(to right, #9c9c9cbe, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #9c9c9cbe, #2d8fd1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*Unselected state for the bubbles*/
+.grayButton{
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
+  color: white;
+  font-size: 25px;
+  line-height: 250px;
+  text-align: center;
+  background: -webkit-linear-gradient(to right, #9c9c9cbe, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: #c4c4c4;
+}
+
+/*Text font and size for the top of the bubble page*/
+.BubblePageText{
+  font-family: 'Raleway';
+  font-size: 30px;
+}
+
+/*Styled the button on bubble page*/
+.nextBtn{
+  float: right;
+  border-color: black;
+  color: dodgerblue;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+/* Next button hover effect*/
+.nextBtn:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/*Animation for the text inside bubble*/
+.animate__fadeOutUp{
+  /* animation-delay: 3s; */
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation: bounce 0.9s;
+}
+@keyframes bounce{
+  10%{
+    transform: translateY(240px);
+  }
+}
+
+/*placement for all the bubbles below*/
+#Voting{
+  width: 200px;
+  height:200px;
+  position: absolute;
+  top: 44%;
+  left: 31%;
+}
+
+#Petitions{
+  width: 200px;
+  height:200px;
+  position: absolute;
+  top:16%;
+  left: 27%;
+}
+
+#Traffic{
+  width: 200px;
+  height:200px;
+  position: absolute;
+  left: 57%;
+}
+
+#Zoning{
+  width: 200px;
+  height:200px;
+  position: absolute;
+  top:34%;
+  left: 42%;
+}
+
+#Budget{
+  width: 200px;
+  height:200px;
+  position: absolute;
+  top:44%;
+  left: 59%;
+}
+
+#Schools{
+  width: 200px;
+  height:200px;
+  position: absolute;
+  top: 62%;
+  left: 37%;
+}
+
+#Tax{
+  width: 200px;
+  height:200px;
+  position: absolute;
+  top: 57%;
+  left: 49%;
+}
+
+#Protest{
+  width: 200px;
+  height:200px;
+  position: absolute;
+  top: 64%;
+  left: 61%;
+}
