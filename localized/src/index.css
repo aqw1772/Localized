@@ -189,13 +189,15 @@ position: relative;
 .contacte{
   padding: 20px; 
   display: inline-block;
-  margin-left: 70px;
+  margin: 70px;
   background: red;
+
 }
 .contactt{
   display: inline-block;
   padding: 20px; 
   background:#47B200;
+  text-align: center;
 } 
 .interests1{
   /* flex-wrap: wrap; */
@@ -204,6 +206,7 @@ position: relative;
   margin: 10px;
  flex-wrap: nowrap; 
  align-content: space-between;
+ background:#206AD8;
 }
 .interests{
  
@@ -212,12 +215,13 @@ position: relative;
   padding:20px;
   flex-wrap: nowrap;
   align-content: space-between;
+  background:#206AD8;
 }
 .addInterest{
   display:flex;
   flex-wrap: wrap;
   align-content: space-between;
-
+  
 }
 .addbutton{
   float: right;
