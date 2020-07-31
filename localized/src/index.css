@@ -117,6 +117,77 @@ code {
 .carousel-item {
   margin-bottom: 10px;
 }
+
+.myContentWrapper{
+  /* display: grid;
+  grid-template-columns: 20% 80%; */
+}
+
+.myContentSidebar {
+  height: 88.6%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  margin-top: 75px;
+  top: 0; /* Stay at the top -- **THIS WILL CHANGE WHEN NAV BAR IS IMPLEMENTED** */
+  left: 0;
+  background-color: lightgray;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.nameAndPic {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.myContentSidebar .nameAndPic img{
+  height: 60px;
+  width: 60px;
+}
+
+.myContentSidebar .heading {
+  border-radius: 26px;
+  height: 40px;
+  width: 173px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  background-color: white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+
+.myContentSidebar .heading img {
+  margin-right: 10px;
+}
+
+.myContentSidebar .interests {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.myContentSidebar .interests span {
+  border-radius: 26px;
+  height: 40px;
+  width: 173px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
 /*  beginning of styling for the cards in my content page */
 .card{
   box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -177,7 +248,7 @@ hr{
 }
 
 /* beginning span tag housing small name tags for the article card */
-span{
+.card-deck span{
   border-radius: 26px;
   height: 40px;
   text-align: center;
