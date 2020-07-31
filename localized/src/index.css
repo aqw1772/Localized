@@ -184,20 +184,21 @@ position: relative;
   /* float: left; */
   margin-right: 70px;
   background: rgb(93, 93, 223);
-
+  border-radius: 15px;
 }
 .contacte{
   padding: 20px; 
   display: inline-block;
   margin: 70px;
   background: red;
-
+  border-radius: 15px;
 }
 .contactt{
   display: inline-block;
   padding: 20px; 
   background:#47B200;
   text-align: center;
+  border-radius: 15px;
 } 
 .interests1{
   /* flex-wrap: wrap; */
@@ -207,6 +208,7 @@ position: relative;
  flex-wrap: nowrap; 
  align-content: space-between;
  background:#206AD8;
+ border-radius: 15px;
 }
 .interests{
  
@@ -216,6 +218,7 @@ position: relative;
   flex-wrap: nowrap;
   align-content: space-between;
   background:#206AD8;
+  border-radius: 15px;
 }
 .addInterest{
   display:flex;
@@ -227,4 +230,6 @@ position: relative;
   float: right;
   margin-bottom:10%;
   padding: 15px;
+  background:#206AD8 ;
+  border-radius: 15px;
 }
