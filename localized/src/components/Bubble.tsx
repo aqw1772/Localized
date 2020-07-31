@@ -1,5 +1,7 @@
 import React from "react";
 import './Bubble.css';
+// @ts-ignore
+import { World, Item } from "react-dom-box2d";
 
 interface BubbleProps{
     name: string

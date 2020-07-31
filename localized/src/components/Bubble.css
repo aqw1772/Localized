@@ -48,7 +48,7 @@ p{
 }
 
 .BubbleList ul{
-  list-style-type: none;
+  text-align: center;
   margin: 0;
   padding: 0;
   display: flex;
@@ -68,8 +68,6 @@ li{
   background: #2196F3;
   color: white;
 }
-
-
 
 #menu li {
   width: 250px;
