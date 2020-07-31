@@ -1,6 +1,7 @@
 import React from "react";
 import { pages } from "../App";
 
+
 interface SignUpScreenProps {
   changePage: (page: pages) => void;
 }
@@ -32,7 +33,6 @@ export class SignUpPage extends React.Component<SignUpScreenProps> {
               <br/>
               <button onClick={(e) => this.props.changePage(pages.BubblePage)}>Sign Up</button>
           </form>
-
          
     </div>
     );
