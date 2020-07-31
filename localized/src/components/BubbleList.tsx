@@ -12,8 +12,6 @@ interface BubbleListProps {
     listOfBubbles?: Array<Bubble>
 }
 
-// let listOfBubbles = ["Protest","Voting","Zoning","Tax","Schools"];
-
 class BubbleList extends React.Component<BubbleListProps> {
     render() {
         return (

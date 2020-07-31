@@ -1,14 +1,16 @@
-@media sreen and(max-width: 400px){
+@media screen and(max-width: 400px){
 .animate__fadeOutUp{
   width: 100%;
 }
 }
 
+/* Placement of the words in the bubble */
 h2{
   line-height: 6em;
   margin-bottom: 0;
 }
 
+/*Selected state for the bubbles*/
 .blueButton{
   width: 200px;
   height:200px;
@@ -21,6 +23,7 @@ h2{
   background: linear-gradient(to top, #9c9c9cbe, #2d8fd1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/*Unselected state for the bubbles*/
 .grayButton{
   width: 200px;
   height:200px;
@@ -33,7 +36,14 @@ h2{
   background: #c4c4c4;
 }
 
-.App-link{
+/*Text font and size for the top of the bubble page*/
+.BubblePageText{
+  font-family: 'Raleway';
+  font-size: 30px;
+}
+
+/*Styled the button on bubble page*/
+.nextBtn{
   float: right;
   border-color: black;
   color: dodgerblue;
@@ -41,33 +51,13 @@ h2{
   margin-right: 20px;
 }
 
-.BubbleList ul{
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  float: center;
-  flex-flow: row wrap-reverse;
-  align-items: flex-end;
-  width: max-content;
-}
-
-li{
-  margin: 0.1em;
-  padding: 0.1em;
- 
-}
-
-.App-link:hover {
+/* Next button hover effect*/
+.nextBtn:hover {
   background: #2196F3;
   color: white;
 }
 
-#menu li {
-  width: 250px;
-  height: auto;
-}
-
+/*Animation for the text inside bubble*/
 .animate__fadeOutUp{
   /* animation-delay: 3s; */
   animation-duration: 2s;
@@ -80,48 +70,65 @@ li{
   }
 }
 
+/*placement for all the bubbles below*/
 #Voting{
+  width: 200px;
+  height:200px;
   position: absolute;
   top: 44%;
   left: 31%;
 }
 
 #Petitions{
+  width: 200px;
+  height:200px;
   position: absolute;
   top:16%;
   left: 27%;
 }
 
 #Traffic{
+  width: 200px;
+  height:200px;
   position: absolute;
   left: 57%;
 }
 
 #Zoning{
+  width: 200px;
+  height:200px;
   position: absolute;
   top:34%;
   left: 42%;
 }
 
 #Budget{
+  width: 200px;
+  height:200px;
   position: absolute;
   top:44%;
   left: 59%;
 }
 
 #Schools{
+  width: 200px;
+  height:200px;
   position: absolute;
   top: 62%;
   left: 37%;
 }
 
 #Tax{
+  width: 200px;
+  height:200px;
   position: absolute;
   top: 57%;
   left: 49%;
 }
 
 #Protest{
+  width: 200px;
+  height:200px;
   position: absolute;
   top: 64%;
   left: 61%;

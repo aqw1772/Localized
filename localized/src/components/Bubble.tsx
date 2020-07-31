@@ -7,6 +7,7 @@ interface BubbleProps{
     name: string
 }
 
+//created a component for each bubble
 class Bubble extends React.Component<BubbleProps,{selected: boolean}>{
     constructor(props: any){
         super(props);
@@ -15,6 +16,7 @@ class Bubble extends React.Component<BubbleProps,{selected: boolean}>{
         };
     }
 
+    //onclick method to change the state of the bubble component
     changeColor = () => {
         this.setState({selected: !this.state.selected})
     }
