@@ -209,6 +209,7 @@ position: relative;
  align-content: space-between;
  background:#206AD8;
  border-radius: 15px;
+ /* clear: both; */
 }
 .interests{
  
@@ -219,6 +220,7 @@ position: relative;
   align-content: space-between;
   background:#206AD8;
   border-radius: 15px;
+  /* clear: both; */
 }
 .addInterest{
   display:flex;
