@@ -14,7 +14,7 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
 
   render() {
     return (
-      <div className="wrapper">
+      <div className="Design">
           <button className="App-link" onClick={(e) => this.props.changePage(pages.MyContentPage)}>
           Design Civil Supporter Page
           </button>
