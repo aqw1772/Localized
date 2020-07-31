@@ -5,20 +5,22 @@ interface BubbleProps{
     name: string
 }
 
-class Bubble extends React.Component<BubbleProps>{
-
+class Bubble extends React.Component<BubbleProps,{selected: boolean}>{
     constructor(props: any){
         super(props);
-        this.state = {color: "white"};
+        this.state = {
+            selected: false
+        };
     }
 
-    // changeColor = () => {
-    //     console.log("Clicked");
-    // }
+    changeColor = () => {
+        this.setState({selected: !this.state.selected})
+    }
 
     render(){
+        let btn_class = this.state.selected ? "blueButton" : "grayButton";
         return(
-            <div onClick={this.changeColor}>
+            <div className={btn_class} onClick={this.changeColor.bind(this)}>
                 <h2 className="animate__fadeOutUp">{this.props.name}</h2>
             </div>
         )
