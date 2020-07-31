@@ -7,6 +7,7 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import CardGroup from 'react-bootstrap/CardGroup';
 import CardColumns from 'react-bootstrap/CardColumns';
 import { BsNewspaper } from "react-icons/bs";
+import {BsCalendar} from "react-icons/bs";
 
 
 interface MyContentScreenProps {
@@ -30,9 +31,10 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
           Latest articles for you based on your interests <BsNewspaper/>
           <hr></hr>
         </p>
-    
-
-      
+        <p className="p3"> 
+          Upcoming Events <BsCalendar />
+        </p>
+        
         <CardDeck className="card-deck">
           <Card>
             <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Election_voting_20180128.jpg/1200px-Election_voting_20180128.jpg"/>
@@ -71,6 +73,9 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
             </Card.Text>
             <Button variant="primary">Read More...</Button>
             </Card.Body>
+          </Card>
+          <Card>
+
           </Card>
         </CardDeck>
 
