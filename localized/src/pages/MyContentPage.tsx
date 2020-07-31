@@ -55,8 +55,8 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
             <Card.Body>
               <Card.Title><strong>Schools close due to COVID-19:</strong></Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
-                voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.{' '}
+                <div className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
+                voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.{' '} </div>
               </Card.Text>
               <Button variant="primary">Read More...</Button>
             </Card.Body>
@@ -74,11 +74,15 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
             <Button variant="primary">Read More...</Button>
             </Card.Body>
           </Card>
-
-
         </CardDeck>
+
+        <div className="footer">
+          <p>&copy; New Technologists 2020 - Team 13</p>
+        </div>
+
+
       
-              </div>
+       </div>
     );
   }
 }
