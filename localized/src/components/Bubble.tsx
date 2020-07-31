@@ -6,14 +6,19 @@ interface BubbleProps{
 }
 
 class Bubble extends React.Component<BubbleProps>{
-    
+
     constructor(props: any){
         super(props);
+        this.state = {color: "white"};
     }
+
+    // changeColor = () => {
+    //     console.log("Clicked");
+    // }
 
     render(){
         return(
-            <div>
+            <div onClick={this.changeColor}>
                 <h2 className="animate__fadeOutUp">{this.props.name}</h2>
             </div>
         )

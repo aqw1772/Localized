@@ -16,7 +16,7 @@ class BubbleList extends React.Component<BubbleListProps> {
     render() {
         return (
             <div className="BubbleList" >
-                <ul id="menu">
+                <ul>
                     {/* {this.props.listOfBubbles.map((bubble: Bubble) => {
                             return (
                                 <li>{bubble.name}</li>
@@ -24,13 +24,16 @@ class BubbleList extends React.Component<BubbleListProps> {
                             )
                         }
                     )} */}
-                    <li><Bubble name="Voting"/></li>
-                    <li><Bubble name="Budget" /></li>
-                   <li> <Bubble name="Traffic" /></li>
-                   <li><Bubble name="Petitions" /></li>
-                   <li><Bubble name="Schools" /></li>
-                   <li><Bubble name="Tax" /></li>
-                   <li><Bubble name="Protest" /></li>
+                    <div id="Protest"><Bubble name="Protest"/></div>
+                    <div id="Voting"><Bubble name="Voting"/></div>
+                    <div id="Budget"><Bubble name="Budget"/></div>
+                    <div id="Traffic"><Bubble name="Traffic"/></div>
+                    <div id="Petitions"><Bubble name="Petitions"/></div>
+                    <div id="Schools"><Bubble name="Schools"/></div>
+                    <div id="Tax"><Bubble name="Tax"/></div>
+                    
+                    <div id="Zoning"><Bubble name="Zoning"/></div>
+                    
                 </ul>
             </div >
         )
