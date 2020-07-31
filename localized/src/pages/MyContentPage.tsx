@@ -6,9 +6,7 @@ import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
 import CardGroup from 'react-bootstrap/CardGroup';
 import CardColumns from 'react-bootstrap/CardColumns';
-
-
-
+import { BsNewspaper } from "react-icons/bs";
 
 
 interface MyContentScreenProps {
@@ -29,7 +27,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
         </button>
 
         <p className="p"> 
-          Latest articles for you based on your interests 
+          Latest articles for you based on your interests <BsNewspaper/>
           <hr></hr>
         </p>
     
