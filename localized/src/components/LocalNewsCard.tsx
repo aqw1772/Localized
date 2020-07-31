@@ -12,7 +12,7 @@ export class LocalNewsCard extends React.Component<LocalNewsCardProps>{
  render(){
      return(
         <Card>
-            <Card.Img variant="top" src=""/>
+            <Card.Img variant="top" src={this.props.image}/>
             <span className="voting">Voting</span>
             <Card.Body>
               <Card.Title><strong>{this.props.title}</strong></Card.Title>
