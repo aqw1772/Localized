@@ -76,7 +76,6 @@ code {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 .welcomeCarousel {
   margin-top: 400px;
   height: 600px;
@@ -118,7 +117,6 @@ code {
 .carousel-item {
   margin-bottom: 10px;
 }
-=======
 /*  beginning of styling for the cards in my content page */
 .card{
   box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -223,4 +221,3 @@ span{
 .bi .bi-newspaper{
   background-color: blue;
 }
->>>>>>> d679fd7b6da2a76db78b604049597d7a14896731
