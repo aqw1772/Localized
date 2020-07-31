@@ -24,8 +24,10 @@
   color: white;
 }
 
-.App-link {
-  color: black;
+.App-click {
+  background:#206AD8;
+  border-radius: 15px;
+  padding: 20px;
 }
 
 @keyframes App-logo-spin {
