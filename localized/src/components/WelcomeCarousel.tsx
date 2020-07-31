@@ -24,17 +24,31 @@ class WelcomeCarousel extends React.Component {
                         <br></br>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <h3>Second Slide</h3>
+                        <h1>Civil Supporter</h1>
+                        <br></br>
+                        <h3>Your new local government companion is always ready for any question you might have 
+                            about your local government!</h3>
+                        <br></br>
+                        <h3>Ask him what he can tell you!</h3>
                         <br></br>
                         <br></br>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <h3>Third Slide</h3>
+                        <h1>My Content</h1>
+                        <br></br>
+                        <h3>All of the content that you might be interested is aggregated all in one place! Filter 
+                            your interests, explore latest articles, local news, and upcoming events in your area.
+                        </h3>
                         <br></br>
                         <br></br>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <h3>Fourth Slide</h3>
+                        <h1>About Us</h1>
+                        <br></br>
+                        <h3>We are Team 13, Innovators For imPact (IFP), of The New Technologists program made 
+                            possible by Shanon, Kristin, Jane, Lazaro, and our instructor Brian! Thank you so much 
+                            for everything you've done for us!
+                        </h3>
                         <br></br>
                         <br></br>
                     </Carousel.Item>
