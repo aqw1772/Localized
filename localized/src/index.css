@@ -125,7 +125,6 @@ code {
   height: 32rem;
 }
 
-
 .card:hover{
   transform: scale(1.1);
   opacity: 1;
@@ -236,4 +235,15 @@ span{
 /* positioning the line below the title */
 .lineTitle{
   margin-right: 62%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 50%;
 }

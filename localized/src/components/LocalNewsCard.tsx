@@ -11,15 +11,14 @@ interface LocalNewsCardProps{
 export class LocalNewsCard extends React.Component<LocalNewsCardProps>{
  render(){
      return(
-        <Card>
+        <Card className="LocalNewsCard">
             <Card.Img variant="top" src={this.props.image}/>
             <span className="voting">Voting</span>
-            <Card.Body>
-              <Card.Title><strong>{this.props.title}</strong></Card.Title>
-              <Card.Text>
+            <Card.Body className="TwoColGridCard">
+              <Card.Title className="column"><strong>{this.props.title}</strong></Card.Title>
+              <Card.Text className="column">
                 {this.props.caption}
               </Card.Text>
-              <Button variant="primary">Read More...</Button>
             </Card.Body>
         </Card>
      );
