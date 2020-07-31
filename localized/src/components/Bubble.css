@@ -29,7 +29,7 @@ h2{
   line-height: 250px;
   text-align: center;
   background: -webkit-linear-gradient(to right, #9c9c9cbe, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: gray;
+  background: #c4c4c4;
 }
 
 p{
