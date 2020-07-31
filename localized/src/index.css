@@ -166,3 +166,19 @@ span{
 .bi .bi-newspaper{
   background-color: blue;
 }
+
+/* CSS styling for the local news row */
+.LocalNews{
+  margin-top: 50px;
+  margin-right: 40%;
+  font-size: 22px;
+}
+
+.LocalNewsTitle{
+  margin-right:14%;
+}
+
+/* positioning the line below the title */
+.lineTitle{
+  margin-right: 62%;
+}

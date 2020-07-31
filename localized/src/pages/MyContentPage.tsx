@@ -7,6 +7,7 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import CardGroup from 'react-bootstrap/CardGroup';
 import CardColumns from 'react-bootstrap/CardColumns';
 import { BsNewspaper } from "react-icons/bs";
+import { LocalNewsDeck } from "../components/LocalNewsDeck";
 
 
 interface MyContentScreenProps {
@@ -73,6 +74,8 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
             </Card.Body>
           </Card>
         </CardDeck>
+
+        <LocalNewsDeck />
 
         <div className="footer">
           <p>&copy; New Technologists 2020 - Team 13</p>
