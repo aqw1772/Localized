@@ -86,8 +86,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
               <Card.Body>
                 <Card.Title><strong>Tuesday at 10am</strong></Card.Title>
                 <Card.Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
-                  voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.
+                  The Derby Days tradition continues in 2020 with our virtual edition. Celebrate Redmond with opportunities to participate in the Derby Dash 5K, Community Bike Challenge, Virtual Bike Decorating Parade, Derby Days Bingo, Rock-a-thon Open Mic, Derby Do Gooder scholarship, and Virtual Art Show. 
                 </Card.Text>
                 <Button variant="primary"> View Details</Button>
               </Card.Body>
@@ -98,8 +97,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
               <Card.Body>
                 <Card.Title><strong>Sunday at 11am</strong></Card.Title>
                 <Card.Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
-                  voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.
+                  Decorate your bike and join us for a virtual bike parade to help celebrate virtual Derby Days 2020! Bike decorating is a long-standing Derby Days tradition and is a fun way to show your individual style. Add streamers, ribbons, balloons and any other decorations that inspire your creativity. 
                 </Card.Text>
                 <Button variant="primary"> View Details</Button>
               </Card.Body>
@@ -108,10 +106,9 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
             <Card.Img variant="top" src= "https://www.redmond.gov/ImageRepository/Document?documentID=9912" />
             <span className="Lights"> Redmond Lights</span>
               <Card.Body>
-                <Card.Title><strong>Saturday at 9pm</strong></Card.Title>
+                <Card.Title><strong>December 5&6, at 7pm</strong></Card.Title>
                 <Card.Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
-                  voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.
+                  This progressive, three-part event starts at Redmond City Hall and takes you on a luminary walk along the Sammamish River Trail to Downtown Park and the Redmond Town Center. On Saturday evening, a Winter Wonderland awaits you at Redmond Town Center, with a carousel, live ice carver, and more performances.
                 </Card.Text>
                 <Button variant="primary"> View Details</Button>
               </Card.Body>
