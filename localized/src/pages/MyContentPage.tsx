@@ -34,7 +34,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
         <p className="p3"> 
           Upcoming Events <BsCalendar />
         </p>
-        
+
         <CardDeck className="card-deck">
           <Card>
             <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Election_voting_20180128.jpg/1200px-Election_voting_20180128.jpg"/>
@@ -74,9 +74,35 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
             <Button variant="primary">Read More...</Button>
             </Card.Body>
           </Card>
-          <Card>
+        
+        </CardDeck>
 
+        <CardDeck className= "Events-Deck">
+        <Card>
+            <Card.Img variant="top" src="https://www.redmond.gov/ImageRepository/Document?documentId=13898" />
+              <span className="Derby"> Derby Days</span>
+              <Card.Body>
+                <Card.Title><strong>Tuesday at 10am</strong></Card.Title>
+                <Card.Text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
+                  voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.
+                </Card.Text>
+                <Button variant="primary"> View Details</Button>
+              </Card.Body>
           </Card>
+          <Card>
+            <Card.Img variant="top" src= "https://www.redmond.gov/ImageRepository/Document?documentId=13870" />
+            <span className="Derby"> Bike Decorating Parade</span>
+              <Card.Body>
+                <Card.Title><strong>Saturday at 11am</strong></Card.Title>
+                <Card.Text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
+                  voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.
+                </Card.Text>
+                <Button variant="primary"> View Details</Button>
+              </Card.Body>
+          </Card>
+
         </CardDeck>
 
         <div className="footer">
