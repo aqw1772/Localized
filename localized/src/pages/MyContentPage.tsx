@@ -31,9 +31,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
           Latest articles for you based on your interests <BsNewspaper/>
           <hr></hr>
         </p>
-        <p className="p3"> 
-          Upcoming Events <BsCalendar />
-        </p>
+    
 
         <CardDeck className="card-deck">
           <Card>
@@ -76,6 +74,10 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
           </Card>
         
         </CardDeck>
+        
+        <p className="p3"> 
+          Upcoming Events <BsCalendar />
+        </p>
 
         <CardDeck className= "Events-Deck">
         <Card>
@@ -92,7 +94,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
           </Card>
           <Card>
             <Card.Img variant="top" src= "https://www.redmond.gov/ImageRepository/Document?documentId=13870" />
-            <span className="Derby"> Bike Decorating Parade</span>
+            <span className="Parade"> Bike Decorating Parade</span>
               <Card.Body>
                 <Card.Title><strong>Saturday at 11am</strong></Card.Title>
                 <Card.Text>
