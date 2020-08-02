@@ -96,7 +96,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
             <Card.Img variant="top" src= "https://www.redmond.gov/ImageRepository/Document?documentId=13870" />
             <span className="Parade"> Bike Decorating Parade</span>
               <Card.Body>
-                <Card.Title><strong>Saturday at 11am</strong></Card.Title>
+                <Card.Title><strong>Sunday at 11am</strong></Card.Title>
                 <Card.Text>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
                   voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.
