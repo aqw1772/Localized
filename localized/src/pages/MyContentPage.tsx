@@ -74,7 +74,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
           </Card>
         
         </CardDeck>
-        
+
         <p className="p3"> 
           Upcoming Events <BsCalendar />
         </p>
@@ -97,6 +97,18 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
             <span className="Parade"> Bike Decorating Parade</span>
               <Card.Body>
                 <Card.Title><strong>Saturday at 11am</strong></Card.Title>
+                <Card.Text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
+                  voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.
+                </Card.Text>
+                <Button variant="primary"> View Details</Button>
+              </Card.Body>
+          </Card>
+          <Card>
+            <Card.Img variant="top" src= "https://www.redmond.gov/ImageRepository/Document?documentID=9912" />
+            <span className="Lights"> Redmond Lights</span>
+              <Card.Body>
+                <Card.Title><strong>Saturday at 9pm</strong></Card.Title>
                 <Card.Text>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error,
                   voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim.
