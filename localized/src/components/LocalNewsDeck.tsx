@@ -14,10 +14,10 @@ export class LocalNewsDeck extends React.Component<{}>{
                     <hr className="lineTitle"></hr>
                 </p>
                 <CardDeck className="LocalNewsDeck">
-                    <LocalNewsCard image="https://komonews.com/resources/media/e5a4f1a7-15ad-4064-8364-f19067e6321f-large16x9_thumb_85010.png?1595385874086" title="2020 Primary Voter's Guide - The Seattle Times" caption= "It’s been an unusual time for campaigning. The COVID-19 pandemic has changed the rules of engagement with voters — less contact, fewer personal appearances by most candidates, but not all." 
-                    topic="Voting"/>
+                    <LocalNewsCard image="https://media.king5.com/assets/KING/images/285572476/285572476_1140x641.jpg" title="How secure is your mail-in ballot in Washington State?" caption= "It’s been an unusual time for voting. The COVID-19 pandemic has changed the rules of political participation — less contact, fewer personal appearances by most candidates..." 
+                    topic="Voting" videoLink="https://www.king5.com/article/news/politics/where-to-drop-off-your-stamp-free-ballot-before-election-day/281-285557913"/>
                     <LocalNewsCard image="https://seattlemedium.com/wp-content/uploads/2020/06/BLM-silent-march-main-5G4A6549.jpg" title="Highlights of Black Lives Matter Seattle-King County March" caption= "The march was planned as a silent event to honor those killed by police brutality and institutionalized racism. Additionally, according to BLM, the silence was intended to help mitigate the risk of spreading the COVID-19 coronavirus..." 
-                    topic="Protests"/>
+                    topic="Protests" videoLink="https://www.youtube.com/watch?v=ttEnL5BTn3M"/>
                 </CardDeck>
             </div>
         );

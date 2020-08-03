@@ -7,6 +7,7 @@ interface LocalNewsCardProps{
     title: string;
     caption: string;
     topic: string;
+    videoLink: string;
 }
 
 export class LocalNewsCard extends React.Component<LocalNewsCardProps>{
@@ -14,7 +15,7 @@ export class LocalNewsCard extends React.Component<LocalNewsCardProps>{
      return(
         <Card className="LocalNewsCard">
             <Card.Img className="LocalNewsPicture" variant="top" src={this.props.image}/>
-            <MdPlayArrow className="PlayButton"/>
+            <a href={this.props.videoLink}><MdPlayArrow className="PlayButton"/></a>
             <span className={this.props.topic}>{this.props.topic}</span>
             <Card.Body className="TwoColGridCard">
               <Card.Title className="column"><strong>{this.props.title}</strong></Card.Title>
