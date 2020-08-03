@@ -7,6 +7,8 @@ import  { MyContentPage } from './pages/MyContentPage';
 import  { EditCivilPage } from './pages/EditCivilPage';
 import  { SignUpPage }  from './pages/SignUpPage';
 
+import UniversalNavBar from './components/UniversalNavBar';
+
 export enum pages {
   WelcomePage,
   BubblePage,
