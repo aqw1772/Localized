@@ -131,7 +131,7 @@ code {
   margin-top: 75px;
   top: 0; /* Stay at the top -- **THIS WILL CHANGE WHEN NAV BAR IS IMPLEMENTED** */
   left: 0;
-  background-color: lightgray;
+  background-color: #F0F2F5;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 }
@@ -145,6 +145,11 @@ code {
 .myContentSidebar .nameAndPic img{
   height: 60px;
   width: 60px;
+}
+
+.myContentSidebar .nameAndPic h3 {
+  color: rgb(131, 130, 130);
+  font-size: medium;
 }
 
 .myContentSidebar .heading {
@@ -166,7 +171,30 @@ code {
   margin-right: 10px;
 }
 
-.myContentSidebar .interests {
+/* .myContentSidebar .arrow + .interests {
+  display: none;
+} */
+
+#arrow {
+  margin-left: -40px;
+  position: static;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.interests {
+  display: none;
+}
+
+#arrow:checked ~ svg {
+  transform: rotate(90deg);
+  transform-origin: 50% 50%;
+}
+
+#arrow:checked ~ .interests {
   margin-top: 20px;
   display: inline-block;
 }
@@ -186,6 +214,42 @@ code {
   margin-left: 30px;
   margin-bottom: 10px;
   display: inline-block;
+}
+
+.myContentSidebar .edit {
+  border-radius: 26px;
+  height: 40px;
+  width: 173px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  background-color: white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-top: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.myContentSidebar .edit img {
+  margin-right: 10px;
+}
+
+.myContentSidebar .logout {
+  border-radius: 26px;
+  height: 40px;
+  width: 173px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  background-color: rgba(253, 43, 43, 0.877);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
 }
 
 /*  beginning of styling for the cards in my content page */
@@ -291,4 +355,8 @@ hr{
 
 .bi .bi-newspaper{
   background-color: blue;
+}
+
+.LocalNewsCard span {
+  left: 69%;
 }

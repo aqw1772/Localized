@@ -1,7 +1,10 @@
 import peopleSearch from "../images/PeopleSearch.png";
+import AddInterests from "../images/AddInterests.png";
 import Satya from "../images/Satya.png";
 import React from 'react';
-import { pages } from "../App"; {/* Not sure if I need this */}
+import { pages } from "../App";
+import { BsChevronRight } from "react-icons/bs";
+import BsChevronDown from "react-icons/bs";
 
 
 
@@ -15,6 +18,17 @@ interface IMyContentSidebarProps {
 
 
 class MyContentSidebar extends React.Component<IMyContentSidebarProps> {
+
+    // myFunction() {
+    //     var checkBox = document.getElementById("arrow");
+    //     var text = document.getElementById("text");
+    //     if (checkBox.checked == true){
+    //       text.style.display = "block";
+    //     } else {
+    //       text.style.display = "none";
+    //     }
+    // }
+
     render() {
         return (
             <div className="myContentSidebar">
@@ -22,17 +36,34 @@ class MyContentSidebar extends React.Component<IMyContentSidebarProps> {
                     {/* Insert profile pic here */}
                     <img src={Satya}></img>
                     {/* Insert profile name here */}
-                    <h4>Satya Nadella</h4> {/* test */}
+                    <h4>Satya Nadella</h4>
+                    <h3>Redmond, WA</h3>
                 </div>
                 {/* Dropdown goes here */}
                 <span className="heading">
                     <img src={peopleSearch}></img>
-                    Your Interests</span>
+                    Your Interests
+                </span>
+                <input id="arrow" className="arrow" type="checkbox"></input><BsChevronRight/>
                 <div className="interests">
                     <span className="school">School</span> 
                     <span className="protest">Protest</span>
+                    <span className="voting">Voting</span>
                 </div>
+                <br></br>
+                <br></br>
                 {/* Edit interests button */}
+                <span className="edit" onClick={(e) => this.props.changePage(pages.BubblePage)}>
+                    <img src={AddInterests}></img>
+                    Edit Interests
+                </span>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <span className="logout" onClick={(e) => this.props.changePage(pages.WelcomePage)}>
+                    Logout
+                </span>
             </div>
         )
     };
