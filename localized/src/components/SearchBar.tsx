@@ -9,7 +9,7 @@ export class SearchBar extends React.Component<{}> {
             <div className="SearchBar">
                 <form id="TopSearchForm" action="https://www.bing.com/search" method="GET" target="_blank">
                     {/* */}
-                    <form onSubmit={this.onKeyUp} ><input style={{borderRadius: '10px', width: '250px'}} id="searchInput" type="text" name="q" placeholder="Search" /></form>
+                    <form onSubmit={this.onKeyUp} ><input id="searchInput" type="text" name="q" placeholder="Search"/></form>
                     
                 </form>
             </div >
