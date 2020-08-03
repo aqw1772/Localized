@@ -333,6 +333,10 @@ position: relative;
   width: 100%;
 }
 
+.LocalNewsCard span {
+  left: 69%;
+}
+
 /* Creating space between last deck and footer */
 .LocalNewsDeck{
   margin-bottom: 3%;
@@ -340,7 +344,7 @@ position: relative;
 
 .column1 {
   float: left;
-  width: 33.33%;
+  width: 50%;
 }
 
 /* adjusted the picture size for local news card */
@@ -349,13 +353,19 @@ position: relative;
   width: 100%;
 }
 
+.UpcomingEventsTitle{
+  margin-right: 24%;
+}
+
 /* Creating space between last deck and footer */
 .UpcomingEventsDeck{
   margin-bottom: 3%;
 }
 
-.UpcomingEventsCard .card {
-  width: 375px !important;
+.UpcomingEventsCard {
+  width: 33.33rem !important;
+  margin-left: 10px;
+  margin-top:20px;
 }
 
 .PlayButton{
@@ -371,4 +381,8 @@ position: relative;
 
 .PlayButton:hover {
   opacity: 100%;
+}
+
+.SearchBar{
+  border-radius: 13px;
 }
