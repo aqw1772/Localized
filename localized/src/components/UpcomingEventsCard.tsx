@@ -12,7 +12,6 @@ interface UpcomingEventsCardProps{
 export class UpcomingEventsCard extends React.Component<UpcomingEventsCardProps>{
     render(){
         return(
-          <div>
             <Card className="UpcomingEventsCard">
               <Card.Img variant="top" src={this.props.image}/>
               <span className={this.props.topic}>{this.props.topic}</span>
@@ -24,7 +23,6 @@ export class UpcomingEventsCard extends React.Component<UpcomingEventsCardProps>
                 <a href={this.props.link}><button>View Details...</button></a>
               </Card.Body>
             </Card>
-          </div>
         );
         
     }
