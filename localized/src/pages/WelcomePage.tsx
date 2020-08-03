@@ -5,6 +5,7 @@ import iPhone_screenshot from "../images/iPhone.png";
 import WelcomeNavBar from "../components/WelcomeNavBar";
 import WelcomeCarousel from "../components/WelcomeCarousel";
 
+
 interface WelcomeScreenProps {
   changePage: (page: pages) => void;
 }
