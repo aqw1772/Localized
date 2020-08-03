@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -160,6 +160,8 @@ span{
   color: black;
   text-align: center;
 }
+
+/* styling for sign up/in form */
 form{
   width: 100%;
   display: flex;
@@ -246,7 +248,7 @@ input:focus{
     flex-direction: column;
     align-items: center;
     color:#0078D4;
-    padding-bottom: 9px;
+    padding-bottom: 19px;
   }
   
   .createAccount button {
@@ -275,7 +277,7 @@ input:focus{
     margin-top: 3px;
     cursor: pointer;
   }
-
+  /* side bar on sign up/in page */
   .sidenav {
     height: 100%;
     width: 38%;
@@ -297,6 +299,7 @@ input:focus{
   }
 /* end of styling for image on the side bar of sign up page*/
 
+/* button on sign up/in page to go back to landing page */
   .back{
     background-color: #0078D4;
     width: 90px;
@@ -308,7 +311,15 @@ input:focus{
     border: 0px;
   }
 
+  /* text on side bar on sign up/in page */
   .title{
     font-weight: bolder;
     color: #fff;
+    font-family: 'Capriola', sans-serif;
+    letter-spacing: 4px;
+    text-align: left;
+    margin-left: 29px;
+    text-align: center;
+    padding-bottom: 2900px;
   }
+
