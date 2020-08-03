@@ -186,11 +186,11 @@ position: relative;
   background: rgb(93, 93, 223);
   border-radius: 15px;
 }
-.contacte{
+.contactm{
   padding: 20px; 
   display: inline-block;
   margin: 70px;
-  background: red;
+  background:purple;
   border-radius: 15px;
 }
 .contactt{
