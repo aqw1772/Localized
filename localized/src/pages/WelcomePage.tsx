@@ -4,6 +4,7 @@ import logo from "../images/logo.png";
 import iPhone_screenshot from "../images/iPhone.png";
 import WelcomeNavBar from "../components/WelcomeNavBar";
 
+
 interface WelcomeScreenProps {
   changePage: (page: pages) => void;
 }
