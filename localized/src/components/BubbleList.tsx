@@ -31,7 +31,7 @@ class BubbleList extends React.Component<BubbleListProps> {
                     <World
                         height={700}
                         width={1000}
-                        gravity={[0,-1.62]}
+                        gravity={[0,2]}
                         className="world"
                     >
                         <Item restitution={1} initialImpulse={[70,70]}><div id="Protest"><Bubble name="Protest"/></div></Item>
