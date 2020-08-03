@@ -157,13 +157,13 @@ code {
   margin-top: 30px;
   
 }
-.events-deck{
+/* .events-deck{
   width: 70%;
   min-width: 75%;
   margin-left: 260px;
   margin-top: 30px;
   margin-bottom: 5%;
-}
+} */
 
 /*  end of styling for the cards in my content page */
 
@@ -203,15 +203,8 @@ span{
   color: white;
   padding-top: 4px;
 }
-<<<<<<< HEAD
-.eventsa{
-  position: absolute;
-}
-.voting{
-=======
 
 .Voting{
->>>>>>> 4fc66d34c08683c9f254be8e61c38892a534eab1
   border: 2px solid #0CA6AE;
   background-color: #0CA6AE;
 }
@@ -242,7 +235,6 @@ span{
 .bi .bi-newspaper{
   background-color: blue;
 }
-<<<<<<< HEAD
 #fb_logo{
   width: 14px;
   height: 13px;
@@ -311,7 +303,7 @@ position: relative;
   padding: 15px;
   background:#206AD8 ;
   border-radius: 15px;
-=======
+}
 
 /* CSS styling for the local news row */
 .LocalNews{
@@ -346,6 +338,26 @@ position: relative;
   margin-bottom: 3%;
 }
 
+.column1 {
+  float: left;
+  width: 33.33%;
+}
+
+/* adjusted the picture size for local news card */
+.UpcomingEventsDeck img{
+  height: 60%; 
+  width: 100%;
+}
+
+/* Creating space between last deck and footer */
+.UpcomingEventsDeck{
+  margin-bottom: 3%;
+}
+
+.UpcomingEventsCard .card {
+  width: 375px !important;
+}
+
 .PlayButton{
   position: absolute;
   top: 25%;
@@ -359,5 +371,4 @@ position: relative;
 
 .PlayButton:hover {
   opacity: 100%;
->>>>>>> 4fc66d34c08683c9f254be8e61c38892a534eab1
 }

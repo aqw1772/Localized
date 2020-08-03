@@ -10,6 +10,7 @@ import { BsNewspaper } from "react-icons/bs";
 import { LocalNewsDeck } from "../components/LocalNewsDeck";
 import {BsCalendar} from "react-icons/bs";
 import UniversalNavBar from "../components/UniversalNavBar";
+import {UpcomingEventsDeck} from "../components/UpcomingEventsDeck";
 
 
 interface MyContentScreenProps {
@@ -75,11 +76,9 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
         
         </CardDeck>
 
-        <p className="p3"> 
-          Upcoming Events <BsCalendar />
-        </p>
-
-        <CardDeck className= "events-Deck">
+        
+        <UpcomingEventsDeck/>
+        {/* <CardDeck className= "events-Deck">
           <Card>
               <Card.Img variant="top" src="https://www.redmond.gov/ImageRepository/Document?documentId=13898" />
                 <span className="Derby"> Derby Days</span>
@@ -104,7 +103,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
             </Card>
             <Card>
             {/* <a  className= "eventsa" href="https://www.redmond.gov/1138/Derby-Days"> */}
-            <Card.Img variant="top"  src= "https://www.redmond.gov/ImageRepository/Document?documentID=9912" />
+            {/* <Card.Img variant="top"  src= "https://www.redmond.gov/ImageRepository/Document?documentID=9912" />
               <span className="Lights"> Redmond Lights</span>
                 <Card.Body>
                   <Card.Title><strong>Saturday at 7pm</strong></Card.Title>
@@ -113,15 +112,18 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
                   </Card.Text>
                   <Button variant="primary"> View Details</Button>
                 </Card.Body>
-          </Card>
+          </Card>  */}
 
-        </CardDeck>
+        {/* </CardDeck> */}
 
-        <LocalNewsDeck />
+      
+
+        <LocalNewsDeck/>
 
         <div className="footer">
           <p>&copy; New Technologists 2020 - Team 13</p>
         </div>
+
 
 
       
