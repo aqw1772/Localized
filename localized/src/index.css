@@ -125,7 +125,6 @@ code {
   height: 32rem;
 }
 
-
 .card:hover{
   transform: scale(1.1);
   opacity: 1;
@@ -156,7 +155,15 @@ code {
   min-width: 75%;
   margin-left: 260px;
   margin-top: 30px;
+  
 }
+/* .events-deck{
+  width: 70%;
+  min-width: 75%;
+  margin-left: 260px;
+  margin-top: 30px;
+  margin-bottom: 5%;
+} */
 
 /*  end of styling for the cards in my content page */
 
@@ -171,6 +178,12 @@ hr{
 
 /* styling for section haading text on my content page  */
 .p{
+  margin-top: 50px;
+  margin-right: 40%;
+  font-size: 22px;
+}
+/* styling for upcoming events tab */
+.p3{
   margin-top: 50px;
   margin-right: 40%;
   font-size: 22px;
@@ -191,18 +204,18 @@ span{
   padding-top: 4px;
 }
 
-.voting{
+.Voting{
   border: 2px solid #0CA6AE;
   background-color: #0CA6AE;
 }
 
-.school{
+.Schools{
   border: 2px solid #EC6A5F;
   background-color: #EC6A5F;
 
 }
 
-.protest{
+.Protests{
   border: 2px solid #F5BF4F;
   background-color: #F5BF4F;
 }
@@ -210,6 +223,7 @@ span{
 
 .footer{
   position: fixed;
+  top: 97%;
   left: 0;
   bottom: 0;
   background-color: #0078D4;
@@ -289,4 +303,86 @@ position: relative;
   padding: 15px;
   background:#206AD8 ;
   border-radius: 15px;
+}
+
+/* CSS styling for the local news row */
+.LocalNews{
+  margin-top: 50px;
+  margin-right: 40%;
+  font-size: 22px;
+}
+
+.LocalNewsTitle{
+  margin-right:14%;
+}
+
+/* positioning the line below the title */
+.lineTitle{
+  margin-right: 62%;
+}
+
+/* Created two column for card body */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* adjusted the picture size for local news card */
+.LocalNewsCard img{
+  height: 60%; 
+  width: 100%;
+}
+
+.LocalNewsCard span {
+  left: 69%;
+}
+
+/* Creating space between last deck and footer */
+.LocalNewsDeck{
+  margin-bottom: 3%;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+}
+
+/* adjusted the picture size for local news card */
+.UpcomingEventsDeck img{
+  height: 60%; 
+  width: 100%;
+}
+
+.UpcomingEventsTitle{
+  margin-right: 24%;
+}
+
+/* Creating space between last deck and footer */
+.UpcomingEventsDeck{
+  margin-bottom: 3%;
+}
+
+.UpcomingEventsCard {
+  width: 33.33rem !important;
+  margin-left: 10px;
+  margin-top:20px;
+}
+
+.PlayButton{
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  color: white;
+  opacity: 70%;
+  transition: .2s;
+  height: 80px;
+  width: 80px;
+} 
+
+.PlayButton:hover {
+  opacity: 100%;
+}
+
+.SearchBar{
+  border-radius: 13px;
 }
