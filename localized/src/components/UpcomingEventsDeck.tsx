@@ -10,15 +10,15 @@ export class UpcomingEventsDeck extends React.Component<{}>{
         return(
             <div>
                 <p className="p3"> 
-                    Upcoming Events <BsCalendar />
+                    <div className="UpcomingEventsTitle">Upcoming Events <BsCalendar /></div>
                     <hr className="lineTitle"></hr>
                 </p>
                 <CardDeck className="UpcomingEventsDeck">
-                    <UpcomingEventsCard image=" https://www.redmond.gov/ImageRepository/Document?documentId=13870" title="Sunday at 11am" caption= "It’s been an unusual time for voting. The COVID-19 pandemic has changed the rules of political participation — less contact, fewer personal appearances by most candidates..." 
+                   <UpcomingEventsCard link="https://www.redmond.gov/1413/Bike-Decorating-Virtual-Parade" image=" https://www.redmond.gov/ImageRepository/Document?documentId=13870" title="Sunday at 11am" caption= "Decorate your bike and join us for a virtual bike parade to help celebrate virtual Derby Days 2020!" 
                     topic="Bike decorating Parade"/>
-                    <UpcomingEventsCard  image="https://www.redmond.gov/ImageRepository/Document?documentID=9912" title="Saturday at 7pm" caption= "The march was planned as a silent event to honor those killed by police brutality and institutionalized racism. Additionally, according to BLM, the silence was intended to help mitigate the risk of spreading the COVID-19 coronavirus..." 
+                   <UpcomingEventsCard link="https://www.redmond.gov/1139/Redmond-Lights" image="https://www.redmond.gov/ImageRepository/Document?documentID=9912" title="Saturday at 7pm" caption= " This progressive, three-part event starts at Redmond City Hall and takes you to the Redmond Town Center." 
                     topic="Redmond Lights"/>
-                    <UpcomingEventsCard image="https://www.redmond.gov/ImageRepository/Document?documentId=13898" title="Tuesday at 10pm" caption= "The march was planned as a silent event to honor those killed by police brutality and institutionalized racism. Additionally, according to BLM, the silence was intended to help mitigate the risk of spreading the COVID-19 coronavirus..." 
+                    <UpcomingEventsCard link="https://www.redmond.gov/1138/Derby-Days" image="https://www.redmond.gov/ImageRepository/Document?documentId=13898" title="Tuesday at 10pm" caption=" The Derby Days tradition continues in 2020 with our virtual edition."
                     topic="Derby Days"/>
                 </CardDeck>
             </div>
