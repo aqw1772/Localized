@@ -6,6 +6,7 @@ import  { DesignCivilPage } from './pages/DesignCivilPage';
 import  { MyContentPage } from './pages/MyContentPage';
 import  { EditCivilPage } from './pages/EditCivilPage';
 import  { SignUpPage }  from './pages/SignUpPage';
+import  { SignInPage } from './pages/SignInPage';
 
 export enum pages {
   WelcomePage,
@@ -13,7 +14,8 @@ export enum pages {
   DesignCivilPage,
   MyContentPage,
   EditCivilPage,
-  SignUpPage
+  SignUpPage,
+  SignInPage
 }
 
 interface AppState {
@@ -43,6 +45,8 @@ export class App extends React.Component<{}, AppState> {
         return <EditCivilPage changePage={this.changeScreen} />;
       case pages.SignUpPage:
         return <SignUpPage changePage={this.changeScreen}/>;
+      case pages.SignInPage:
+        return <SignInPage changePage={this.changeScreen}/>;
       default:
         return <WelcomePage changePage={this.changeScreen} />;
     }
