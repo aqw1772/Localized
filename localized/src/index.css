@@ -178,7 +178,7 @@ margin: 10px;
 position: relative;
 /* text-align: center; */
 }
-.contactf{
+.contactm{
 
   padding: 20px;
   /* float: left; */
@@ -186,11 +186,11 @@ position: relative;
   background: rgb(93, 93, 223);
   border-radius: 15px;
 }
-.contactm{
+.contactg{
   padding: 20px; 
   display: inline-block;
   margin: 70px;
-  background:purple;
+  background: #318CE7;
   border-radius: 15px;
 }
 .contactt{
