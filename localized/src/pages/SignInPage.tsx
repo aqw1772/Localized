@@ -4,11 +4,11 @@ import Button from 'react-bootstrap/Button';
 import lc from '../images/lc.png';
 
 
-interface SignUpScreenProps {
+interface SignInScreenProps {
   changePage: (page: pages) => void;
 }
 
-export class SignUpPage extends React.Component<SignUpScreenProps> {
+export class SignInPage extends React.Component<SignInScreenProps> {
   constructor(props: any) {
     super(props);
   }
@@ -28,31 +28,18 @@ export class SignUpPage extends React.Component<SignUpScreenProps> {
         <div className="wrap">
           <div className="form-wrapper">
           <form>
-            <h4 className="createAccount">Sign up to create a new account</h4>
-            <div className="firstName">
-              <label htmlFor="firstName">First Name</label>
-              <input 
-              placeholder="First Name" type="text" name="firstName" required/>
-            </div>
-            <div className="lastName">
-              <label htmlFor="lastName">Last Name</label>
-              <input placeholder="Last Name" type="text" name="lastName" required />
-            </div>
+            <h4 className="createAccount">Welcome Back</h4>
             <div className="email">
               <label htmlFor="email">Email</label>
-              <input  placeholder="Email" type="email" name="email" required />
+              <input  placeholder="Email" type="email" name="email"required />
             </div>
             <div className="password">
               <label htmlFor="password">Password</label>
               <input placeholder="Password" type="password" name="password" required />
             </div>
-            <div className="password">
-              <label htmlFor="password">Confirm Password</label>
-              <input placeholder="Confirm Password" type="password" name="password" />
-            </div>
             <div className="createAccount">
-              <button type="submit" onClick={(e) => this.props.changePage(pages.BubblePage)}>Create Account</button>
-              <small onClick={(e) => this.props.changePage(pages.SignInPage)}>Already Have an Account?</small>
+              <button type="submit" onClick={(e) => this.props.changePage(pages.MyContentPage)}>Sign In</button>
+              <small onClick={(e) => this.props.changePage(pages.SignUpPage)}>Don't have an account yet?</small>
             </div>
           </form>
         </div>
