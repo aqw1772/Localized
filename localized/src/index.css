@@ -155,7 +155,15 @@ code {
   min-width: 75%;
   margin-left: 260px;
   margin-top: 30px;
+  
 }
+/* .events-deck{
+  width: 70%;
+  min-width: 75%;
+  margin-left: 260px;
+  margin-top: 30px;
+  margin-bottom: 5%;
+} */
 
 /*  end of styling for the cards in my content page */
 
@@ -170,6 +178,12 @@ hr{
 
 /* styling for section haading text on my content page  */
 .p{
+  margin-top: 50px;
+  margin-right: 40%;
+  font-size: 22px;
+}
+/* styling for upcoming events tab */
+.p3{
   margin-top: 50px;
   margin-right: 40%;
   font-size: 22px;
@@ -221,6 +235,75 @@ span{
 .bi .bi-newspaper{
   background-color: blue;
 }
+#fb_logo{
+  width: 14px;
+  height: 13px;
+}
+.addContact{
+/* display: flex; */
+padding: 20px;
+/* flex: 33.33%; */
+margin: 10px;
+position: relative;
+/* text-align: center; */
+}
+.contactf{
+
+  padding: 20px;
+  /* float: left; */
+  margin-right: 70px;
+  background: rgb(93, 93, 223);
+  border-radius: 15px;
+}
+.contacte{
+  padding: 20px; 
+  display: inline-block;
+  margin: 70px;
+  background: red;
+  border-radius: 15px;
+}
+.contactt{
+  display: inline-block;
+  padding: 20px; 
+  background:#47B200;
+  text-align: center;
+  border-radius: 15px;
+} 
+.interests1{
+  /* flex-wrap: wrap; */
+  flex: 33.33%;
+  padding:20px;
+  margin: 10px;
+ flex-wrap: nowrap; 
+ align-content: space-between;
+ background:#206AD8;
+ border-radius: 15px;
+ /* clear: both; */
+}
+.interests{
+ 
+  flex: 33.33%;
+  margin: 10px;
+  padding:20px;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  background:#206AD8;
+  border-radius: 15px;
+  /* clear: both; */
+}
+.addInterest{
+  display:flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  
+}
+.addbutton{
+  float: right;
+  margin-bottom:10%;
+  padding: 15px;
+  background:#206AD8 ;
+  border-radius: 15px;
+}
 
 /* CSS styling for the local news row */
 .LocalNews{
@@ -250,9 +333,39 @@ span{
   width: 100%;
 }
 
+.LocalNewsCard span {
+  left: 69%;
+}
+
 /* Creating space between last deck and footer */
 .LocalNewsDeck{
   margin-bottom: 3%;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+}
+
+/* adjusted the picture size for local news card */
+.UpcomingEventsDeck img{
+  height: 60%; 
+  width: 100%;
+}
+
+.UpcomingEventsTitle{
+  margin-right: 24%;
+}
+
+/* Creating space between last deck and footer */
+.UpcomingEventsDeck{
+  margin-bottom: 3%;
+}
+
+.UpcomingEventsCard {
+  width: 33.33rem !important;
+  margin-left: 10px;
+  margin-top:20px;
 }
 
 .PlayButton{
@@ -268,4 +381,8 @@ span{
 
 .PlayButton:hover {
   opacity: 100%;
+}
+
+.SearchBar{
+  border-radius: 13px;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import CardDeck from 'react-bootstrap/CardDeck';
-import {MdLiveTv} from "react-icons/md";
+import {MdLiveTv} from  'react-icons/md';
 import {LocalNewsCard} from "./LocalNewsCard";
 import Carousel from 'react-bootstrap/Carousel';
 

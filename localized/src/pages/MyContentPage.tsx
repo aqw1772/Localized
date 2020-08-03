@@ -8,6 +8,9 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import CardColumns from 'react-bootstrap/CardColumns';
 import { BsNewspaper } from "react-icons/bs";
 import { LocalNewsDeck } from "../components/LocalNewsDeck";
+import {BsCalendar} from "react-icons/bs";
+import UniversalNavBar from "../components/UniversalNavBar";
+import {UpcomingEventsDeck} from "../components/UpcomingEventsDeck";
 
 
 interface MyContentScreenProps {
@@ -23,9 +26,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
   render() {
     return (
       <div>
-        <button className="App-link" onClick={(e) => this.props.changePage(pages.EditCivilPage)}>
-            My Content Page
-        </button>
+        <UniversalNavBar changePage={this.props.changePage}/>
 
         <p className="p"> 
           Latest articles for you based on your interests <BsNewspaper/>
@@ -33,7 +34,6 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
         </p>
     
 
-      
         <CardDeck className="card-deck">
           <Card>
             <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Election_voting_20180128.jpg/1200px-Election_voting_20180128.jpg"/>
@@ -73,13 +73,19 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
             <Button variant="primary">Read More...</Button>
             </Card.Body>
           </Card>
+        
         </CardDeck>
 
-        <LocalNewsDeck />
+        
+        <UpcomingEventsDeck/>
+      
+
+        <LocalNewsDeck/>
 
         <div className="footer">
           <p>&copy; New Technologists 2020 - Team 13</p>
         </div>
+
 
 
       
