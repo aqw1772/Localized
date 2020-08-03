@@ -1,9 +1,10 @@
 import React from "react";
 import { pages } from "../App";
-import fb_logo from "../images/facebook.png";
-import  {BsFillChatFill} from "react-icons/bs";
+// import fb_logo from "../images/facebook.png";
+import  {BsFillChatFill, BsChatFill} from "react-icons/bs";
 import {BsPeopleFill} from "react-icons/bs";
 import {BsPlusCircleFill} from "react-icons/bs";
+import {BsChatSquareDotsFill} from "react-icons/bs";
 // imported bootstrap icons in code
 
 interface DesignCivilScreenProps {
@@ -27,9 +28,9 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
           <p> Select your method Prefered Method of Contact</p>
           <div className="addContact">
             {/* buttons with preffered method of contact */}
-            <button className ="contactf" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}>Facebook <img id="fb_logo" src={fb_logo}/></button>
-            <button className ="contactt" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Text Message <BsFillChatFill /> </button>
-            <button className ="contactm" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}>Microsoft Teams <BsPeopleFill /></button>
+            <button className ="contactm" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Microsoft Teams <BsPeopleFill /></button>
+            <button className ="contactg" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> GroupMe <BsChatSquareDotsFill /> </button>
+            <button className ="contactt" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Text Message<BsChatFill /></button>
           </div><br/>
           <p>Select your prefered topic of interests
           <button className="addbutton" onClick={(e)=> this.props.changePage(pages.BubblePage)} > Add interests <BsPlusCircleFill /> </button></p>
