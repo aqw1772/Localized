@@ -13,7 +13,6 @@ export class LocalNewsCard extends React.Component<LocalNewsCardProps>{
  render(){
      return(
         <Card className="LocalNewsCard">
-            {/* <MdPlayArrow className="PlayButton"/> */}
             <Card.Img className="LocalNewsPicture" variant="top" src={this.props.image}/>
             <MdPlayArrow className="PlayButton"/>
             <span className={this.props.topic}>{this.props.topic}</span>

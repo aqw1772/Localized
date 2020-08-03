@@ -255,25 +255,15 @@ span{
   margin-bottom: 3%;
 }
 
-/* .Thumbnail{
-  position: relative;
-  height: 60%;
-  width: 100%;
-}*/
-
 .PlayButton{
   position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: honeydew;
-  opacity: 30%;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+  top: 25%;
+  left: 45%;
+  color: white;
+  opacity: 70%;
+  transition: .2s;
+  height: 80px;
+  width: 80px;
 } 
 
 .PlayButton:hover {
