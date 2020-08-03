@@ -254,3 +254,28 @@ span{
 .LocalNewsDeck{
   margin-bottom: 3%;
 }
+
+/* .Thumbnail{
+  position: relative;
+  height: 60%;
+  width: 100%;
+}*/
+
+.PlayButton{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: honeydew;
+  opacity: 30%;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+} 
+
+.PlayButton:hover {
+  opacity: 100%;
+}

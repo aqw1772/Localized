@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import {MdPlayArrow} from "react-icons/md";
 
 interface LocalNewsCardProps{
     image: string;
@@ -12,7 +13,9 @@ export class LocalNewsCard extends React.Component<LocalNewsCardProps>{
  render(){
      return(
         <Card className="LocalNewsCard">
+            {/* <MdPlayArrow className="PlayButton"/> */}
             <Card.Img className="LocalNewsPicture" variant="top" src={this.props.image}/>
+            <MdPlayArrow className="PlayButton"/>
             <span className={this.props.topic}>{this.props.topic}</span>
             <Card.Body className="TwoColGridCard">
               <Card.Title className="column"><strong>{this.props.title}</strong></Card.Title>
