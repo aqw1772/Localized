@@ -20,9 +20,8 @@ export class SignUpPage extends React.Component<SignUpScreenProps> {
 
         {/* side nav bar containing image/welcome text */}
         <div className="sidenav">
-          <h1 className="title">Localized</h1>
           <img src={lc} alt="" className="lc"/>
-          <h3>information right at the tips of your finger</h3>
+          <h5 className="title">information at your fingertips...</h5>
         </div>
 
         {/* sign up form */}
@@ -32,15 +31,16 @@ export class SignUpPage extends React.Component<SignUpScreenProps> {
             <h4 className="createAccount">Sign up to create a new account</h4>
             <div className="firstName">
               <label htmlFor="firstName">First Name</label>
-              <input placeholder="First Name" type="text" name="firstName" required/>
+              <input 
+              placeholder="First Name" type="text" name="firstName" required/>
             </div>
             <div className="lastName">
               <label htmlFor="lastName">Last Name</label>
-              <input placeholder="Last Name" type="text" name="lastName" required/>
+              <input placeholder="Last Name" type="text" name="lastName" required />
             </div>
             <div className="email">
               <label htmlFor="email">Email</label>
-              <input  placeholder="Email" type="email" name="email"required />
+              <input  placeholder="Email" type="email" name="email" required />
             </div>
             <div className="password">
               <label htmlFor="password">Password</label>
@@ -48,11 +48,11 @@ export class SignUpPage extends React.Component<SignUpScreenProps> {
             </div>
             <div className="password">
               <label htmlFor="password">Confirm Password</label>
-              <input placeholder="Confirm Password" type="password" name="password" required/>
+              <input placeholder="Confirm Password" type="password" name="password" />
             </div>
             <div className="createAccount">
               <button type="submit" onClick={(e) => this.props.changePage(pages.BubblePage)}>Create Account</button>
-              <small>Already Have an Account?</small>
+              <small onClick={(e) => this.props.changePage(pages.SignInPage)}>Already Have an Account?</small>
             </div>
           </form>
         </div>
