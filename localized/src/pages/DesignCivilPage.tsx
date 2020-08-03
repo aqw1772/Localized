@@ -2,7 +2,7 @@ import React from "react";
 import { pages } from "../App";
 import fb_logo from "../images/facebook.png";
 import  {BsFillChatFill} from "react-icons/bs";
-import {BsFillEnvelopeOpenFill} from "react-icons/bs";
+import {BsPeopleFill} from "react-icons/bs";
 import {BsPlusCircleFill} from "react-icons/bs";
 // imported bootstrap icons in code
 
@@ -29,7 +29,7 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
             {/* buttons with preffered method of contact */}
             <button className ="contactf" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}>Facebook <img id="fb_logo" src={fb_logo}/></button>
             <button className ="contactt" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Text Message <BsFillChatFill /> </button>
-            <button className ="contacte" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}>Email <BsFillEnvelopeOpenFill /></button>
+            <button className ="contactm" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}>Microsoft Teams <BsPeopleFill /></button>
           </div><br/>
           <p>Select your prefered topic of interests
           <button className="addbutton" onClick={(e)=> this.props.changePage(pages.BubblePage)} > Add interests <BsPlusCircleFill /> </button></p>
