@@ -8,6 +8,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import CardColumns from 'react-bootstrap/CardColumns';
 import { BsNewspaper } from "react-icons/bs";
 import {BsCalendar} from "react-icons/bs";
+import UniversalNavBar from "../components/UniversalNavBar";
 
 
 interface MyContentScreenProps {
@@ -23,9 +24,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
   render() {
     return (
       <div>
-        <button className="App-link" onClick={(e) => this.props.changePage(pages.EditCivilPage)}>
-            My Content Page
-        </button>
+        <UniversalNavBar changePage={this.props.changePage}/>
 
         <p className="p"> 
           Latest articles for you based on your interests <BsNewspaper/>
@@ -79,39 +78,40 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
           Upcoming Events <BsCalendar />
         </p>
 
-        <CardDeck className= "Events-Deck">
-        <Card>
-            <Card.Img variant="top" src="https://www.redmond.gov/ImageRepository/Document?documentId=13898" />
-              <span className="Derby"> Derby Days</span>
-              <Card.Body>
-                <Card.Title><strong>Tuesday at 10am</strong></Card.Title>
-                <Card.Text>
-                  The Derby Days tradition continues in 2020 with our virtual edition. Celebrate Redmond with opportunities to participate in the Derby Dash 5K, Community Bike Challenge, Virtual Bike Decorating Parade, Derby Days Bingo, Rock-a-thon Open Mic, Derby Do Gooder scholarship, and Virtual Art Show. 
-                </Card.Text>
-                <Button variant="primary"> View Details</Button>
-              </Card.Body>
-          </Card>
+        <CardDeck className= "events-Deck">
           <Card>
-            <Card.Img variant="top" src= "https://www.redmond.gov/ImageRepository/Document?documentId=13870" />
-            <span className="Parade"> Bike Decorating Parade</span>
-              <Card.Body>
-                <Card.Title><strong>Sunday at 11am</strong></Card.Title>
-                <Card.Text>
-                  Decorate your bike and join us for a virtual bike parade to help celebrate virtual Derby Days 2020! Bike decorating is a long-standing Derby Days tradition and is a fun way to show your individual style. Add streamers, ribbons, balloons and any other decorations that inspire your creativity. 
-                </Card.Text>
-                <Button variant="primary"> View Details</Button>
-              </Card.Body>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src= "https://www.redmond.gov/ImageRepository/Document?documentID=9912" />
-            <span className="Lights"> Redmond Lights</span>
-              <Card.Body>
-                <Card.Title><strong>December 5&6, at 7pm</strong></Card.Title>
-                <Card.Text>
-                  This progressive, three-part event starts at Redmond City Hall and takes you on a luminary walk along the Sammamish River Trail to Downtown Park and the Redmond Town Center. On Saturday evening, a Winter Wonderland awaits you at Redmond Town Center, with a carousel, live ice carver, and more performances.
-                </Card.Text>
-                <Button variant="primary"> View Details</Button>
-              </Card.Body>
+              <Card.Img variant="top" src="https://www.redmond.gov/ImageRepository/Document?documentId=13898" />
+                <span className="Derby"> Derby Days</span>
+                <Card.Body>
+                  <Card.Title><strong>Tuesday at 10am</strong></Card.Title>
+                  <Card.Text>
+                    The Derby Days tradition continues in 2020 with our virtual edition. 
+                  </Card.Text>
+                  <Button variant="primary"> View Details</Button>
+                </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img variant="top" src= "https://www.redmond.gov/ImageRepository/Document?documentId=13870" />
+              <span className="Parade"> Bike Decorating Parade</span>
+                <Card.Body>
+                  <Card.Title><strong>Sunday at 11am</strong></Card.Title>
+                  <Card.Text>
+                    Decorate your bike and join us for a virtual bike parade to help celebrate virtual Derby Days 2020!
+                  </Card.Text>
+                  <Button variant="primary"> View Details</Button>
+                </Card.Body>
+            </Card>
+            <Card>
+            {/* <a  className= "eventsa" href="https://www.redmond.gov/1138/Derby-Days"> */}
+            <Card.Img variant="top"  src= "https://www.redmond.gov/ImageRepository/Document?documentID=9912" />
+              <span className="Lights"> Redmond Lights</span>
+                <Card.Body>
+                  <Card.Title><strong>Saturday at 7pm</strong></Card.Title>
+                  <Card.Text>
+                    This progressive, three-part event starts at Redmond City Hall and takes you to the Redmond Town Center.
+                  </Card.Text>
+                  <Button variant="primary"> View Details</Button>
+                </Card.Body>
           </Card>
 
         </CardDeck>
