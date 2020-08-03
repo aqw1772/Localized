@@ -17,8 +17,8 @@ class UniversalNavBar extends React.Component<UniversalNavBarProps> {
             <Navbar.Brand >Simpler Styling</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav>
-                <Nav.Link className="mr-auto" onClick={(e: any)=> this.props.changePage(pages.DesignCivilPage) }>Civil Supporter</Nav.Link>
+              <Nav className="mr-auto">
+                <Nav.Link onClick={(e)=> this.props.changePage(pages.DesignCivilPage) }>Civil Supporter</Nav.Link>
                 <Nav.Link>My Content</Nav.Link>
               </Nav>
               <Form inline>
