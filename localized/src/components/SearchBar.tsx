@@ -8,6 +8,7 @@ export class SearchBar extends React.Component<{}> {
         return (
             <div className="SearchBar">
                 <form id="TopSearchForm" action="https://www.bing.com/search" method="GET" target="_blank">
+                    {/* */}
                     <form onSubmit={this.onKeyUp} ><input style={{borderRadius: '10px', width: '250px'}} id="searchInput" type="text" name="q" placeholder="Search" /></form>
                     
                 </form>
@@ -21,10 +22,11 @@ export class SearchBar extends React.Component<{}> {
             
             let input = (document.getElementById("searchInput") as HTMLInputElement);
             let searchTerm = input.value;
-
             input.value = "";
 
             // Submit the outer form using this 
+            // In hinesight the form being submitted, is simultaneously replaced by a new form th
+            // that's empty
             let form = (document.getElementById("TopSearchForm") as HTMLFormElement);
             let searchInput = (document.createElement("input") as HTMLInputElement);
             searchInput.setAttribute('type', 'text');
