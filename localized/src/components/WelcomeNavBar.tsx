@@ -26,7 +26,7 @@ class WelcomeNavBar extends React.Component<IWelcomeNavBarProps> {
                 <img src={ComputerMacOS}></img>
                 <img src={phone}></img>
                 <img className="navButton" src={SignUp} onClick={(e) => this.props.changePage(pages.SignUpPage)}></img>
-                <img className="navButton" src={Login} onClick={(e) => this.props.changePage(pages.MyContentPage)}></img>
+                <img className="navButton" src={Login} onClick={(e) => this.props.changePage(pages.SignInPage)}></img>
             </div>
         )
     };
