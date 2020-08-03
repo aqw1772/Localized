@@ -7,12 +7,9 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import CardGroup from 'react-bootstrap/CardGroup';
 import CardColumns from 'react-bootstrap/CardColumns';
 import { BsNewspaper } from "react-icons/bs";
-<<<<<<< HEAD
+import { LocalNewsDeck } from "../components/LocalNewsDeck";
 import {BsCalendar} from "react-icons/bs";
 import UniversalNavBar from "../components/UniversalNavBar";
-=======
-import { LocalNewsDeck } from "../components/LocalNewsDeck";
->>>>>>> 4fc66d34c08683c9f254be8e61c38892a534eab1
 
 
 interface MyContentScreenProps {
