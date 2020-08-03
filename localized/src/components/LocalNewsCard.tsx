@@ -5,6 +5,7 @@ interface LocalNewsCardProps{
     image: string;
     title: string;
     caption: string;
+    topic: string;
 }
 
 export class LocalNewsCard extends React.Component<LocalNewsCardProps>{
@@ -12,7 +13,7 @@ export class LocalNewsCard extends React.Component<LocalNewsCardProps>{
      return(
         <Card className="LocalNewsCard">
             <Card.Img className="LocalNewsPicture" variant="top" src={this.props.image}/>
-            <span className="voting">Voting</span>
+            <span className={this.props.topic}>{this.props.topic}</span>
             <Card.Body className="TwoColGridCard">
               <Card.Title className="column"><strong>{this.props.title}</strong></Card.Title>
               <Card.Text className="column">

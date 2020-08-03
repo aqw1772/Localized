@@ -12,8 +12,10 @@ export class LocalNewsDeck extends React.Component<{}>{
                     <hr className="lineTitle"></hr>
                 </p>
                 <CardDeck className="LocalNewsDeck">
-                    <LocalNewsCard image="https://www.gizmodo.com.au/content/uploads/sites/2/2020/07/07/a4myq463ikgrijkrl80o-732x411.jpg" title="Amazon pays federal income tax for the first time since 2016 -" caption= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error, voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim." />
-                    <LocalNewsCard image="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Election_voting_20180128.jpg/1200px-Election_voting_20180128.jpg" title="Mail Voting gone wrong again -WSJ" caption= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere minus nesciunt deleniti dolore error, voluptate nostrum eligendi assumenda autem possimus nemo natus! Sit inventore dolor rem adipisci quas enim." />
+                    <LocalNewsCard image="https://komonews.com/resources/media/e5a4f1a7-15ad-4064-8364-f19067e6321f-large16x9_thumb_85010.png?1595385874086" title="2020 Primary Voter's Guide - The Seattle Times" caption= "It’s been an unusual time for campaigning. The COVID-19 pandemic has changed the rules of engagement with voters — less contact, fewer personal appearances by most candidates, but not all." 
+                    topic="Voting"/>
+                    <LocalNewsCard image="https://seattlemedium.com/wp-content/uploads/2020/06/BLM-silent-march-main-5G4A6549.jpg" title="Highlights of Black Lives Matter Seattle-King County March" caption= "The march was planned as a silent event to honor those killed by police brutality and institutionalized racism. Additionally, according to BLM, the silence was intended to help mitigate the risk of spreading the COVID-19 coronavirus..." 
+                    topic="Protests"/>
                 </CardDeck>
             </div>
         );

@@ -190,18 +190,18 @@ span{
   padding-top: 4px;
 }
 
-.voting{
+.Voting{
   border: 2px solid #0CA6AE;
   background-color: #0CA6AE;
 }
 
-.school{
+.Schools{
   border: 2px solid #EC6A5F;
   background-color: #EC6A5F;
 
 }
 
-.protest{
+.Protests{
   border: 2px solid #F5BF4F;
   background-color: #F5BF4F;
 }
@@ -238,15 +238,19 @@ span{
   margin-right: 62%;
 }
 
+/* Created two column for card body */
 .column {
   float: left;
   width: 50%;
 }
 
+/* adjusted the picture size for local news card */
 .LocalNewsCard img{
   height: 60%; 
+  width: 100%;
 }
 
+/* Creating space between last deck and footer */
 .LocalNewsDeck{
   margin-bottom: 3%;
 }
