@@ -78,44 +78,6 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
 
         
         <UpcomingEventsDeck/>
-        {/* <CardDeck className= "events-Deck">
-          <Card>
-              <Card.Img variant="top" src="https://www.redmond.gov/ImageRepository/Document?documentId=13898" />
-                <span className="Derby"> Derby Days</span>
-                <Card.Body>
-                  <Card.Title><strong>Tuesday at 10am</strong></Card.Title>
-                  <Card.Text>
-                    The Derby Days tradition continues in 2020 with our virtual edition. 
-                  </Card.Text>
-                  <Button variant="primary"> View Details</Button>
-                </Card.Body>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src= "https://www.redmond.gov/ImageRepository/Document?documentId=13870" />
-              <span className="Parade"> Bike Decorating Parade</span>
-                <Card.Body>
-                  <Card.Title><strong>Sunday at 11am</strong></Card.Title>
-                  <Card.Text>
-                    Decorate your bike and join us for a virtual bike parade to help celebrate virtual Derby Days 2020!
-                  </Card.Text>
-                  <Button variant="primary"> View Details</Button>
-                </Card.Body>
-            </Card>
-            <Card>
-            {/* <a  className= "eventsa" href="https://www.redmond.gov/1138/Derby-Days"> */}
-            {/* <Card.Img variant="top"  src= "https://www.redmond.gov/ImageRepository/Document?documentID=9912" />
-              <span className="Lights"> Redmond Lights</span>
-                <Card.Body>
-                  <Card.Title><strong>Saturday at 7pm</strong></Card.Title>
-                  <Card.Text>
-                    This progressive, three-part event starts at Redmond City Hall and takes you to the Redmond Town Center.
-                  </Card.Text>
-                  <Button variant="primary"> View Details</Button>
-                </Card.Body>
-          </Card>  */}
-
-        {/* </CardDeck> */}
-
       
 
         <LocalNewsDeck/>
