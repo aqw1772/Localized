@@ -61,6 +61,27 @@ class MyContentSidebar extends React.Component<IMyContentSidebarProps> {
                 <br></br>
                 <br></br>
                 <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+
                 <span className="logout" onClick={(e) => this.props.changePage(pages.WelcomePage)}>
                     Logout
                 </span>

@@ -29,6 +29,9 @@ export class WelcomePage extends React.Component<WelcomeScreenProps> {
           <img id="" src={iPhone_screenshot}></img>
           {/* Click on the iPhone to advance to the next page (haven't made the sign-up button yet) */}
         </div>
+        <div className="footer">
+          <p>&copy; New Technologists 2020 - Team 13</p>
+        </div>
       </div>
     );
   }
