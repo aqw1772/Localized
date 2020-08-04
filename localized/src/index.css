@@ -258,7 +258,7 @@ input[type="checkbox"] {
 }
 
 .myContentSidebar .logout {
-  border-radius: 26px;
+  border-radius: 6px;
   height: 40px;
   width: 173px;
   text-align: center;
@@ -270,6 +270,7 @@ input[type="checkbox"] {
   padding-left: 20px;
   padding-right: 20px;
   cursor: pointer;
+  top: -50%;
 }
 
 /*  beginning of styling for the cards in my content page */
@@ -740,6 +741,10 @@ hr.subhead {
   margin-bottom: auto;
 }
 
+.ArticlesTitle svg {
+  margin-left: 5px;
+}
+
 /* CSS styling for the local news row */
 .LocalNews{
   margin-top: 50px;
@@ -818,7 +823,7 @@ hr.subhead {
 }
 
 .searchBar{
-  width: 130px;
+  width: 250px;
   border-radius: 7px;
   font-size: 14px;
   background-color: white;
@@ -838,9 +843,4 @@ hr.subhead {
   box-sizing: border-box;
 }
 
-.searchBar:focus{
-  transition:  .3s ease-out;
-  width: 250px;
-  outline: none;
-}
 

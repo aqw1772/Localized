@@ -43,10 +43,13 @@ h2{
 /*Styled the button on bubble page*/
 .nextBtn{
   float: right;
-  border-color: black;
   color: dodgerblue;
   font-size: 30px;
   margin-right: 20px;
+  border-radius: 15px;
+  background: white;
+  border: none;
+  transition: .2s;
 }
 
 /* Next button hover effect*/
