@@ -638,20 +638,7 @@ hr.subhead {
   flex-wrap: wrap;
   flex: 10%;
 }
-.addInterest .interests1{
-  /* flex-wrap: wrap; */
-  flex: 33.33%;
-  padding:20px;
-  margin: 10px;
- flex-wrap: nowrap; 
- align-content: space-between;
- color: white;
 
- padding: 10px 24px;
- background:#206AD8;
- border-radius: 15px;
- 
-}
 .interests{
   flex: 10%;
   margin: 10px;

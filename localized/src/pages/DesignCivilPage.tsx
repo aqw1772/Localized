@@ -24,15 +24,10 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
     return (
       // Class wrapper with Design Class wrapping contact and interests.
       <div className="Design">  
-<<<<<<< HEAD
            <UniversalNavBar changePage={this.props.changePage}/>
            <p className="maintag"> Design your Civil Supporter</p>
           <p className="subhead"> Select your method Prefered Method of Contact <hr className="subhead"></hr></p>
 
-=======
-          <UniversalNavBar changePage={this.props.changePage}/>
-          <p> Select your method Prefered Method of Contact</p>
->>>>>>> 0e646a4fd1ab00772f8a5dd82444a0e442bd10c6
           <div className="addContact">
             {/* buttons with preffered method of contact */}
             <button className ="contactm" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Microsoft Teams <BsPeopleFill /></button>
