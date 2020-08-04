@@ -12,7 +12,7 @@ interface UpcomingEventsCardProps{
 export class UpcomingEventsCard extends React.Component<UpcomingEventsCardProps>{
     render(){
         return(
-            <Card className="UpcomingEventsCard">
+            <Card>
               <Card.Img variant="top" src={this.props.image}/>
               {/* <span className={this.props.topic}>{this.props.topic}</span> */}
               <Card.Body className="TwoColGridCard">
