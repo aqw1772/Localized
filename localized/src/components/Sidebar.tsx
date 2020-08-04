@@ -46,9 +46,9 @@ class MyContentSidebar extends React.Component<IMyContentSidebarProps> {
                 </span>
                 <input id="arrow" className="arrow" type="checkbox"></input><BsChevronRight/>
                 <div className="interests">
-                    <span className="school">School</span> 
-                    <span className="protest">Protest</span>
-                    <span className="voting">Voting</span>
+                    <span className="Schools">Schools</span> 
+                    <span className="Protests">Protests</span>
+                    <span className="Voting">Voting</span>
                 </div>
                 <br></br>
                 <br></br>
