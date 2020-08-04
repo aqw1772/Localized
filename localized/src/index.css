@@ -457,7 +457,7 @@ hr.subhead {
   font-weight:bolder;
   font-size:20px;
   color: white;
-  width: 650px;
+  width: 6px;
 }
 /* styling for interests button */
 .interests1{
@@ -472,7 +472,7 @@ hr.subhead {
  padding: 10px 24px;
  background:#206AD8;
  border-radius: 15px;
- /* clear: both; */
+ 
 }
 
 .interests2{
@@ -487,7 +487,7 @@ hr.subhead {
  padding: 10px 24px;
  background:#206AD8;
  border-radius: 15px;
- /* clear: both; */
+ 
 }
 
 .interests{
@@ -499,7 +499,7 @@ hr.subhead {
  border-radius:15px;
   background:#206AD8;
   color: white;
-  /* clear: both; */
+  
 }
 .addInterest{
   display:flex;
