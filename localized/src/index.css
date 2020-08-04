@@ -409,9 +409,10 @@ position: relative;
 
   padding: 20px;
   /* float: left; */
-  margin-right: 70px;
+  margin: 70px;
   background: rgb(93, 93, 223);
   border-radius: 15px;
+  color: white;
 }
 .contactg{
   padding: 20px; 
@@ -419,58 +420,87 @@ position: relative;
   margin: 70px;
   background: #318CE7;
   border-radius: 15px;
+  color: white;
 }
 .contactt{
   display: inline-block;
   padding: 20px; 
+  margin: 70px;
   background:#47B200;
   text-align: center;
   border-radius: 15px;
+  color: white;
 } 
 /* styling for font on all page */
 .Design{
   font-family: 'raleway';
 }
+.subhead{
+  text-align:left;
+  padding-left:6%;  
+  font-size: 25px
+  
+}
+
+hr.subhead {
+  text-align:left;
+  padding-left:8%;  
+  margin-left: 10px;
+}
+
 /* styling for css title */
 .maintag{
   font-weight:bolder;
   font-size:50px;
 }
+.maintag1{
+  font-weight:bolder;
+  font-size:20px;
+  color: white;
+}
 /* styling for interests button */
 .interests1{
-  /* flex-wrap: wrap; */
-  flex: 33.33%;
+  flex-wrap: wrap;
+  flex: 10%;
   padding:20px;
   margin: 10px;
  flex-wrap: nowrap; 
  align-content: space-between;
+ color: white;
+
+ padding: 10px 24px;
  background:#206AD8;
  border-radius: 15px;
  /* clear: both; */
 }
+
 .interests{
  
-  flex: 33.33%;
+flex: 10%;
   margin: 10px;
   padding:20px;
   flex-wrap: nowrap;
   align-content: space-between;
+ border-radius:15px;
   background:#206AD8;
-  border-radius: 15px;
+  color: white;
   /* clear: both; */
 }
 .addInterest{
   display:flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   align-content: space-between;
+ 
   
 }
 .addbutton{
-  float: right;
-  margin-bottom:10%;
-  padding: 15px;
+  padding:20px;
   background:#206AD8 ;
   border-radius: 15px;
+  position: relative;
+  top: -50px;
+  float:right;
+  color: white;
 }
 
 /* CSS styling for the local news row */
