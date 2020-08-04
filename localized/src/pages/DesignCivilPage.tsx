@@ -5,6 +5,7 @@ import  {BsFillChatFill, BsChatFill} from "react-icons/bs";
 import {BsPeopleFill} from "react-icons/bs";
 import {BsPlusCircleFill} from "react-icons/bs";
 import {BsChatSquareDotsFill} from "react-icons/bs";
+import UniversalNavBar from "../components/UniversalNavBar";
 // imported bootstrap icons in code
 
 interface DesignCivilScreenProps {
@@ -22,9 +23,9 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
     return (
       // Class wrapper with Design Class wrapping contact and interests.
       <div className="Design">  
-          {/* <button className="App-link" onClick={(e) => this.props.changePage(pages.MyContentPage)}> */}
+           <UniversalNavBar changePage={this.props.changePage}/>
            <p className="maintag"> Design Civil Supporter Page</p>
-          {/* </button> */}
+          
           <p> Select your method Prefered Method of Contact</p>
           <div className="addContact">
             {/* buttons with preffered method of contact */}
