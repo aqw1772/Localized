@@ -118,12 +118,29 @@ code {
   margin-bottom: 10px;
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 0px !important;
+}
+
+.nav-link {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: larger;
+}
+
+.navbar img {
+  margin-left: 20px;
+}
+
 .myContentSidebar {
-  height: 88.6%; /* Full-height: remove this if you want "auto" height */
+  height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 250px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
-  margin-top: 75px;
+  margin-top: 66px;
   top: 0; /* Stay at the top -- **THIS WILL CHANGE WHEN NAV BAR IS IMPLEMENTED** */
   left: 0;
   background-color: #F0F2F5;
@@ -472,7 +489,7 @@ input:focus {
   }
   
   .createAccount small {
-    color: #999;
+    color: rgb(131, 130, 130);
     font-weight: lighter;
     font-size: 1em;
     margin-top: 3px;
@@ -562,7 +579,7 @@ position: relative;
   border-radius: 15px;
 } 
 
-.interests1{
+.addInterest .interests1{
   /* flex-wrap: wrap; */
   flex: 33.33%;
   padding:20px;
@@ -573,7 +590,7 @@ position: relative;
  border-radius: 15px;
  /* clear: both; */
 }
-.interests{
+.addInterest .interests{
  
   flex: 33.33%;
   margin: 10px;
