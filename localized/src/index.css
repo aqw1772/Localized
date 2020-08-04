@@ -125,10 +125,15 @@ code {
   margin-bottom: 0px !important;
 }
 
-.nav-link {
+.navbar a{
   margin-top: auto;
   margin-bottom: auto;
   font-size: larger;
+  color: white !important;
+}
+
+.navbar a:hover {
+  color: rgb(219, 219, 219) !important;
 }
 
 .navbar img {
@@ -679,7 +684,6 @@ position: relative;
 .UpcomingEventsCard {
   width: 33.33rem !important;
   margin-left: 10px;
-  margin-top:20px;
 }
 
 .PlayButton{
