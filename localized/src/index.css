@@ -201,10 +201,10 @@ input[type="checkbox"] {
   opacity: 0;
   cursor: pointer;
 }
-
+/* 
 .interests {
   display: none;
-}
+} */
 
 #arrow:checked ~ svg {
   transform: rotate(90deg);
@@ -564,7 +564,7 @@ position: relative;
 /* text-align: center; */
 }
 
-.contactf{
+.contactm{
   padding: 20px;
   /* float: left; */
   margin: 70px;
@@ -616,8 +616,9 @@ hr.subhead {
   font-weight:bolder;
   font-size:20px;
   color: white;
-  width: 6px;
+  width: 650px;
 }
+
 /* styling for interests button */
 .interests1{
   flex-wrap: wrap;
@@ -635,16 +636,27 @@ hr.subhead {
 }
 
 .interests{
+  /* flex-wrap: wrap; */
   flex: 10%;
+  padding: 20px !important;
   margin: 10px;
   color: white;
+  flex-wrap: nowrap; 
+  /* align-content: space-between;
+  color: white; */
   
+  padding: 10px 24px;
+  background:#206AD8;
+  border-radius: 15px;
 }
 .addInterest{
-  display:flex;
-  flex-wrap: wrap;
+  /* display:flex; */
+  /* flex-wrap: wrap-reverse; */
+  flex:wrap;
   align-content: space-between;
   width: 90%;
+  margin-left:200px;
+  margin-right:20opx;
 }
 
 .addInterest button {
@@ -656,22 +668,26 @@ hr.subhead {
   width: 90%;
   height: 30px;
   margin-bottom: 60px;
+  
 }
 
 .civilInterestRow2{
   width: 90%;
   height: 30px;
   margin-bottom: 60px;
+  
+
 }
+/* styling for add interest button */
 
 .addbutton{
   padding:20px;
-  padding-top: 5px;
-  padding-bottom: 40px;
-  background:#206AD8 ;
+  padding-top:5px;
+  padding-bottom: 60px;
+  background:#206AD8;
   border-radius: 15px;
   position: absolute;
-  top: 50%;
+  top:45%;
   left: 32%;
   color: white;
   height: 50px;
