@@ -427,6 +427,14 @@ position: relative;
   text-align: center;
   border-radius: 15px;
 } 
+.Design{
+  font-family: 'raleway';
+}
+.maintag{
+  font-style: normal;
+  font-weight: 400;
+}
+/* styling for interests button */
 .interests1{
   /* flex-wrap: wrap; */
   flex: 33.33%;
