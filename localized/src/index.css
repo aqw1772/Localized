@@ -427,9 +427,11 @@ position: relative;
   text-align: center;
   border-radius: 15px;
 } 
+/* styling for font on all page */
 .Design{
   font-family: 'raleway';
 }
+/* styling for css title */
 .maintag{
   font-weight:bolder;
   font-size:50px;
