@@ -5,8 +5,8 @@ import phoneLaptop from "../images/phone-laptop.png";
 import largeTablet from "../images/largeTablet.png";
 import ComputerMacOS from "../images/ComputerMacOS.png";
 import phone from "../images/phone.png";
-import SignUp from "../images/SignUp.png";
-import Login from "../images/Login.png";
+import SignUp from "../images/SignUp.svg";
+import Login from "../images/login.svg";
 
 //NavBar for the Welcome/Landing page
 //The component will include icons of accessible devices in addition to 2 buttons for Sign Up and Login
