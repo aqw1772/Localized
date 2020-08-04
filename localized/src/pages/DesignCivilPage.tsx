@@ -45,7 +45,7 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
             <button className="interests" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Budget</button>
         </div> <br/>
         <button className="App-click" onClick={(e) => this.props.changePage(pages.MyContentPage)}>
-         <p> Create my Civil Supporter!</p> 
+         <p className="maintag1"> Create my Civil Supporter!</p> 
           </button>
     
     </div>
