@@ -203,10 +203,11 @@ input[type="checkbox"] {
   opacity: 0;
   cursor: pointer;
 }
-/* 
+
+
 .interests {
   display: none;
-} */
+}
 
 #arrow:checked ~ svg {
   transform: rotate(90deg);
@@ -570,41 +571,56 @@ position: relative;
 /* text-align: center; */
 }
 
+.addContact button{
+  outline: none;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
 .contactm{
-  padding: 20px;
+  padding: 30px;
+  width: 280px; 
   /* float: left; */
   margin: 70px;
   background: rgb(93, 93, 223);
   border-radius: 15px;
   color: white;
+  font-size: x-large;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .contactg{
-  padding: 20px; 
+  padding: 30px;
+  width: 250px; 
   display: inline-block;
   margin: 70px;
   background: #318CE7;
   border-radius: 15px;
   color: white;
+  font-size: x-large;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contactt{
   display: inline-block;
-  padding: 20px; 
+  padding: 30px; 
+  width: 250px;
   margin: 70px;
   background:#47B200;
   text-align: center;
   border-radius: 15px;
   color: white;
+  font-size: x-large;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
 /* styling for font on all page */
 .Design{
   font-family: 'raleway';
 }
+
 .subhead{
   text-align:left;
   padding-left:6%;  
-  font-size: 25px
-  
+  font-size: 25px  
 }
 
 hr.subhead {
@@ -617,6 +633,10 @@ hr.subhead {
 .maintag{
   font-weight:bolder;
   font-size:50px;
+  margin-top: 70px;
+  margin-left: 25%;
+  margin-right: 22%;
+  text-align: center;
 }
 .maintag1{
   font-weight:bolder;
@@ -641,7 +661,7 @@ hr.subhead {
  
 }
 
-.interests{
+.interests2{
   /* flex-wrap: wrap; */
   flex: 10%;
   padding: 20px !important;
@@ -661,13 +681,16 @@ hr.subhead {
   flex:wrap;
   align-content: space-between;
   width: 90%;
-  margin-left:200px;
-  margin-right:20opx;
+  margin-left: 165px;
+  margin-right: 200px;
 }
 
 .addInterest button {
-  width: 400px;
+  width: 300px;
   font-size: x-large;
+  outline: none;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
 }
 
 .civilInterestRow1{
@@ -680,23 +703,41 @@ hr.subhead {
 .civilInterestRow2{
   width: 90%;
   height: 30px;
-  margin-bottom: 60px;
-  
-
+  margin-bottom: 60px;  
 }
 /* styling for add interest button */
 
 .addbutton{
   padding:20px;
   padding-top:5px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   background:#206AD8;
   border-radius: 15px;
   position: absolute;
-  top:45%;
+  top: 53.5%;
   left: 32%;
   color: white;
   height: 50px;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
+.createButton {
+  background:#206AD8;
+  border-radius: 15px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
+.createButton p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /* CSS styling for the local news row */
