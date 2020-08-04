@@ -16,7 +16,8 @@ export class UpcomingEventsCard extends React.Component<UpcomingEventsCardProps>
               <Card.Img variant="top" src={this.props.image}/>
               {/* <span className={this.props.topic}>{this.props.topic}</span> */}
               <Card.Body className="TwoColGridCard">
-                <Card.Title className="column1"><strong>{this.props.title}</strong></Card.Title>
+
+        <Card.Title className="column1"><strong>{this.props.topic}: {this.props.title}</strong></Card.Title>
                 <Card.Text className="column1">
                   {this.props.caption}
                 </Card.Text>

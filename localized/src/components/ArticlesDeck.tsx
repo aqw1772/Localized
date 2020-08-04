@@ -16,7 +16,7 @@ export class ArticlesDeck extends React.Component<{}>{
                 </p>
                 <CardDeck className="ArticlesDeck">
                    <ArticlesCard link="https://www.goredmond.com/schools" image=" https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/BostonSchoolSt3.JPG/1200px-BostonSchoolSt3.JPG" title="School Pool Program" caption="The Redmond SchoolPool program encourages students and their families to Walk and Roll when traveling to their neighborhood school in October!
-                    By leaving the car behind, we're reducing neighborhood traffic..." topic="Schools"/>
+                    By leaving the car behind..." topic="Schools"/>
                    <ArticlesCard link="https://www.redmond.gov/CivicAlerts.aspx?AID=169" image="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Election_voting_20180128.jpg/1200px-Election_voting_20180128.jpg" title="Ballot boxes for General Elections are open!" caption="Ballot boxes for the 2019 General Election are open! No postage required for ballots returned via US Mail. Ballots must be postmarked or dropped off 
                    at a ballot... " 
                     topic="Voting"/>

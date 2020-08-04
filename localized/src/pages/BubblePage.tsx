@@ -18,7 +18,7 @@ export class BubblePage extends React.Component<BubbleScreenProps> {
 
   render() {
     return (
-      <div>
+      <div className="Design">
         <UniversalNavBar changePage={this.props.changePage}/>
           <br></br>
           <br></br>

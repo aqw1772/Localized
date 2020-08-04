@@ -27,7 +27,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
 
   render() {
     return (
-      <div>
+      <div className="Design">
         <UniversalNavBar changePage={this.props.changePage}/>
         <Sidebar changePage={this.props.changePage} userInterests={"Implement redux here"}/>
         <ArticlesDeck/>

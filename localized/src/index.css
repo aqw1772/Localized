@@ -204,6 +204,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
+
 .interests {
   display: none;
 }
@@ -570,64 +571,173 @@ position: relative;
 /* text-align: center; */
 }
 
-.contactf{
-  padding: 20px;
-  /* float: left; */
-  margin-right: 70px;
-  background: rgb(93, 93, 223);
-  border-radius: 15px;
+.addContact button{
+  outline: none;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
 }
 
-.contacte{
-  padding: 20px; 
+.contactm{
+  padding: 30px;
+  width: 280px; 
+  /* float: left; */
+  margin: 70px;
+  background: rgb(93, 93, 223);
+  border-radius: 15px;
+  color: white;
+  font-size: x-large;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contactg{
+  padding: 30px;
+  width: 250px; 
   display: inline-block;
   margin: 70px;
-  background: red;
+  background: #318CE7;
   border-radius: 15px;
+  color: white;
+  font-size: x-large;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contactt{
   display: inline-block;
-  padding: 20px; 
+  padding: 30px; 
+  width: 250px;
+  margin: 70px;
   background:#47B200;
   text-align: center;
   border-radius: 15px;
+  color: white;
+  font-size: x-large;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
+/* styling for font on all page */
+.Design{
+  font-family: 'raleway';
+}
 
-.addInterest .interests1{
-  /* flex-wrap: wrap; */
-  flex: 33.33%;
-  padding:20px;
+.subhead{
+  text-align:left;
+  padding-left:6%;  
+  font-size: 25px  
+}
+
+hr.subhead {
+  text-align:left;
+  padding-left:8%;  
+  margin-left: 10px;
+}
+
+/* styling for css title */
+.maintag{
+  font-weight:bolder;
+  font-size:50px;
+  margin-top: 70px;
+  margin-left: 25%;
+  margin-right: 22%;
+  text-align: center;
+}
+.maintag1{
+  font-weight:bolder;
+  font-size:20px;
+  color: white;
+  width: 650px;
+}
+
+/* styling for interests button */
+.interests1{
+  flex-wrap: wrap;
+  flex: 10%;
+  padding: 20px !important;
   margin: 10px;
  flex-wrap: nowrap; 
  align-content: space-between;
+ color: white;
+
+ padding: 10px 24px;
  background:#206AD8;
  border-radius: 15px;
- /* clear: both; */
-}
-.addInterest .interests{
  
-  flex: 33.33%;
+}
+
+.interests2{
+  /* flex-wrap: wrap; */
+  flex: 10%;
+  padding: 20px !important;
   margin: 10px;
-  padding:20px;
-  flex-wrap: nowrap;
-  align-content: space-between;
+  color: white;
+  flex-wrap: nowrap; 
+  /* align-content: space-between;
+  color: white; */
+  
+  padding: 10px 24px;
   background:#206AD8;
   border-radius: 15px;
-  /* clear: both; */
 }
 .addInterest{
-  display:flex;
-  flex-wrap: wrap;
+  /* display:flex; */
+  /* flex-wrap: wrap-reverse; */
+  flex:wrap;
   align-content: space-between;
+  width: 90%;
+  margin-left: 165px;
+  margin-right: 200px;
+}
+
+.addInterest button {
+  width: 300px;
+  font-size: x-large;
+  outline: none;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
+.civilInterestRow1{
+  width: 90%;
+  height: 30px;
+  margin-bottom: 60px;
   
 }
+
+.civilInterestRow2{
+  width: 90%;
+  height: 30px;
+  margin-bottom: 60px;  
+}
+/* styling for add interest button */
+
 .addbutton{
-  float: right;
-  margin-bottom:10%;
-  padding: 15px;
-  background:#206AD8 ;
+  padding:20px;
+  padding-top:5px;
+  padding-bottom: 30px;
+  background:#206AD8;
   border-radius: 15px;
+  position: absolute;
+  top: 53.5%;
+  left: 32%;
+  color: white;
+  height: 50px;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
+.createButton {
+  background:#206AD8;
+  border-radius: 15px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
+.createButton p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /* CSS styling for the local news row */

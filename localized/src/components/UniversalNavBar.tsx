@@ -22,12 +22,14 @@ class UniversalNavBar extends React.Component<UniversalNavBarProps> {
             <SearchBar />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
+
                 <Nav.Link onClick={(e)=> this.props.changePage(pages.DesignCivilPage) }>Civil Supporter</Nav.Link>
                 <Nav.Link onClick={(e)=> this.props.changePage(pages.MyContentPage) }>My Content</Nav.Link>
                 <Image style={{width: 50, height: 'auto'}} src={Satya}/>
                 {/* <Navbar.Text>
                   Signed in as: Satya Nadella
                 </Navbar.Text> */}
+
               </Nav>
             </Navbar.Collapse>
           </Navbar> 
