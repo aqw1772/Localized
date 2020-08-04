@@ -34,7 +34,7 @@ class BubbleList extends React.Component<BubbleListProps> {
                         gravity={[0,2]}
                         className="world"
                     >
-                        <Item restitution={1} initialImpulse={[70,70]}><div id="Protest"><Bubble name="Protest"/></div></Item>
+                        <Item restitution={1} initialImpulse={[70,70]}><div id="Protests"><Bubble name="Protests"/></div></Item>
                         <Item restitution={1} initialImpulse={[70,70]}><div id="Voting"><Bubble name="Voting"/></div></Item>
                         <Item restitution={1} initialImpulse={[70,70]}><div id="Budget"><Bubble name="Budget"/></div></Item>
                         <Item restitution={1} initialImpulse={[70,70]}><div id="Traffic"><Bubble name="Traffic"/></div></Item>

@@ -8,6 +8,8 @@ export class ArticlesDeck extends React.Component<{}>{
     render(){
         return(
             <div>
+                <br/>
+                <br></br>
                 <p className="p3"> 
                     <div className="ArticlesTitle"> Latest articles for you based on your interests<BsNewspaper /></div>
                     <hr></hr>

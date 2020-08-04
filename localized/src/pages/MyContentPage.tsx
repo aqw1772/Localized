@@ -7,6 +7,7 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import CardGroup from 'react-bootstrap/CardGroup';
 import CardColumns from 'react-bootstrap/CardColumns';
 import { BsNewspaper } from "react-icons/bs";
+import Sidebar from "../components/Sidebar";
 import { LocalNewsDeck } from "../components/LocalNewsDeck";
 import {BsCalendar} from "react-icons/bs";
 import UniversalNavBar from "../components/UniversalNavBar";
@@ -28,6 +29,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
     return (
       <div>
         <UniversalNavBar changePage={this.props.changePage}/>
+        <Sidebar changePage={this.props.changePage} userInterests={"Implement redux here"}/>
         <ArticlesDeck/>
         <UpcomingEventsDeck/>
         <LocalNewsDeck/>
@@ -39,4 +41,3 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
     );
   }
 }
-
