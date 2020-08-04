@@ -431,8 +431,8 @@ position: relative;
   font-family: 'raleway';
 }
 .maintag{
-  font-style: normal;
-  font-weight: 400;
+  font-weight:bolder;
+  font-size:50px;
 }
 /* styling for interests button */
 .interests1{
