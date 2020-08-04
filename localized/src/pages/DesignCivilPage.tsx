@@ -25,24 +25,25 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
       <div className="Design">  
            <UniversalNavBar changePage={this.props.changePage}/>
            <p className="maintag"> Design your Civil Supporter</p>
-          
-          <p className="subhead"> Select your method Prefered Method of Contact</p>
+          <p className="subhead"> Select your method Prefered Method of Contact <hr className="subhead"></hr></p>
+
           <div className="addContact">
             {/* buttons with preffered method of contact */}
             <button className ="contactm" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Microsoft Teams <BsPeopleFill /></button>
             <button className ="contactg" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> GroupMe <BsChatSquareDotsFill /> </button>
             <button className ="contactt" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Text Message<BsChatFill /></button>
           </div><br/>
-          <p className="subhead">Select your prefered topic of interests
+          <p className="subhead"> Select your prefered topic of interests
+          <hr className="subhead"></hr>
           <button className="addbutton" onClick={(e)=> this.props.changePage(pages.BubblePage)} > Add interests <BsPlusCircleFill /> </button></p>
           <div className="addInterest">
             {/* buttons with each interest */}
-            <button className="interests1" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Voting</button>
-            <button className="interests1" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Petitions</button>
-            <button className="interests1" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Schools</button><br/>
-            <button className="interests" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Protest</button>
-            <button className="interests" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Taxes</button>
-            <button className="interests" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Budget</button>
+              <button className="interests1"onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Voting</button>
+              <button className="interests1" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Petitions</button>
+              <button className="interests1"  onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Schools</button><br/>
+              <button className="interests"  onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Protest</button>
+              <button className="interests" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Taxes</button>
+              <button className="interests"  onClick={(e)=> this.props.changePage(pages.DesignCivilPage)} > Budget</button>
         </div> <br/>
         <button className="App-click" onClick={(e) => this.props.changePage(pages.MyContentPage)}>
          <p className="maintag1"> Create my Civil Supporter!</p> 
