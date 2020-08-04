@@ -673,7 +673,6 @@ hr.subhead {
   position: absolute;
   top: 50%;
   left: 32%;
-  /* float:right; */
   color: white;
   height: 50px;
 }
