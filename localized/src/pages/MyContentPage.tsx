@@ -28,7 +28,7 @@ export class MyContentPage extends React.Component<MyContentScreenProps> {
     return (
       <div>
         <UniversalNavBar changePage={this.props.changePage}/>
-
+      <br></br>
         <p className="p"> 
           Latest articles for you based on your interests <BsNewspaper/>
           <hr></hr>
