@@ -277,6 +277,10 @@ input[type="checkbox"] {
   opacity: 1;
 }
 
+.LocalNewsCard:hover {
+  transform: scale(1.05);
+}
+
 .card img{
   border-radius: 18px 18px 0px 0px;
   height: 51%;
