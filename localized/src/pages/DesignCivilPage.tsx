@@ -24,7 +24,7 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
       // Class wrapper with Design Class wrapping contact and interests.
       <div className="Design">  
            <UniversalNavBar changePage={this.props.changePage}/>
-           <p className="maintag"> Design Civil Supporter Page</p>
+           <p className="maintag"> Design your Civil Supporter</p>
           
           <p> Select your method Prefered Method of Contact</p>
           <div className="addContact">
