@@ -7,7 +7,7 @@ import {BsPlusCircleFill} from "react-icons/bs";
 import {BsChatSquareDotsFill} from "react-icons/bs";
 import UniversalNavBar from "../components/UniversalNavBar";
 // imported bootstrap icons in code
-import UniversalNavBar from "../components/UniversalNavBar";
+
 
 interface DesignCivilScreenProps {
   changePage: (page: pages) => void;
