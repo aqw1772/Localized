@@ -26,14 +26,14 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
            <UniversalNavBar changePage={this.props.changePage}/>
            <p className="maintag"> Design your Civil Supporter</p>
           
-          <p> Select your method Prefered Method of Contact</p>
+          <p className="subhead"> Select your method Prefered Method of Contact</p>
           <div className="addContact">
             {/* buttons with preffered method of contact */}
             <button className ="contactm" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Microsoft Teams <BsPeopleFill /></button>
             <button className ="contactg" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> GroupMe <BsChatSquareDotsFill /> </button>
             <button className ="contactt" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Text Message<BsChatFill /></button>
           </div><br/>
-          <p>Select your prefered topic of interests
+          <p className="subhead">Select your prefered topic of interests
           <button className="addbutton" onClick={(e)=> this.props.changePage(pages.BubblePage)} > Add interests <BsPlusCircleFill /> </button></p>
           <div className="addInterest">
             {/* buttons with each interest */}
