@@ -117,6 +117,158 @@ code {
 .carousel-item {
   margin-bottom: 10px;
 }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 0px !important;
+}
+
+.navbar a{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: larger;
+  color: white !important;
+}
+
+.navbar a:hover {
+  color: rgb(219, 219, 219) !important;
+}
+
+.navbar img {
+  margin-left: 20px;
+}
+
+.myContentSidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  margin-top: 66px;
+  top: 0; /* Stay at the top -- **THIS WILL CHANGE WHEN NAV BAR IS IMPLEMENTED** */
+  left: 0;
+  background-color: #F0F2F5;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.nameAndPic {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.myContentSidebar .nameAndPic img{
+  height: 60px;
+  width: 60px;
+}
+
+.myContentSidebar .nameAndPic h3 {
+  color: rgb(131, 130, 130);
+  font-size: medium;
+}
+
+.myContentSidebar .heading {
+  border-radius: 26px;
+  height: 40px;
+  width: 173px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  background-color: white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+
+.myContentSidebar .heading img {
+  margin-right: 10px;
+}
+
+/* .myContentSidebar .arrow + .interests {
+  display: none;
+} */
+
+#arrow {
+  margin-left: -40px;
+  position: static;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.interests {
+  display: none;
+}
+
+#arrow:checked ~ svg {
+  transform: rotate(90deg);
+  transform-origin: 50% 50%;
+}
+
+#arrow:checked ~ .interests {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.myContentSidebar .interests span {
+  border-radius: 26px;
+  height: 40px;
+  width: 173px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.myContentSidebar .edit {
+  border-radius: 26px;
+  height: 40px;
+  width: 173px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  background-color: white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-top: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.myContentSidebar .edit img {
+  margin-right: 10px;
+}
+
+.myContentSidebar .logout {
+  border-radius: 26px;
+  height: 40px;
+  width: 173px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  background-color: rgba(253, 43, 43, 0.877);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
 /*  beginning of styling for the cards in my content page */
 .card{
   box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -128,6 +280,10 @@ code {
 .card:hover{
   transform: scale(1.1);
   opacity: 1;
+}
+
+.LocalNewsCard:hover {
+  transform: scale(1.05);
 }
 
 .card img{
@@ -189,7 +345,7 @@ hr{
 }
 
 /* beginning span tag housing small name tags for the article card */
-span{
+.card-deck span{
   border-radius: 26px;
   height: 40px;
   text-align: center;
@@ -260,7 +416,8 @@ input::placeholder{
   color: #999;
 }
 
-input:focus{
+/* Might have to edit */
+input:focus { 
   transition: .1s;
   outline: none;
   border-bottom: 1.5px solid #0078D4;
@@ -341,7 +498,7 @@ input:focus{
   }
   
   .createAccount small {
-    color: #999;
+    color: rgb(131, 130, 130);
     font-weight: lighter;
     font-size: 1em;
     margin-top: 3px;
@@ -397,6 +554,7 @@ input:focus{
   width: 14px;
   height: 13px;
 }
+
 .addContact{
 /* display: flex; */
 padding: 20px;
@@ -405,8 +563,8 @@ margin: 10px;
 position: relative;
 /* text-align: center; */
 }
-.contactm{
 
+.contactf{
   padding: 20px;
   /* float: left; */
   margin: 70px;
@@ -422,6 +580,7 @@ position: relative;
   border-radius: 15px;
   color: white;
 }
+
 .contactt{
   display: inline-block;
   padding: 20px; 
@@ -478,6 +637,10 @@ hr.subhead {
 .interests2{
   flex-wrap: wrap;
   flex: 10%;
+}
+.addInterest .interests1{
+  /* flex-wrap: wrap; */
+  flex: 33.33%;
   padding:20px;
   margin: 10px;
  flex-wrap: nowrap; 
@@ -489,15 +652,9 @@ hr.subhead {
  border-radius: 15px;
  
 }
-
 .interests{
   flex: 10%;
   margin: 10px;
-  padding:20px;
-  flex-wrap: nowrap;
-  align-content: space-between;
- border-radius:15px;
-  background:#206AD8;
   color: white;
   
 }
@@ -599,7 +756,6 @@ hr.subhead {
 .UpcomingEventsCard {
   width: 33.33rem !important;
   margin-left: 10px;
-  margin-top:20px;
 }
 
 .PlayButton{
