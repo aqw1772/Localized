@@ -12,8 +12,7 @@ h2{
 
 /*Selected state for the bubbles*/
 .blueButton{
-  width: 200px;
-  height:200px;
+
   border-radius: 50%;
   color: white;
   font-size: 25px;
@@ -25,8 +24,7 @@ h2{
 
 /*Unselected state for the bubbles*/
 .grayButton{
-  width: 200px;
-  height:200px;
+
   border-radius: 50%;
   color: white;
   font-size: 25px;

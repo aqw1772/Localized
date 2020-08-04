@@ -8,6 +8,7 @@ import  { EditCivilPage } from './pages/EditCivilPage';
 import  { SignUpPage }  from './pages/SignUpPage';
 import  { SignInPage } from './pages/SignInPage';
 
+
 export enum pages {
   WelcomePage,
   BubblePage,
