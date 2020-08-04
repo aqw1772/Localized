@@ -457,9 +457,25 @@ hr.subhead {
   font-weight:bolder;
   font-size:20px;
   color: white;
+  width: 650px;
 }
 /* styling for interests button */
 .interests1{
+  flex-wrap: wrap;
+  flex: 10%;
+  padding: 20px !important;
+  margin: 10px;
+ flex-wrap: nowrap; 
+ align-content: space-between;
+ color: white;
+
+ padding: 10px 24px;
+ background:#206AD8;
+ border-radius: 15px;
+ /* clear: both; */
+}
+
+.interests2{
   flex-wrap: wrap;
   flex: 10%;
   padding:20px;
@@ -475,8 +491,7 @@ hr.subhead {
 }
 
 .interests{
- 
-flex: 10%;
+  flex: 10%;
   margin: 10px;
   padding:20px;
   flex-wrap: nowrap;
@@ -488,19 +503,40 @@ flex: 10%;
 }
 .addInterest{
   display:flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   align-content: space-between;
- 
-  
+  width: 90%;
 }
+
+.addInterest button {
+  width: 400px;
+  font-size: x-large;
+}
+
+.civilInterestRow1{
+  width: 90%;
+  height: 30px;
+  margin-bottom: 60px;
+}
+
+.civilInterestRow2{
+  width: 90%;
+  height: 30px;
+  margin-bottom: 60px;
+}
+
 .addbutton{
   padding:20px;
+  padding-top: 5px;
+  padding-bottom: 40px;
   background:#206AD8 ;
   border-radius: 15px;
-  position: relative;
-  top: -50px;
-  float:right;
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  /* float:right; */
   color: white;
+  height: 50px;
 }
 
 /* CSS styling for the local news row */
