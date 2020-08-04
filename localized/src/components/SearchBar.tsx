@@ -6,10 +6,10 @@ import React from 'react';
 export class SearchBar extends React.Component<{}> {
     render() {
         return (
-            <div className="SearchBar">
+            <div>
                 <form id="TopSearchForm" action="https://www.bing.com/search" method="GET" target="_blank">
                     {/* */}
-                    <form onSubmit={this.onKeyUp} ><input id="searchInput" type="text" name="q" placeholder="Search"/></form>
+                    <form onSubmit={this.onKeyUp} ><input id="searchInput" type="text" name="q" placeholder="Search..." className="searchBar"/></form>
                     
                 </form>
             </div >
