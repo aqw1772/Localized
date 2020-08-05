@@ -30,7 +30,7 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
 
           <div className="addContact">
             {/* buttons with preffered method of contact */}
-            <button className ="contactm" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Microsoft Teams <BsPeopleFill /></button>
+            <button className ="contactm" onClick={(e)=> this.openTeams()}> Microsoft Teams <BsPeopleFill /></button>
             <button className ="contactg" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> GroupMe <BsChatSquareDotsFill /> </button>
             <button className ="contactt" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Text Message <BsChatFill /></button>
           </div><br/>
@@ -59,5 +59,11 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
     </div>
     );
   }
+
+openTeams = () => {
+  const URL = 'https://teams.microsoft.com/l/chat/0/0?users=28:4c3d463a-4801-4a68-bec0-65bd92ac5f71';
+  window.open(URL, '_blank');
+}
+
 }
 
