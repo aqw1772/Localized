@@ -25,7 +25,7 @@ export class SearchBar extends React.Component<{}> {
             input.value = "";
 
             // Submit the outer form using this 
-            // In hinesight the form being submitted, is simultaneously replaced by a new form th
+            // In hinesight the form being submitted, is simultaneously replaced by a new form
             // that's empty
             let form = (document.getElementById("TopSearchForm") as HTMLFormElement);
             let searchInput = (document.createElement("input") as HTMLInputElement);

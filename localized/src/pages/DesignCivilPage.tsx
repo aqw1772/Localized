@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { pages } from "../App";
 // import fb_logo from "../images/facebook.png";
 import  {BsFillChatFill, BsChatFill} from "react-icons/bs";
@@ -30,9 +30,9 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
 
           <div className="addContact">
             {/* buttons with preffered method of contact */}
-            <button className ="contactm" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Microsoft Teams <BsPeopleFill /></button>
+            <button className ="contactm" onClick={(e)=> this.openTeams()}> Microsoft Teams <BsPeopleFill /></button>
             <button className ="contactg" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> GroupMe <BsChatSquareDotsFill /> </button>
-            <button className ="contactt" onClick={(e)=> this.props.changePage(pages.DesignCivilPage)}> Text Message <BsChatFill /></button>
+            <button className ="contactt" onClick={(e)=> this.openTextMessage()}> Text Message <BsChatFill /></button>
           </div><br/>
           <p className="subhead"> Select your prefered topic of interests
           <hr className="subhead"></hr>
@@ -58,6 +58,19 @@ export class DesignCivilPage extends React.Component<DesignCivilScreenProps> {
     
     </div>
     );
+  }
+
+  openTeams = () => {
+    const URL = 'https://teams.microsoft.com/l/chat/0/0?users=28:4c3d463a-4801-4a68-bec0-65bd92ac5f71';
+    window.open(URL, '_blank');
+  }
+
+  openTextMessage = () => {
+    alert("Text this number: +1 (857) 763-3495 and say hello to your Civil Supporter!");
+  }
+
+  openGroupMe = () => {
+    
   }
 }
 
